@@ -2,11 +2,32 @@
 <html>
   <head>
     <meta charset="UTF-8">
-	<title>Happy KAIST-Login</title>
-    <link href="./Login.css" rel="stylesheet" />
+	<title>Happy KAIST-login</title>
+    <link href="./login.css" rel="stylesheet" />
   </head>
   <body>
-  
-    <script src="./Login.js"></script>
+    <script src="./login.js"></script>
+
+    <form>
+      <div id = "wrap">
+       <h1 class = "title">Happy Apron</h1>
+       <div class = "form">
+        <div class = "form2">
+         <div class = "form3">
+          <label>Email Address</label><br>
+          <input type = "text" class = "inputbox"><br><br><br>
+          <label>Password</label><br>
+          <input type = "password" class="inputbox">
+         </div>
+         <div class = "form4">
+          <input type = "button" style="WIDTH: 120pt; HEIGHT: 30pt" value = "Sign in">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type = "button" style="WIDTH: 120pt; HEIGHT: 30pt" value = "Sign up" onClick="location.href='/sign_up/sign_up.html'">
+         </div>
+        </div>
+       </div>
+      </div>
+     </form>
+
   </body>
 </html>
