@@ -72,7 +72,7 @@ to {top: 0; opacity: 1}
 }
 
 .flex-container{
-display: flex;
+display: flex	;
 position:relative;
 flex-flow: column wrap;
 border: 3px solid black;
@@ -139,4 +139,5 @@ height: 95%;
 	margin:10px;
 	padding:10px;
 	background-color: grey;
+	border-radius: 10px;
 }
