@@ -1,4 +1,4 @@
-var userName="Minsoo Kang";
+var userName="edwin";
 var headerBar = document.getElementById("headerBar");
 var sticky = headerBar.offsetTop;
 window.onscroll = function() {stickyScrolling()};
