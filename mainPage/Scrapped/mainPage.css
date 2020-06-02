@@ -29,6 +29,8 @@ h1 {
 	width:auto;
 	height: auto;
 	float: right;
+    margin-left: 0px;
+    margin-bottom: 0px;
 }
 
 .vertical-center {
