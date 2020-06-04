@@ -3,7 +3,7 @@ import './App.css';
 import HeaderBar from './components/HeaderBar.js';
 import CardList from "./components/CardList.js";
 import CardColumns from "react-bootstrap/CardColumns";
-import Dashboard from './components/Dashboard/dashboard.jsx';
+import Dashboard from './components/Dashboard/Dashboard.jsx';
 
 class App extends React.Component {
 	state={

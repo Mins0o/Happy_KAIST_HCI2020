@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Modal, Button, Row, Col, Form} from 'react-bootstrap';
+import './InfoModal.css';
 
 export class InfoModal extends Component{
     constructor(props){
@@ -10,7 +11,7 @@ export class InfoModal extends Component{
         return(
         <Modal
             {...this.props}
-            size="lg"
+            size="xl"
             aria-labelledby="contained-modal-title-vcenter"
             centered
             >
@@ -20,11 +21,18 @@ export class InfoModal extends Component{
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                
+            <div className="modal-page">
+                <div className="body-container">
+                <div className ="menu-info-container">
+                </div>
+                <div className ="description-container">
+                </div>  
+                </div>
+                <div className="proceed-button" onClick={this.props.onHide}>
+                            Press to Proceed
+                </div>
+            </div>
             </Modal.Body>
-            <Modal.Footer>
-                <Button variant="danger" onClick={this.props.onHide}>Close</Button>
-            </Modal.Footer>
         </Modal>   
         )
     }
