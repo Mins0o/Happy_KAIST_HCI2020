@@ -43,5 +43,10 @@
 		"id": 9,
 		"name": "Delicious Breakfast",
 		"difficulty":"m"
+	},
+	{
+		"id": 10,
+		"name": "Most Expensive Burger",
+		"difficulty":"h"
 	}
 ]
