@@ -22,7 +22,7 @@ class MainPage extends React.Component {
 	  return (
 		<div style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
 			<HeaderBar/>
-			<div style={{width: "44rem",  display: "flex", alignItems: "center", justifyContent: "center"}}>
+			<div style={{width: "43em",  alignItems: "center", justifyContent: "center"}}>
 				<CardColumns>
 					<CardList menus={this.state.menulist}/>
 				</CardColumns>
