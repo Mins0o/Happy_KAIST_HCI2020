@@ -34,7 +34,7 @@ class App extends React.Component {
           <Row><Col></Col></Row>
           <Row>
             <Col>
-            <img src={burger} alt="Burger" />
+            <img src={burger} alt="Burger"/>
             </Col>
             <Col><div id="title">Burger</div><br></br>
             <button id="checkout">Proceed to Checkout</button></Col>
