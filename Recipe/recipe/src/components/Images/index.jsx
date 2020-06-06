@@ -11,8 +11,10 @@ class Images extends React.Component{
     render(){
         const { ingredients } = this.props;
         return(
+            <div>
+            <br></br>
             <Container>
-            <Row>
+                <Row>
                 {
                     ingredients.map((val,idx) => {
                         return(
@@ -21,11 +23,11 @@ class Images extends React.Component{
                         </Col>
                         )
                     })
-
                 }
-            </Row>
+                </Row>
             </Container>
-            
+            <br></br>
+            </div>
         )
     }
 }
