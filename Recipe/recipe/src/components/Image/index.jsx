@@ -20,13 +20,13 @@ class Image extends React.Component{
     render(){
         const style = this.state.active ? {border: '3px solid green'}:{border: '3px solid black'};
         let  imgSrc = images.dog.src;
-        return <img 
-        style ={style} 
-        src = {imgSrc}
-        onClick={this.clickImage}
-        width = '100px'
-        height = '100px'
-        />
+        return (
+                <img 
+                    style ={style}
+                    src = {imgSrc}
+                    onClick={this.clickImage}
+                />
+        )
 
     }
 }
