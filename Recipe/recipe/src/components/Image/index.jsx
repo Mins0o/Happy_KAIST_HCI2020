@@ -1,5 +1,5 @@
 import React from 'react';
-import anjeng from './anjeng.jpg'
+import { images } from './image_list';
 
 class Image extends React.Component{
     constructor(props){
@@ -18,9 +18,10 @@ class Image extends React.Component{
 
     render(){
         const style = this.state.active ? {border: '1px solid black'}:{};
+        let  imgSrc = images.dog.src;
         return <img 
         style ={style} 
-        src = {anjeng}
+        src = {imgSrc}
         onClick={this.clickImage}
         />
 
