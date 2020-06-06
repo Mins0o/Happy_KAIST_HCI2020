@@ -1,5 +1,6 @@
 import React from 'react';
 import { images } from './image_list';
+//import './index.css';
 
 class Image extends React.Component{
     constructor(props){
@@ -17,12 +18,14 @@ class Image extends React.Component{
 
 
     render(){
-        const style = this.state.active ? {border: '1px solid black'}:{};
+        const style = this.state.active ? {border: '3px solid green'}:{border: '3px solid black'};
         let  imgSrc = images.dog.src;
         return <img 
         style ={style} 
         src = {imgSrc}
         onClick={this.clickImage}
+        width = '100px'
+        height = '100px'
         />
 
     }
