@@ -1,11 +1,27 @@
+import React from 'react';
+import anjeng from './anjeng.jpg'
+
 class Image extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {active:false};
+        this.clickImage = this.clickImage.bind(this);
+    }
+
+    clickImage(){
+        this.setState(prevState=>({
+            active: !(prevState.active)
+        }));
+
+    }
+
+
     render(){
-        const{ ix, clickImage, active } = this.props;
-        const style = active ? {border: '1px solid black'}:{};
+        const style = this.state.active ? {border: '1px solid black'}:{};
         return <img 
         style ={style} 
-        src = 'anjeng.jpg' 
-        onClick={()=> clickImage(ix)}
+        src = {anjeng}
+        onClick={this.clickImage}
         />
 
     }
