@@ -12,7 +12,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import Image from './components/Image';
+import Images from './components/Images';
 
 //import Tabs from './components/Tabs';
 
@@ -20,12 +20,13 @@ class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      ingredients:[],
-      utensils: [],
-      recipe: 'this is the recipe'
+      ingredients:['anjeng', 'anjeng', 'anjeng'],
+      //utensils: [],
+      //recipe: 'this is the recipe'
     }
   }
   render(){
+    const { ingredients } = this.state;
     return (
       <div className="App">
         <br></br>
@@ -46,7 +47,7 @@ class App extends React.Component {
           <Tabs defaultActiveKey="home" transition={false} id="noanim-tab-example">
             <Tab eventKey="home" title="Ingredients">
               <div id = 'img-container'>
-              <Image></Image>
+              <Images ingredients = {ingredients}/>
               </div>
             </Tab>
             <Tab eventKey="profile" title="Utensils">
