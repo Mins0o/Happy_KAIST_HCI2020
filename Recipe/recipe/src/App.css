@@ -43,6 +43,7 @@ img {
   width: 300px;
   height: 300px;
 }
+
 #tabs-container{
   margin: 10px auto;
   height: 300px;
@@ -60,4 +61,9 @@ img {
 button{
   border-radius: 50%;
   float:left;
+}
+
+#img-container{
+  display: flex;
+  flex-wrap: wrap;
 }
