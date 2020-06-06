@@ -1,0 +1,38 @@
+[
+	{
+		"id": 1,
+		"name": "비빔밥"
+	},
+	{
+		"id": 2,
+		"name": "찌개"
+	},
+	{
+		"id": 3,
+		"name": "짜장면"
+	},
+	{
+		"id": 4,
+		"name": "Avocado Salad"
+	},
+	{
+		"id": 5,
+		"name": "Mie goreng"
+	},
+	{
+		"id": 6,
+		"name": "Seasoned rice with egg"
+	},
+	{
+		"id": 7,
+		"name": "Delicious dish"
+	},
+	{
+		"id": 8,
+		"name": "Burer patty with naan"
+	},
+	{
+		"id": 9,
+		"name": "Delicious Breakfast"
+	}
+]
