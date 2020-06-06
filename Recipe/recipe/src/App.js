@@ -13,11 +13,17 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import Image from './components/Image';
+
 //import Tabs from './components/Tabs';
 
 class App extends React.Component {
   constructor(props){
     super(props);
+    this.state = {
+      ingredients:[],
+      utensils: [],
+      recipe: 'this is the recipe'
+    }
   }
   render(){
     return (
