@@ -1,38 +1,47 @@
 [
 	{
 		"id": 1,
-		"name": "비빔밥"
+		"name": "비빔밥",
+		"difficulty":"l"
 	},
 	{
 		"id": 2,
-		"name": "찌개"
+		"name": "찌개",
+		"difficulty":"h"
 	},
 	{
 		"id": 3,
-		"name": "짜장면"
+		"name": "짜장면",
+		"difficulty":"l"
 	},
 	{
 		"id": 4,
-		"name": "Avocado Salad"
+		"name": "Avocado Salad",
+		"difficulty":"l"
 	},
 	{
 		"id": 5,
-		"name": "Mie goreng"
+		"name": "Mie goreng",
+		"difficulty":"m"
 	},
 	{
 		"id": 6,
-		"name": "Seasoned rice with egg"
+		"name": "Seasoned rice with egg",
+		"difficulty":"l"
 	},
 	{
 		"id": 7,
-		"name": "Delicious dish"
+		"name": "Delicious dish",
+		"difficulty":"h"
 	},
 	{
 		"id": 8,
-		"name": "Burer patty with naan"
+		"name": "Burger patty with naan",
+		"difficulty":"h"
 	},
 	{
 		"id": 9,
-		"name": "Delicious Breakfast"
+		"name": "Delicious Breakfast",
+		"difficulty":"m"
 	}
 ]

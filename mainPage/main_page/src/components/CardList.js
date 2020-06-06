@@ -11,7 +11,7 @@ class CardList extends React.Component {
 	console.log(this.props.menus);
 	  return (
 		this.props.menus.map((menu) =>(
-			<CardItem key={menu.id} numbering={menu.id}/>
+			<CardItem key={menu.id} index={menu.id}/>
 			
 	  ))
 	  );
