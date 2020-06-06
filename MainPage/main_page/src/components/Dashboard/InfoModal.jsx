@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {Modal, Button, Row, Col, Form} from 'react-bootstrap';
 import './InfoModal.css';
+import MenuInfo from './MenuInfo';
+import DescriptionInfo from './DescriptionInfo'
 
 export class InfoModal extends Component{
     constructor(props){
@@ -23,10 +25,8 @@ export class InfoModal extends Component{
             <Modal.Body>
             <div className="modal-page">
                 <div className="body-container">
-                <div className ="menu-info-container">
-                </div>
-                <div className ="description-container">
-                </div>  
+                <MenuInfo></MenuInfo>
+                <DescriptionInfo></DescriptionInfo> 
                 </div>
                 <div className="proceed-button" onClick={this.props.onHide}>
                             Press to Proceed
