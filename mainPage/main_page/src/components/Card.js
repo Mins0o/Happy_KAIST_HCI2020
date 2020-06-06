@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from "react-bootstrap/Card";
+import Form from 'react-bootstrap/Form';
 
 class CardItem extends React.Component {
 	state={
@@ -10,33 +11,40 @@ class CardItem extends React.Component {
 	render() { 
 		let food_data = require('../data/food_data.json');
 		let i = this.props.index-1;
-		var styling;
+		var color;
+		var borderColor="";
+		var diffText;
 		if(food_data[i].difficulty=="h"){
-		styling = {
-			width:"14em",
-			border: "5px solid red",
-			cursor: "pointer"
-		};
+		color="danger";
+		borderColor="#d73343 ";
+		diffText="Hard";
 		}else if(food_data[i].difficulty=="m"){
-		styling = {
-			width:"14em",
-			border: "5px solid #FFD700	",
-			cursor: "pointer"
-		};}else{
-		styling = {
-			width:"14em",
-			border: "5px solid #00CD00",
-			cursor: "pointer"
-		};	
+		color="warning";
+		borderColor="#f7bc07";
+		diffText="Good";
+		}else{
+		color="success";
+		borderColor="#27a243";
+		diffText="Easy";
 		}
 		function clicked(e){
 			alert("Ahhh");
 		}
 		return (
-			<Card onClick={clicked} style={styling}>
-				<Card.Header className="text-center">{food_data[i].name}
-				</Card.Header>
+			<Card bg={color} onClick={clicked} 
+				style={{
+					width :"26vw",
+					cursor: "pointer", 
+					fontWeight:"bold",
+					fontSize: "1.8vw",
+					border:"15px solid "+borderColor,
+					color: "#FFFFFF"
+				}}
+			>
 				<Card.Img variant="top" src={require("../image_sources/"+food_data[i].id.toString()+".png")} />
+				<Card.Footer style={{bgColor : "red", padding:"0.1vw", maxHeight:"2.5vw"}} className="text-center">
+				{food_data[i].name}
+				</Card.Footer>
 			</Card>
 		);
 	}

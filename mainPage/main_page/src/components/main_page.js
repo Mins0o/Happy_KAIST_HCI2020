@@ -22,8 +22,8 @@ class MainPage extends React.Component {
 	  return (
 		<div style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
 			<HeaderBar/>
-			<div style={{width: "43em",  alignItems: "center", justifyContent: "center"}}>
-				<CardColumns>
+			<div style={{width: "79vw",  alignItems: "center", justifyContent: "center"}}>
+				<CardColumns style={{columnCount:"3"}}>
 					<CardList menus={this.state.menulist}/>
 				</CardColumns>
 			</div>
