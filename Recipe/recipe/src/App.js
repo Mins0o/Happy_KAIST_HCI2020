@@ -44,10 +44,10 @@ class App extends React.Component {
         </Container>
         <br></br>
         <div id="tabs-container">
-          <Tabs defaultActiveKey="home" transition={false} id="noanim-tab-example">
+          <Tabs fill defaultActiveKey="home" transition={false} id="noanim-tab-example">
             <Tab eventKey="home" title="Ingredients">
               <div id = 'img-container'>
-              <Images ingredients = {ingredients}/>
+              <Images style = {{width:'100px', height:'100px'}} ingredients = {ingredients}/>
               </div>
             </Tab>
             <Tab eventKey="profile" title="Utensils">
