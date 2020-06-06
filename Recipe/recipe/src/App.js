@@ -12,6 +12,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+import Image from './components/Image';
 //import Tabs from './components/Tabs';
 
 class App extends React.Component {
@@ -38,7 +39,9 @@ class App extends React.Component {
         <div id="tabs-container">
           <Tabs defaultActiveKey="home" transition={false} id="noanim-tab-example">
             <Tab eventKey="home" title="Ingredients">
-              ingredients
+              <div id = 'img-container'>
+              <Image></Image>
+              </div>
             </Tab>
             <Tab eventKey="profile" title="Utensils">
               utensils
