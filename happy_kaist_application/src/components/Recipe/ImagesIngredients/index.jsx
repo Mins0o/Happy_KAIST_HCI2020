@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from '../Image';
 import BuyButton from '../BuyButton';
-//import card_image from '../card_image';
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
