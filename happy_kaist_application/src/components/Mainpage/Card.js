@@ -9,7 +9,7 @@ class CardItem extends React.Component {
 		
 	}
 	render() { 
-		let food_data = require('../data/food_data.json');
+		let food_data = require('../../data/food_data.json');
 		let i = this.props.index-1;
 		var color;
 		var borderColor="";
@@ -41,7 +41,7 @@ class CardItem extends React.Component {
 					color: "#FFFFFF"
 				}}
 			>
-				<Card.Img variant="top" src={require("../image_sources/"+food_data[i].id.toString()+".png")} />
+				<Card.Img variant="top" src={require("../../images/"+food_data[i].id.toString()+".png")} />
 				<Card.Footer style={{bgColor : "red", padding:"0.1vw", maxHeight:"2.5vw"}} className="text-center">
 				{food_data[i].name}
 				</Card.Footer>
