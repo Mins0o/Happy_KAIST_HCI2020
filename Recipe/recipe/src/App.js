@@ -55,7 +55,7 @@ class App extends React.Component {
           <Tabs fill defaultActiveKey="home" transition={false} id="noanim-tab-example">
             <Tab eventKey="home" title="Ingredients">
               <div id='img-container'>
-              <ImagesIngredients style = {{width:'100px', height:'100px'}} ingredients = {ingredients}/>
+              <ImagesIngredients style = {{width:'100px', height:'100px'}} ingredients = {ingredients} inCount={inCount}/>
               </div>
             </Tab>
             <Tab eventKey="profile" title="Utensils">

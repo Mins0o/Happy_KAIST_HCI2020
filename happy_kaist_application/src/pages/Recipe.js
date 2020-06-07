@@ -1,7 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
-import burger from './burger.jpg';
-// import './App.css';
+import logo from '../logo.svg';
+import burger from '../images/burger.jpg';
+import './Recipe.css';
 //import './styles.css';
 import { render } from '@testing-library/react';
 
@@ -15,8 +15,8 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
 
-import ImagesIngredients from './components/ImagesIngredients';
-import ImagesUtensils from './components/ImagesUtensils';
+import ImagesIngredients from '../components/Recipe/ImagesIngredients';
+import ImagesUtensils from '../components/Recipe/ImagesUtensils';
 
 
 class Recipe extends React.Component {
