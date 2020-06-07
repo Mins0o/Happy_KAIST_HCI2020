@@ -1,7 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
-import burger from './burger.jpg';
-import './App.css';
+import logo from '../logo.svg';
+import burger from '../images/burger.jpg';
+import './Recipe.css';
 //import './styles.css';
 import { render } from '@testing-library/react';
 
@@ -15,11 +15,11 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
 
-import ImagesIngredients from './components/ImagesIngredients';
-import ImagesUtensils from './components/ImagesUtensils';
+import ImagesIngredients from '../components/Recipe/ImagesIngredients';
+import ImagesUtensils from '../components/Recipe/ImagesUtensils';
 
 
-class App extends React.Component {
+class Recipe extends React.Component {
   constructor(props){
     super(props);
     this.state = {
@@ -55,7 +55,7 @@ class App extends React.Component {
           <Tabs fill defaultActiveKey="home" transition={false} id="noanim-tab-example">
             <Tab eventKey="home" title="Ingredients">
               <div id='img-container'>
-              <ImagesIngredients style = {{width:'100px', height:'100px'}} ingredients = {ingredients} inCount={inCount}/>
+              <ImagesIngredients style = {{width:'100px', height:'100px'}} ingredients = {ingredients}/>
               </div>
             </Tab>
             <Tab eventKey="profile" title="Utensils">
@@ -73,4 +73,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default Recipe;

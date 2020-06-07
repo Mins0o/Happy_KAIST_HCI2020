@@ -1,15 +1,21 @@
 import React from 'react';
 import Image from '../Image';
+import BuyButton from '../BuyButton';
+//import card_image from '../card_image';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 
-class Images extends React.Component{
+class ImagesIngredients extends React.Component{
     constructor(props){
         super(props);
     }
+
     render(){
         const { ingredients } = this.props;
+        const { inCount } = this.props;
+       
         return(
             <div>
             <br></br>
@@ -19,12 +25,26 @@ class Images extends React.Component{
                     ingredients.map((val,idx) => {
                         return(
                         <Col xs="12" sm="4">
-                            <Image></Image>
+                            <Image/>
                         </Col>
                         )
                     })
+
                 }
                 </Row>
+                <br></br>
+                <Row float='center'>
+                    {
+                    ingredients.map((val,idx) => {
+                        return(
+                        <Col xs="12" sm="4" >
+                            <BuyButton inCount={ inCount }/>
+                        </Col>
+                        )
+                    })
+                    }
+                </Row>
+
             </Container>
             <br></br>
             </div>
@@ -32,4 +52,4 @@ class Images extends React.Component{
     }
 }
 
-export default Images;
+export default ImagesIngredients;

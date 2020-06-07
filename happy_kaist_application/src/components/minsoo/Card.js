@@ -9,23 +9,23 @@ class CardItem extends React.Component {
 		
 	}
 	render() { 
-		let food_data = require('../data/food_data.json');
+		let food_data = require('../../data/food_data.json');
 		let i = this.props.index-1;
 		var color;
 		var borderColor="";
 		var diffText;
 		if(food_data[i].difficulty=="h"){
-			color="danger";
-			borderColor="#d73343 ";
-			diffText="Hard";
+		color="danger";
+		borderColor="#d73343 ";
+		diffText="Hard";
 		}else if(food_data[i].difficulty=="m"){
-			color="warning";
-			borderColor="#f7bc07";
-			diffText="Good";
+		color="warning";
+		borderColor="#f7bc07";
+		diffText="Good";
 		}else{
-			color="success";
-			borderColor="#27a243";
-			diffText="Easy";
+		color="success";
+		borderColor="#27a243";
+		diffText="Easy";
 		}
 		function clicked(e){
 			alert("Ahhh");
@@ -41,8 +41,8 @@ class CardItem extends React.Component {
 					color: "#FFFFFF"
 				}}
 			>
-				<Card.Img variant="top" src={require("../image_sources/"+food_data[i].id.toString()+".png")} />
-				<Card.Footer style={{bgColor : "red", padding:"0.1vw", maxHeight:2.5vw"}} className="text-center">
+				<Card.Img variant="top" style={{maxHeight:"26vw"}}src={require("../../images/"+food_data[i].id.toString()+".png")} />
+				<Card.Footer style={{bgColor : "red", paddingLeft:"0px", paddingRight:"0px", fontSize:"17pt", padding:"auto", maxHeight:"4vw"}} className="text-center">
 				{food_data[i].name}
 				</Card.Footer>
 			</Card>
