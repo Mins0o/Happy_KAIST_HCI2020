@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import burger from './burger.jpg';
+import burger from '../images/burger.jpg';
 import './App.css';
 //import './styles.css';
 import { render } from '@testing-library/react';
