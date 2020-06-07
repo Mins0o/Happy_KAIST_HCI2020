@@ -20,10 +20,10 @@ class MainPage extends React.Component {
 	}
 	render() {
 	  return (
-		<div><br/><br/><br/><br/></div>
 		<div style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
 			<HeaderBar/>
 			<div style={{width: "79vw",  alignItems: "center", justifyContent: "center"}}>
+				<br/><br/><br/>
 				<CardColumns style={{columnCount:"3"}}>
 					<CardList menus={this.state.menulist}/>
 				</CardColumns>

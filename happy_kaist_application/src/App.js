@@ -14,6 +14,7 @@ class App extends Component {
             <div>
                 {/* <Route exact path="/" component={Mainpage}/> */}
                 {/* <Route path="/about" component={Recipe}/> */}
+				<MainPage/>
             </div>
         );
     }
