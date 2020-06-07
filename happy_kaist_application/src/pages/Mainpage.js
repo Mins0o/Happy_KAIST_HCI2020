@@ -1,11 +1,11 @@
 import React from 'react';
-import './App.css';
 
 
-import MainPage from "./components/main_page.js";
+import MainPage from "./components/MainPage/main_page.js";
+import DashBoard from "./components/DashBoard/DashBoard.jsx";
 
 
-class App extends React.Component {
+class Mainpage extends React.Component {
 	
 	render() {
 	  return (
@@ -13,9 +13,10 @@ class App extends React.Component {
 		<div className="App">
 		<br/><br/><br/>
 			<MainPage/>
+			<DashBoard/>
 		</div>
 
 	  );
 	}
 }
-export default App;
+export default Mainpage;
