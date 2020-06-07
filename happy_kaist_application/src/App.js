@@ -11,9 +11,9 @@ class App extends Component {
         return (
             <Router>
                 <div>
-                    <Route exact path="/" component={Mainpage}/>
+                    {/* <Route exact path="/" component={Mainpage}/> */}
                     <Route path="/recipe" component={Recipe}/>
-                    <Route path="/login" component={Loginpage}/>
+                    <Route exact path="/" component={Loginpage}/>
                     <Route path="/select" component={Selectpage}/>
                 </div>                
             </Router>
