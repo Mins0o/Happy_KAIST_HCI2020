@@ -5,26 +5,26 @@ import { images } from './image_list';
 class Image extends React.Component{
     constructor(props){
         super(props);
-        this.state = {active:false};
-        this.clickImage = this.clickImage.bind(this);
+        //this.state = {active:false};
+        //this.clickImage = this.clickImage.bind(this);
     }
 
-    clickImage(){
-        this.setState(prevState=>({
-            active: !(prevState.active)
-        }));
+    //clickImage(){
+        //this.setState(prevState=>({
+            //active: !(prevState.active)
+        //}));
 
-    }
+    //}
 
 
     render(){
-        const style = this.state.active ? {border: '3px solid green'}:{border: '3px solid black'};
+        const style = this.props.activeImg ? {border: '3px solid green', height: '150px', width: '150px'}: {height: '150px', width: '150px'};
         let  imgSrc = images.dog.src;
         return (
                 <img 
                     style ={style}
                     src = {imgSrc}
-                    onClick={this.clickImage}
+                    //onClick={this.clickImage}
                 />
         )
 
