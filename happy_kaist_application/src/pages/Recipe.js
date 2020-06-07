@@ -19,7 +19,7 @@ import ImagesIngredients from './components/ImagesIngredients';
 import ImagesUtensils from './components/ImagesUtensils';
 
 
-class App extends React.Component {
+class Recipe extends React.Component {
   constructor(props){
     super(props);
     this.state = {
@@ -73,4 +73,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default Recipe;
