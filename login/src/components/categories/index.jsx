@@ -20,7 +20,7 @@ class Category extends React.Component{
     
     render(){
         return(
-            <div className = "form">
+            <div className = "categoryForm">
                 <Buttonbar oncategorySubmit = {this.oncategorySubmit}/>
                 <div>
                     <Utensil utensil_num = {this.state.categoryState}/> 

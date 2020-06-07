@@ -12,7 +12,7 @@ class Select extends React.Component{
     return (
       <div className="App">
         <h1 className = "title">Choose all you have</h1>
-        <div className = "form">
+        <div style={{ display:"flex",alignItems: "center", justifyContent: "center"}} >
           <Category/>
         </div>
         {/* 이전 이후 버튼 */}
