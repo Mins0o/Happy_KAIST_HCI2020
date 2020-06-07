@@ -33,13 +33,13 @@ class HeaderBar extends React.Component {
 					</Form>
 					<span>
 						<Form inline style={{marginBottom:"0px",padding:"0px",maxHeight:"3vw"}}>
-							<Image src={require("../image_sources/userprofile.png")} style={{maxHeight:"2.1vw",margin:"0px"}} roundedCircle />
+							<Image src={require("../../images/userprofile.png")} style={{maxHeight:"2.1vw",margin:"0px"}} roundedCircle />
 							<NavDropdown style={{marginBottom:"0px",paddingBottom:"0px"}} title={"Hi "+username}>
 								<NavDropdown.Item>Trial1</NavDropdown.Item>
 							</NavDropdown>
 						</Form>
 						<Form inline style={{padding:"0px",margin:"0px",width:"100%"}}>
-							<Image src={require("../image_sources/expmeter.png")} style={{maxHeight:"0.5vw"}}  rounded/>
+							<Image src={require("../../images/expmeter.png")} style={{maxHeight:"0.5vw"}}  rounded/>
 						</Form>
 					</span>
 				</Navbar.Collapse>
