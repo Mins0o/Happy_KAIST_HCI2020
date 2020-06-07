@@ -61,7 +61,14 @@ button{
   float:left;
 }
 
+/*
 #img-container{
   display: flex;
   flex-wrap: wrap;
 }
+
+#img-container2{
+  display: flex;
+  flex-wrap: wrap;
+}
+*/
