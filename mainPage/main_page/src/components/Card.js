@@ -15,17 +15,17 @@ class CardItem extends React.Component {
 		var borderColor="";
 		var diffText;
 		if(food_data[i].difficulty=="h"){
-		color="danger";
-		borderColor="#d73343 ";
-		diffText="Hard";
+			color="danger";
+			borderColor="#d73343 ";
+			diffText="Hard";
 		}else if(food_data[i].difficulty=="m"){
-		color="warning";
-		borderColor="#f7bc07";
-		diffText="Good";
+			color="warning";
+			borderColor="#f7bc07";
+			diffText="Good";
 		}else{
-		color="success";
-		borderColor="#27a243";
-		diffText="Easy";
+			color="success";
+			borderColor="#27a243";
+			diffText="Easy";
 		}
 		function clicked(e){
 			alert("Ahhh");
