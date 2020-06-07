@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+export { default as Mainpage } from './pages/Mainpage';
+export { default as Recipe } from './pages/Recipe';
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

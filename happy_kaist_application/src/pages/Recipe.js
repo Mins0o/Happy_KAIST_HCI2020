@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import burger from './burger.jpg';
-import './App.css';
+// import './App.css';
 //import './styles.css';
 import { render } from '@testing-library/react';
 
