@@ -12,7 +12,7 @@ class HeaderBar extends React.Component {
 	render() {
 		let username="Micky";
 		return (
-			<Navbar fixed="top" bg="light" expand="lg" style={{height:"4.5vw"}}>
+			<Navbar fixed="top" bg="light" expand="lg" style={{height:"78px"}}>
 				<Navbar.Brand href="#home">Happy Kaist</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="nav-bar">
