@@ -9,7 +9,6 @@ class Mainpage extends React.Component {
 	  return (
 
 		<div className="App">
-		<br/><br/><br/>
 			<MainPage/>
 			{/* <Dashboard/> */}
 		</div>
