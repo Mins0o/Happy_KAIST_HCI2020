@@ -1,9 +1,7 @@
 import React from 'react';
 
-
-import MainPage from "./components/Mainpage/main_page.js";
-import Dashboard from "./components/Dashboard/Dashboard.jsx";
-
+import MainPage from "../components/minsoo/MainPage.js";
+// import Dashboard from "./components/Dashboard/Dashboard.jsx";
 
 class Mainpage extends React.Component {
 	
@@ -13,7 +11,7 @@ class Mainpage extends React.Component {
 		<div className="App">
 		<br/><br/><br/>
 			<MainPage/>
-			<Dashboard/>
+			{/* <Dashboard/> */}
 		</div>
 
 	  );
