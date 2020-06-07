@@ -1,8 +1,8 @@
 import React from 'react';
 
 
-import MainPage from "./components/MainPage/main_page.js";
-import DashBoard from "./components/DashBoard/DashBoard.jsx";
+import Mainpage from "./components/Mainpage/main_page.js";
+import Dashboard from "./components/Dashboard/Dashboard.jsx";
 
 
 class Mainpage extends React.Component {
@@ -12,8 +12,8 @@ class Mainpage extends React.Component {
 
 		<div className="App">
 		<br/><br/><br/>
-			<MainPage/>
-			<DashBoard/>
+			<Mainpage/>
+			<Dashboard/>
 		</div>
 
 	  );
