@@ -92,7 +92,6 @@ export function utCheck(num){
 export function utGetCheck(num){
     for(var i = 0; i < utensil_info.length; i++){
         if(num == i){
-            console.log(utensil_info[i].checked);
             return utensil_info[i].checked;
         }
     }    

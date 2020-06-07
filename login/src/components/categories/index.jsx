@@ -23,7 +23,7 @@ class Category extends React.Component{
             <div className = "categoryForm">
                 <Buttonbar oncategorySubmit = {this.oncategorySubmit}/>
                 <div>
-                    <Utensil utensil_num = {this.state.categoryState}/> 
+                    <Utensil state_num = {this.state.categoryState}/>
                 </div>
             </div>
         )
