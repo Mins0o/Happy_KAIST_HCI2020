@@ -40,7 +40,7 @@ class Recipe extends React.Component {
           <Row><Col></Col></Row>
           <Row>
             <Col>
-            <img src={burger} alt="Burger"/>
+            <img src={burger} alt="Burger" border-radius='40px' style={{width:'300px', height:'300px' }}/>
             </Col>
             <Col><div id="title">Burger</div><br></br>
             <Button variant="primary">Proceed to Checkout</Button>{' '}</Col>
