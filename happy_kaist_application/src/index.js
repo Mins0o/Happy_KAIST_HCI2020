@@ -1,16 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Select from './container/selectpage';
-import Login from './container/loginpage';
+import App from './App';
 import * as serviceWorker from './serviceWorker';
-
-export { default as Select } from './container/selectpage';
-export { default as Loginpage } from './container/loginpage';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Login/>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
