@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
-import { Loginpage, Selectpage, Createaccount, Mainpage, Recipe} from './pages';
+import { Loginpage, Selectpage, Createaccount, Mainpage, Recipe, Checkoutpage} from './pages';
 
 
 class App extends Component {
@@ -14,7 +14,8 @@ class App extends Component {
                     <Route path = "/select" component = {Selectpage}/>
                     <Route path = "/mainpage" component = {Mainpage}/>
                     <Route path = "/recipe" component = {Recipe}/>
-                    <Redirect exact from = "/" to="login" />
+                    <Route path = "/checkout" component = {Checkoutpage}/>
+                    <Redirect exact from = "/" to = "login"/>
                 </div>                
             </Router>
         );
