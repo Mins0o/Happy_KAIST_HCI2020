@@ -1,5 +1,6 @@
 import React from 'react';
 import './Loginpage.css';
+import { Link } from 'react-router-dom';
 
 class Loginpage extends React.Component{
   constructor(props){
@@ -20,7 +21,9 @@ class Loginpage extends React.Component{
           </div>
           <div className = "form4">
               <input type = "button" value = "Sign in"/>
-              <input type = "button" value = "Sign up"/>
+              <Link to="/select">
+                <input type = "button" value = "Sign up"/>                
+              </Link>
           </div>
         </div>
         </div>

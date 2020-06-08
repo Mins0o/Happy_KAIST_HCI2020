@@ -37,11 +37,6 @@
   }
 }
 
-/*img {
-  border-radius: 40px;
-  width: 300px;
-  height: 300px;
-}*/
 
 #tabs-container{
   margin: 10px auto;
@@ -61,14 +56,3 @@ button{
   float:left;
 }
 
-/*
-#img-container{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#img-container2{
-  display: flex;
-  flex-wrap: wrap;
-}
-*/
