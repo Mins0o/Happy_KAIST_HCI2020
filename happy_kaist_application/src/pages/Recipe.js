@@ -37,7 +37,7 @@ class Recipe extends React.Component {
     return (
       <div className="App">
         <HeaderBar/>
-        <br/><br/><br/>
+        <br/><br/><br/><br/>
         <Container>
           <Row><Col></Col></Row>
           <Row>
@@ -45,7 +45,7 @@ class Recipe extends React.Component {
             <img src={burger} alt="Burger" border-radius='40px' style={{width:'300px', height:'300px' }}/>
             </Col>
             <Col><div id="title">Burger</div><br></br>
-            <Button variant="primary">Proceed to Checkout</Button>{' '}</Col>
+            <Button variant="primary" float="left">Proceed to Checkout</Button>{' '}</Col>
             <Col>
             
             </Col>

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
@@ -8,32 +7,24 @@ import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Image from "react-bootstrap/Image";
 import { Link } from 'react-router-dom';
+import './HeaderBar.css';
 
 class HeaderBar extends React.Component {
 	render() {
 		let username="Micky";
 		return (
-			<Navbar fixed="top" bg="light" expand="lg" style={{height:"78px"}}>
+			<Navbar fixed="top" className = "navbar_bg" expand="lg" style={{height:"78px"}}>
 				<Navbar.Brand>							
-					<Link to="/mainpage" style={{color: "#000000"}}>
-						Happy Kaist
-					</Link>
+					Happy Kaist
 				</Navbar.Brand>
-				<Navbar.Toggle aria-controls="basic-navbar-nav" />
+				<Navbar.Toggle aria-controls="basic-navbar-nav"/>
 				<Navbar.Collapse id="nav-bar">
 					<Nav className="mr-auto">
 						<Nav.Link>
-							<Link to="/mainpage">
+							<Link to="/mainpage" style={{color: "#000000"}}>
 								Home
 							</Link>
 						</Nav.Link>
-						<NavDropdown title="Dropdown" id="basic-nav-dropdown">
-							<NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-							<NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-							<NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-							<NavDropdown.Divider />
-							<NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-						</NavDropdown>
 					</Nav>
 					<Form inline>
 						<FormControl type="text" placeholder="Search" className="mr-sm-2" />
