@@ -16,7 +16,7 @@ class Accountbox extends React.Component{
                         <div>Name</div>
                         <input type = "text" className = "inputbox"/>
                         <div>Email Address</div>
-                        <input type = "password" className="inputbox"/>
+                        <input type = "text" className="inputbox"/>
                         <div>Password</div>
                         <input type = "password" className="inputbox"/>
                     </div>

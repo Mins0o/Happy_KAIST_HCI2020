@@ -10,14 +10,14 @@ class Loginpage extends React.Component{
   render(){
     return (
       <div className = "Login">
-        <h1 className = "title">Happy Apron</h1>
+        <h1 className = "login_title">Happy Apron</h1>
         <div className = "form">
           <div className = "form2">
             <div className = "form3">
-            <div>Email Address</div>
-            <input type = "text" className = "inputbox"/>
-            <div>Password</div>
-            <input type = "password" className="inputbox"/>
+              <div>Email Address</div>
+              <input type = "text" className = "inputbox"/>
+              <div>Password</div>
+              <input type = "password" className="inputbox"/>
             </div>
             <div className = "form4">
                 <Link to="/mainpage" className = "sign_button">

@@ -8,13 +8,13 @@ class App extends Component {
     render() {
         return (
             <Router>
-                <div>
-                    <Route path="/login" component = {Loginpage}/>
-                    <Route path="/create_account" component = {Createaccount}/>
-                    <Route path="/select" component = {Selectpage}/>
-                    <Route path="/mainpage" component = {Mainpage}/>
-                    <Route path="/recipe" component = {Recipe}/>
-                    <Redirect exact from="/" to="login" />
+                <div className = "happy_apron">
+                    <Route path = "/login" component = {Loginpage}/>
+                    <Route path = "/create_account" component = {Createaccount}/>
+                    <Route path = "/select" component = {Selectpage}/>
+                    <Route path = "/mainpage" component = {Mainpage}/>
+                    <Route path = "/recipe" component = {Recipe}/>
+                    <Redirect exact from = "/" to="login" />
                 </div>                
             </Router>
         );

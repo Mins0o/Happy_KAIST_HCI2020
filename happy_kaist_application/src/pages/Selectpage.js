@@ -10,7 +10,7 @@ class Selectpage extends React.Component{
 
   render(){
     return (
-      <div className="App">
+      <div className="selectPage">
         <h1 className = "title">Choose all you have</h1>
         <div style={{ display:"flex",alignItems: "center", justifyContent: "center"}} >
           <Category/>

@@ -1,19 +1,18 @@
 .accountbox{
-    width: 40%;
+    width: 30%;
     margin: auto;
 }
 
 .account_boxForm{
-    margin: auto;
+    display: flex;
+    flex-direction: column;
     background: #D8CFBE;
-    height: 60vh;
+    height: 45vh;
     border-radius: 2vw;
 }
 
 .account_inputboxForm{
-    margin-top: 5vh;
-    margin-left: 8vw;
-    display: inline-block;
+    margin: auto;
 	font-size: 1.3vw;
 	font-weight: bold;
 }
