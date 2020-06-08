@@ -34,7 +34,7 @@ class HeaderBar extends React.Component {
 					<span>
 						<Form inline style={{marginBottom:"0px",padding:"0px",maxHeight:"3vw"}}>
 							<Image src={require("../../images/userprofile.png")} style={{maxHeight:"2.1vw",margin:"0px"}} roundedCircle />
-							<NavDropdown style={{marginBottom:"0px",paddingBottom:"0px"}} title={"Hi "+username}>
+							<NavDropdown alignRight={1} style={{marginBottom:"0px",paddingBottom:"0px"}} title={"Hi "+username}>
 								<NavDropdown.Item>Trial1</NavDropdown.Item>
 							</NavDropdown>
 						</Form>
