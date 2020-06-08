@@ -18,6 +18,7 @@ h1 {
 	color: rgb(0, 0, 0);
 	text-align: center;
 	text-transform: capitalize;
+	font-weight: bold;
 }
    
 .form {
@@ -37,7 +38,7 @@ h1 {
    
 .form3 {
 	margin: auto;
-	font-size: 1.3vw;
+	font-size: 1.4vw;
 	font-weight: bold;
 }
 
@@ -62,6 +63,7 @@ input[type = button]{
 	color: white;
 	outline:none;
 	position: relative;
+	font-weight: bold;
 }
 
   
@@ -79,6 +81,7 @@ input[type = button]:hover{
 	border:none;
 	border-radius: 15px;
 	padding-left: 1vW;
+	font-weight: bold;
 }
 
 .sign_button{

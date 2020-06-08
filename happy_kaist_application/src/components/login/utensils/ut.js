@@ -7,7 +7,7 @@ var utensil_info = [
     },
     {
         "number": 2,
-        "name": "MicroWave",
+        "name": "Microwave",
         "checked": false
     },
     {

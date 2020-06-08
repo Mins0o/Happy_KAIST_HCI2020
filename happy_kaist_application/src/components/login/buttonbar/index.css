@@ -8,6 +8,7 @@
     height: 10vh;
     border-top-left-radius: 1.5rem;
     border-top-right-radius: 1.5rem;
+    font-weight: bold;
 }
 
 .buttonStyle:hover{
