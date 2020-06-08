@@ -43,7 +43,7 @@ class App extends React.Component {
             <img src={burger} alt="Burger" border-radius='40px' style={{width:'300px', height:'300px' }}/>
             </Col>
             <Col><div id="title">Burger</div><br></br>
-            <Button variant="primary">Proceed to Checkout</Button>{' '}</Col>
+            <Button variant="primary" className='proceed'>Proceed to Checkout</Button>{' '}</Col>
             <Col>
             
             </Col>
