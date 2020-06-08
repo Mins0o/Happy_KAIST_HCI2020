@@ -6,6 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Image from "react-bootstrap/Image";
+import Tool from '../login/tool';
 import { Link } from 'react-router-dom';
 import './HeaderBar.css';
 import * as ui from '../login/accountbox/userinfo.js';
@@ -35,7 +36,24 @@ class HeaderBar extends React.Component {
 						<Form inline style={{marginBottom:"0px",padding:"0px",maxHeight:"3vw"}}>
 							<Image src={require("../../images/userprofile.png")} style={{maxHeight:"2.1vw",margin:"0px"}} roundedCircle />
 							<NavDropdown alignRight={1} style={{marginBottom:"0px",paddingBottom:"0px"}} title={"Hi "+username}>
-								<NavDropdown.Item>Trial1</NavDropdown.Item>
+								<NavDropdown.Item disabled={1} style={{width:"22vw"}}>
+								<div>
+									<div>
+										<span>
+											<Image src={require("../../images/userprofile.png")} style={{maxHeight:"3vw",margin:"0px"}} roundedCircle />
+										</span>
+										<span style={{float:"right"}}>
+											<div>{"Hi "+username}</div>
+											<Image src={require("../../images/expmeter.png")} style={{width:"14vw",maxHeight:"0.5vw"}}  rounded/>
+										</span>
+									</div>
+									<div>
+										<Tool utensil_num = {4}/>
+									</div>
+								</div>
+								<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+								
+								</NavDropdown.Item>
 							</NavDropdown>
 						</Form>
 						<Form inline style={{padding:"0px",margin:"0px",width:"100%"}}>
