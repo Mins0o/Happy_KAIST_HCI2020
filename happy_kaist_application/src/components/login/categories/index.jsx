@@ -1,6 +1,7 @@
 import React from 'react';
 import Utensil from '../utensils';
 import Buttonbar from '../buttonbar';
+import { Link } from 'react-router-dom';
 import './index.css';
 
 class Category extends React.Component{
@@ -24,6 +25,14 @@ class Category extends React.Component{
                 <Buttonbar oncategorySubmit = {this.oncategorySubmit}/>
                 <div>
                     <Utensil state_num = {this.state.categoryState}/>
+                </div>
+                <div className = "buttonForm">
+                    <Link to = "/loginpage">
+                        <button>Previous</button>   
+                    </Link>
+                    <Link to = "/mainpage">
+                        <button>Submit</button>
+                    </Link>
                 </div>
             </div>
         )

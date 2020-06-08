@@ -1,7 +1,5 @@
 import React from 'react';
-import * as ut from './ut.js';
 import Tool from '../tool';
-import Image from 'react-bootstrap/Image'
 import './index.css';
 
 class Utensil extends React.Component{
