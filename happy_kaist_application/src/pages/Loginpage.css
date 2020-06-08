@@ -31,13 +31,13 @@ h1 {
 .form3 {
     margin-left: 20px;
     display: inline-block;
-	font-size: 18px;
+	font-size: 1.3vw;
 	font-weight: bold;
 }
 
 .form4 {
     display:flex;
-    align-items: center;
+	align-items: center;
 }
    
 #wrap {
@@ -51,7 +51,7 @@ input[type = button]{
 	border:none;
 	border-radius: 15px;
 	background: #47372F;
-	font-size:1em;
+	font-size:1.2vw;
 	color: white;
 	outline:none;
 	position: relative;
@@ -64,12 +64,16 @@ input[type = button]:hover{
 
 
 .inputbox{
-	margin-bottom: 2.2vh;
+	margin-bottom: 2vh;
 	float: left;
-	font-size:1em;
-	width: 22.2vw;
+	font-size:1.2vw;
+	width: 21.6vw;
 	height: 6vh;
 	border:none;
 	border-radius: 15px;
-	padding-left: 2vh;
+	padding-left: 2vW;
+}
+
+.sign_button{
+	margin: auto;
 }

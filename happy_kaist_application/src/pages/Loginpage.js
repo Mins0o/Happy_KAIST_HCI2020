@@ -20,8 +20,10 @@ class Loginpage extends React.Component{
           <input type = "password" className="inputbox"/>
           </div>
           <div className = "form4">
-              <input type = "button" value = "Sign in"/>
-              <Link to="/select">
+              <Link to="/mainpage" className = "sign_button">
+                <input type = "button" value = "Sign in"/>
+              </Link>
+              <Link to="/select" className = "sign_button">
                 <input type = "button" value = "Sign up"/>                
               </Link>
           </div>

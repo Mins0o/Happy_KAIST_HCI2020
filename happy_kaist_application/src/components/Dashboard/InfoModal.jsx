@@ -3,6 +3,7 @@ import {Modal, Button, Row, Col, Form} from 'react-bootstrap';
 import './InfoModal.css';
 import MenuInfo from './MenuInfo';
 import DescriptionInfo from './DescriptionInfo';
+import { Link } from 'react-router-dom';
 import foodData from '../../data/food_data.json'
 
 export class InfoModal extends Component{
@@ -28,9 +29,11 @@ export class InfoModal extends Component{
                 <MenuInfo id={this.props.displayId} foodname={foodData[this.props.displayId].name} difficulty ={foodData[this.props.displayId].difficulty}></MenuInfo>
                 <DescriptionInfo></DescriptionInfo> 
                 </div>
-                <div className="proceed-button" onClick={this.props.onHide}>
-                            Press to Proceed
-                </div>
+                <Link to = "/recipe">
+                    <div className="proceed-button" onClick={this.props.onHide}>
+                                Press to Proceed
+                    </div>
+                </Link>
             </div>
             </Modal.Body>
         </Modal>   
