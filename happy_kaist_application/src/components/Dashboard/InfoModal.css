@@ -47,14 +47,19 @@
 }
 
 #photo-box{
-    border: 3px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:60%;
+    height:45%;
+    overflow:hidden;
+    position:relative;
 }
 
 #level{
     display:flex;
     width:50%;
     height:100%;
-    background-color:green;
     color:whitesmoke;
     font-size:0.9vw;
     font-weight: 700;
@@ -112,3 +117,12 @@
     background-color: grey;
 }
 
+.background-red{
+    background-color: #d73343;
+}
+.background-yellow{
+    background-color:#f7bc07;
+}
+.background-green{
+    background-color: #27a243;
+}

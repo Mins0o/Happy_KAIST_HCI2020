@@ -3,17 +3,23 @@ import Card from "react-bootstrap/Card";
 import Form from 'react-bootstrap/Form';
 
 class CardItem extends React.Component {
-	state={
-		
-		
-		
+	constructor(props){
+		super(props);
+		this.state={
+		}
 	}
+
+	click(){
+		this.props.click(this.props.index-1);
+	}
+
 	render() { 
 		let food_data = require('../../data/food_data.json');
 		let i = this.props.index-1;
 		var color;
 		var borderColor="";
 		var diffText;
+		
 		if(food_data[i].difficulty=="h"){
 		color="danger";
 		borderColor="#d73343 ";
@@ -27,11 +33,8 @@ class CardItem extends React.Component {
 		borderColor="#27a243";
 		diffText="Easy";
 		}
-		function clicked(e){
-			alert("Ahhh");
-		}
 		return (
-			<Card bg={color} onClick={clicked} 
+			<Card bg={color} onClick = {this.click.bind(this)}
 				style={{
 					width :"26vw",
 					cursor: "pointer", 
