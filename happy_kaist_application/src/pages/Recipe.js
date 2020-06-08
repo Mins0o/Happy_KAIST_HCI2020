@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../logo.svg';
 import burger from '../images/burger.jpg';
+import HeaderBar from '../components/minsoo/HeaderBar.js';
 import './Recipe.css';
 //import './styles.css';
 import { render } from '@testing-library/react';
@@ -35,7 +36,8 @@ class Recipe extends React.Component {
     const { inCount } = this.state;
     return (
       <div className="App">
-        <br></br>
+        <HeaderBar/>
+        <br/><br/><br/>
         <Container>
           <Row><Col></Col></Row>
           <Row>
