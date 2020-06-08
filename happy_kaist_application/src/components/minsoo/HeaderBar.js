@@ -18,6 +18,13 @@ class HeaderBar extends React.Component {
 		var username= ui.getUserName();
 		var choose1=s.get()? "none": "span";
 		var choose2=s.get()? "span":"none";
+		var utArray = [];
+		for( var i = 0; i < 12; i++){
+			if(ut.utGetCheck(i)){
+				utArray.push(i);
+			}
+		}
+
 		return (
 			<Navbar fixed="top" className = "navbar_bg" expand="lg" style={{height:"78px"}}>
 				<Navbar.Brand>							
@@ -56,25 +63,26 @@ class HeaderBar extends React.Component {
 										</span>
 									</div>
 									<div style={{display:"block",margin:"auto"}}>
+										<br/><br/>
 										<div style={{display:"block",margin:"auto"}}>
-											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(0)} roundedCircle />
-											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(1)} roundedCircle />
-											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(2)} roundedCircle />
+											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(utArray[0])} roundedCircle />
+											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(utArray[1])} roundedCircle />
+											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(utArray[2])} roundedCircle />
 										</div>
 										<div style={{display:"block",margin:"auto"}}>
-											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(3)} roundedCircle />
-											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(4)} roundedCircle />
-											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(5)} roundedCircle />
+											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(utArray[3])} roundedCircle />
+											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(utArray[4])} roundedCircle />
+											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(utArray[5])} roundedCircle />
 										</div>
 										<div style={{display:"block",margin:"auto"}}>
-											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(6)} roundedCircle />
-											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(7)} roundedCircle />
-											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(8)} roundedCircle />
+											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(utArray[6])} roundedCircle />
+											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(utArray[7])} roundedCircle />
+											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(utArray[8])} roundedCircle />
 										</div>
 										<div style={{display:"block",margin:"auto"}}>
-											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(9)} roundedCircle />
-											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(10)} roundedCircle />
-											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(11)} roundedCircle />
+											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(utArray[9])} roundedCircle />
+											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(utArray[10])} roundedCircle />
+											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(utArray[11])} roundedCircle />
 										</div>
 									</div>
 								</NavDropdown.Item>
