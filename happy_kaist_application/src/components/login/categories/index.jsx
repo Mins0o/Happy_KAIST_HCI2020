@@ -26,12 +26,12 @@ class Category extends React.Component{
                 <div>
                     <Utensil state_num = {this.state.categoryState}/>
                 </div>
-                <div className = "buttonForm">
-                    <Link to = "/login" className ="category_button">
-                        <button className = "category_buttonStyle">Previous</button>   
+                <div className = "category_buttonForm">
+                    <Link to = "/create_account" className ="category_button">
+                        <button className = "login_buttonStyle">Previous</button>   
                     </Link>
                     <Link to = "/mainpage" className ="category_button">
-                        <button className = "category_buttonStyle">Submit</button>
+                        <button className = "login_buttonStyle">Submit</button>
                     </Link>
                 </div>
             </div>

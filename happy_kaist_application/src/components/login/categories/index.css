@@ -2,13 +2,13 @@
     width: 80%;
 }
 
-.buttonForm{
+.category_buttonForm{
     margin-top: 2vh;
     display: flex;
     justify-content: space-between;
 }
 
-.category_buttonStyle{
+.login_buttonStyle{
     width: 10vw;
     height: 8vh;
     margin: auto;

@@ -3,7 +3,6 @@ body {
 }
 
 h1 {
-	
 	font-weight : bold;
 	text-align: center;
 }
@@ -29,7 +28,7 @@ h1 {
 }
    
 .form3 {
-    margin-left: 20px;
+    margin-left: 1vw;
     display: inline-block;
 	font-size: 1.3vw;
 	font-weight: bold;
