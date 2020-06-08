@@ -25,9 +25,7 @@ class Accountbox extends React.Component{
                 <div className = "account_buttonForm">
                     <Link to = "/select" className ="account_button" 
                     onClick = {() => {
-                        ui.setUserName(document.getElementById('UserName').value),
-                        ui.setUserEmail(document.getElementById('UserEmail').value),
-                        ui.setUserPassword(document.getElementById('UserPassword').value)}}>
+                        ui.setUserName(document.getElementById('UserName').value)}}>
                         <button className = "login_buttonStyle">
                             Next
                         </button>
