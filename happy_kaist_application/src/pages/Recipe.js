@@ -5,6 +5,7 @@ import HeaderBar from '../components/minsoo/HeaderBar.js';
 import './Recipe.css';
 //import './styles.css';
 import { render } from '@testing-library/react';
+import { Link } from 'react-router-dom';
 
 
 import Tabs from 'react-bootstrap/Tabs';
@@ -45,7 +46,9 @@ class Recipe extends React.Component {
             <img src={burger} alt="Burger" border-radius='40px' style={{width:'300px', height:'300px' }}/>
             </Col>
             <Col><div id="title">Burger</div><br></br>
-            <Button variant="primary" float="left">Proceed to Checkout</Button>{' '}</Col>
+              <Link to="/checkout">
+                <Button variant="primary" className='proceed'>Proceed to Checkout</Button>
+              </Link>{' '}</Col>
             <Col>
             
             </Col>

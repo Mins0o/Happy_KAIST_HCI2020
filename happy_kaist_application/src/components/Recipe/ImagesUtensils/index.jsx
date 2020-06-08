@@ -24,7 +24,7 @@ class ImagesUtensils extends React.Component{
                     utensils.map((val,idx) => {
                         return(
                         <Col md="2" lg="3">
-                            <Image/>
+                            
                         </Col>
                         )
                     })
