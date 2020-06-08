@@ -48,25 +48,25 @@ class HeaderBar extends React.Component {
 											<Image src={require("../../images/expmeter.png")} style={{width:"14vw",maxHeight:"0.5vw"}}  rounded/>
 										</span>
 									</div>
-									<div>
-										<Image style={{maxWidth:"6vw", margin:"1vw"}} src = {ut.utImg(0)} roundedCircle />
-										<Image style={{maxWidth:"6vw", margin:"1vw"}} src = {ut.utImg(1)} roundedCircle />
-										<Image style={{maxWidth:"6vw", margin:"1vw"}} src = {ut.utImg(2)} roundedCircle />
+									<div style={{margin:"auto"}}>
+										<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(0)} roundedCircle />
+										<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(1)} roundedCircle />
+										<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(2)} roundedCircle />
 									</div>
-									<div>
-										<Image style={{maxWidth:"6vw", margin:"1vw"}} src = {ut.utImg(3)} roundedCircle />
-										<Image style={{maxWidth:"6vw", margin:"1vw"}} src = {ut.utImg(4)} roundedCircle />
-										<Image style={{maxWidth:"6vw", margin:"1vw"}} src = {ut.utImg(5)} roundedCircle />
+									<div style={{margin:"auto"}}>
+										<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(3)} roundedCircle />
+										<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(4)} roundedCircle />
+										<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(5)} roundedCircle />
 									</div>
-									<div>
-										<Image style={{maxWidth:"6vw", margin:"1vw"}} src = {ut.utImg(6)} roundedCircle />
-										<Image style={{maxWidth:"6vw", margin:"1vw"}} src = {ut.utImg(7)} roundedCircle />
-										<Image style={{maxWidth:"6vw", margin:"1vw"}} src = {ut.utImg(8)} roundedCircle />
+									<div style={{margin:"auto"}}>
+										<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(6)} roundedCircle />
+										<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(7)} roundedCircle />
+										<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(8)} roundedCircle />
 									</div>
-									<div>
-										<Image style={{maxWidth:"6vw", margin:"1vw"}} src = {ut.utImg(9)} roundedCircle />
-										<Image style={{maxWidth:"6vw", margin:"1vw"}} src = {ut.utImg(10)} roundedCircle />
-										<Image style={{maxWidth:"6vw", margin:"1vw"}} src = {ut.utImg(11)} roundedCircle />
+									<div style={{margin:"auto"}}>
+										<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(9)} roundedCircle />
+										<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(10)} roundedCircle />
+										<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(11)} roundedCircle />
 									</div>
 								</div>
 								
@@ -85,16 +85,16 @@ class HeaderBar extends React.Component {
 export default HeaderBar;
 /*
 
-										<Tool style={{maxWidth:"6vw"}} utensil_num = {0}/>
-										<Tool style={{maxWidth:"6vw"}} utensil_num = {1}/>
-										<Tool style={{maxWidth:"6vw"}} utensil_num = {2}/>
-										<Tool style={{maxWidth:"6vw"}} utensil_num = {3}/>
-										<Tool style={{maxWidth:"6vw"}} utensil_num = {4}/>
-										<Tool style={{maxWidth:"6vw"}} utensil_num = {5}/>
-										<Tool style={{maxWidth:"6vw"}} utensil_num = {6}/>
-										<Tool style={{maxWidth:"6vw"}} utensil_num = {7}/>
-										<Tool style={{maxWidth:"6vw"}} utensil_num = {8}/>
-										<Tool style={{maxWidth:"6vw"}} utensil_num = {9}/>
-										<Tool style={{maxWidth:"6vw"}} utensil_num = {10}/>
-										<Tool style={{maxWidth:"6vw"}} utensil_num = {11}/>
+										<Tool style={{maxWidth:"5.5vw"}} utensil_num = {0}/>
+										<Tool style={{maxWidth:"5.5vw"}} utensil_num = {1}/>
+										<Tool style={{maxWidth:"5.5vw"}} utensil_num = {2}/>
+										<Tool style={{maxWidth:"5.5vw"}} utensil_num = {3}/>
+										<Tool style={{maxWidth:"5.5vw"}} utensil_num = {4}/>
+										<Tool style={{maxWidth:"5.5vw"}} utensil_num = {5}/>
+										<Tool style={{maxWidth:"5.5vw"}} utensil_num = {6}/>
+										<Tool style={{maxWidth:"5.5vw"}} utensil_num = {7}/>
+										<Tool style={{maxWidth:"5.5vw"}} utensil_num = {8}/>
+										<Tool style={{maxWidth:"5.5vw"}} utensil_num = {9}/>
+										<Tool style={{maxWidth:"5.5vw"}} utensil_num = {10}/>
+										<Tool style={{maxWidth:"5.5vw"}} utensil_num = {11}/>
 */
