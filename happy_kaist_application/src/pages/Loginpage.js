@@ -1,13 +1,18 @@
 import React from 'react';
 import './Loginpage.css';
 import { Link } from 'react-router-dom';
+import * as s from "../components/minsoo/Signed.js";
 
 class Loginpage extends React.Component{
   constructor(props){
     super(props);
+	this.state={
+		Signed:0
+	}
   }
 
   render(){
+	
     return (
       <div className = "Login">
         <h1 className = "login_title">Happy Apron</h1>
@@ -21,7 +26,7 @@ class Loginpage extends React.Component{
             </div>
             <div className = "form4">
                 <Link to="/mainpage" className = "sign_button">
-                  <input type = "button" value = "Sign in"/>
+                  <input type = "button" onClick={function(){s.set(1)}} value = "Sign in"/>
                 </Link>
                 <Link to="/create_account" className = "sign_button">
                   <input type = "button" value = "Sign up"/>                

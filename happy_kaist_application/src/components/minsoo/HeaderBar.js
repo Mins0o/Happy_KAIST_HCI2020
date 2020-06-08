@@ -11,10 +11,13 @@ import { Link } from 'react-router-dom';
 import * as ut from '../login/utensils/ut.js';
 import './HeaderBar.css';
 import * as ui from '../login/accountbox/userinfo.js';
+import * as s from "./Signed.js";
 
 class HeaderBar extends React.Component {
 	render() {
 		var username= ui.getUserName();
+		var choose1=s.get()? "none": "span";
+		var choose2=s.get()? "span":"none";
 		return (
 			<Navbar fixed="top" className = "navbar_bg" expand="lg" style={{height:"78px"}}>
 				<Navbar.Brand>							
@@ -33,7 +36,12 @@ class HeaderBar extends React.Component {
 						<FormControl type="text" placeholder="Search" className="mr-sm-2" />
 						<Button style={{marginRight:"1vw"}} variant="outline-success">Search</Button>
 					</Form>
-					<span>
+					<Nav.Link style={{display:choose1}}>
+						<Link to="/login" style={{color: "#000000"}}>
+							Sign In
+						</Link>
+					</Nav.Link>
+					<span style={{display:choose2}}>
 						<Form inline style={{marginBottom:"0px",padding:"0px",maxHeight:"3vw"}}>
 							<Image src={require("../../images/userprofile.png")} style={{maxHeight:"2.1vw",margin:"0px"}} roundedCircle />
 							<NavDropdown alignRight={1} style={{marginBottom:"0px",paddingBottom:"0px"}} title={"Hi "+username}>
