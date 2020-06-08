@@ -38,7 +38,6 @@ class HeaderBar extends React.Component {
 							<Image src={require("../../images/userprofile.png")} style={{maxHeight:"2.1vw",margin:"0px"}} roundedCircle />
 							<NavDropdown alignRight={1} style={{marginBottom:"0px",paddingBottom:"0px"}} title={"Hi "+username}>
 								<NavDropdown.Item disabled={1} style={{width:"22vw"}}>
-								<div>
 									<div>
 										<span>
 											<Image src={require("../../images/userprofile.png")} style={{maxHeight:"3vw",margin:"0px"}} roundedCircle />
@@ -48,28 +47,28 @@ class HeaderBar extends React.Component {
 											<Image src={require("../../images/expmeter.png")} style={{width:"14vw",maxHeight:"0.5vw"}}  rounded/>
 										</span>
 									</div>
-									<div style={{margin:"auto"}}>
-										<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(0)} roundedCircle />
-										<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(1)} roundedCircle />
-										<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(2)} roundedCircle />
+									<div style={{display:"block",margin:"auto"}}>
+										<div style={{display:"block",margin:"auto"}}>
+											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(0)} roundedCircle />
+											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(1)} roundedCircle />
+											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(2)} roundedCircle />
+										</div>
+										<div style={{display:"block",margin:"auto"}}>
+											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(3)} roundedCircle />
+											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(4)} roundedCircle />
+											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(5)} roundedCircle />
+										</div>
+										<div style={{display:"block",margin:"auto"}}>
+											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(6)} roundedCircle />
+											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(7)} roundedCircle />
+											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(8)} roundedCircle />
+										</div>
+										<div style={{display:"block",margin:"auto"}}>
+											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(9)} roundedCircle />
+											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(10)} roundedCircle />
+											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(11)} roundedCircle />
+										</div>
 									</div>
-									<div style={{margin:"auto"}}>
-										<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(3)} roundedCircle />
-										<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(4)} roundedCircle />
-										<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(5)} roundedCircle />
-									</div>
-									<div style={{margin:"auto"}}>
-										<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(6)} roundedCircle />
-										<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(7)} roundedCircle />
-										<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(8)} roundedCircle />
-									</div>
-									<div style={{margin:"auto"}}>
-										<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(9)} roundedCircle />
-										<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(10)} roundedCircle />
-										<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(11)} roundedCircle />
-									</div>
-								</div>
-								
 								</NavDropdown.Item>
 							</NavDropdown>
 						</Form>
