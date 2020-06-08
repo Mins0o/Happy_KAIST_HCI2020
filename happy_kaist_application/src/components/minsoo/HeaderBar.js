@@ -48,10 +48,20 @@ class HeaderBar extends React.Component {
 										</span>
 									</div>
 									<div>
-										<Tool utensil_num = {4}/>
+										<Tool style={{maxWidth:"6vw"}} utensil_num = {0}/>
+										<Tool style={{maxWidth:"6vw"}} utensil_num = {1}/>
+										<Tool style={{maxWidth:"6vw"}} utensil_num = {2}/>
+										<Tool style={{maxWidth:"6vw"}} utensil_num = {3}/>
+										<Tool style={{maxWidth:"6vw"}} utensil_num = {4}/>
+										<Tool style={{maxWidth:"6vw"}} utensil_num = {5}/>
+										<Tool style={{maxWidth:"6vw"}} utensil_num = {6}/>
+										<Tool style={{maxWidth:"6vw"}} utensil_num = {7}/>
+										<Tool style={{maxWidth:"6vw"}} utensil_num = {8}/>
+										<Tool style={{maxWidth:"6vw"}} utensil_num = {9}/>
+										<Tool style={{maxWidth:"6vw"}} utensil_num = {10}/>
+										<Tool style={{maxWidth:"6vw"}} utensil_num = {11}/>
 									</div>
 								</div>
-								<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 								
 								</NavDropdown.Item>
 							</NavDropdown>

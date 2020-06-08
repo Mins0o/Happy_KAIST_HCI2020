@@ -18,7 +18,7 @@ class Tool extends React.Component{
             <div className = "utensil">
                 <p>
                     {this.state.select = ut.utGetCheck(utensil_num)}
-                    <Image src = {ut.utImg(utensil_num)}                     
+                    <Image src = {require(ut.utImg(utensil_num))}                     
                     roundedCircle
                     className = {this.state.select ? "selected" : "noSelected"}
                     onClick = {() => this.setState({select: ut.utCheck(utensil_num)})}/>
