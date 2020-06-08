@@ -18,8 +18,9 @@ class Image extends React.Component{
 
 
     render(){
+        const { imgName } = this.props;
         const style = this.props.activeImg ? {border: '3px solid green', height: '150px', width: '150px'}: {height: '150px', width: '150px'};
-        let  imgSrc = images.dog.src;
+        let  imgSrc = images.imgName.src;
         return (
                 <img 
                     style ={style}
