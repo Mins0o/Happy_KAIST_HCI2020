@@ -1,5 +1,10 @@
 .tableForm{
     width: 80%;
     margin: auto;
-    margin-top: 20vh;
+    margin-top: 35vh;
+}
+
+.paymentButton{
+    display: flex;
+    justify-content: flex-end;
 }
