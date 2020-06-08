@@ -49,24 +49,24 @@ class HeaderBar extends React.Component {
 										</span>
 									</div>
 									<div>
-										<Image style={{maxWidth:"6vw"}} src = {ut.utImg(0)} roundedCircle />
-										<Image style={{maxWidth:"6vw"}} src = {ut.utImg(1)} roundedCircle />
-										<Image style={{maxWidth:"6vw"}} src = {ut.utImg(2)} roundedCircle />
+										<Image style={{maxWidth:"6vw", margin:"1vw"}} src = {ut.utImg(0)} roundedCircle />
+										<Image style={{maxWidth:"6vw", margin:"1vw"}} src = {ut.utImg(1)} roundedCircle />
+										<Image style={{maxWidth:"6vw", margin:"1vw"}} src = {ut.utImg(2)} roundedCircle />
 									</div>
 									<div>
-										<Image style={{maxWidth:"6vw"}} src = {ut.utImg(3)} roundedCircle />
-										<Image style={{maxWidth:"6vw"}} src = {ut.utImg(4)} roundedCircle />
-										<Image style={{maxWidth:"6vw"}} src = {ut.utImg(5)} roundedCircle />
+										<Image style={{maxWidth:"6vw", margin:"1vw"}} src = {ut.utImg(3)} roundedCircle />
+										<Image style={{maxWidth:"6vw", margin:"1vw"}} src = {ut.utImg(4)} roundedCircle />
+										<Image style={{maxWidth:"6vw", margin:"1vw"}} src = {ut.utImg(5)} roundedCircle />
 									</div>
 									<div>
-										<Image style={{maxWidth:"6vw"}} src = {ut.utImg(6)} roundedCircle />
-										<Image style={{maxWidth:"6vw"}} src = {ut.utImg(7)} roundedCircle />
-										<Image style={{maxWidth:"6vw"}} src = {ut.utImg(8)} roundedCircle />
+										<Image style={{maxWidth:"6vw", margin:"1vw"}} src = {ut.utImg(6)} roundedCircle />
+										<Image style={{maxWidth:"6vw", margin:"1vw"}} src = {ut.utImg(7)} roundedCircle />
+										<Image style={{maxWidth:"6vw", margin:"1vw"}} src = {ut.utImg(8)} roundedCircle />
 									</div>
 									<div>
-										<Image style={{maxWidth:"6vw"}} src = {ut.utImg(9)} roundedCircle />
-										<Image style={{maxWidth:"6vw"}} src = {ut.utImg(10)} roundedCircle />
-										<Image style={{maxWidth:"6vw"}} src = {ut.utImg(11)} roundedCircle />
+										<Image style={{maxWidth:"6vw", margin:"1vw"}} src = {ut.utImg(9)} roundedCircle />
+										<Image style={{maxWidth:"6vw", margin:"1vw"}} src = {ut.utImg(10)} roundedCircle />
+										<Image style={{maxWidth:"6vw", margin:"1vw"}} src = {ut.utImg(11)} roundedCircle />
 									</div>
 								</div>
 								
