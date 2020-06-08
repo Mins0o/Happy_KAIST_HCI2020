@@ -2,16 +2,15 @@ import React from 'react';
 import CardItem from "./Card.js";
 
 class CardList extends React.Component {
-	state={
-		
-		
-		
+	constructor(props){
+		super(props);
+		this.state={}
 	}
+
 	render() {
-	console.log(this.props.menus);
 	  return (
 		this.props.menus.map((menu) =>(
-			<CardItem key={menu.id} index={menu.id}/>
+			<CardItem click={this.props.cardClick} key={menu.id} index={menu.id}/>
 			
 	  ))
 	  );

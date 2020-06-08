@@ -47,7 +47,7 @@ class Buttonbar extends React.Component{
 
     render(){
         return(
-            <div className = "buttonForm">
+            <div>
                 <button className = "buttonStyle"
                     disabled = {this.state.b1} onClick = {this.btn1Submit}>Home Appliances</button>
                 <button className = "buttonStyle" 

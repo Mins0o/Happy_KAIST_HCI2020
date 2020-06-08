@@ -1,0 +1,18 @@
+.createaccount{
+    background-color: #eeeeee;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.createaccount_title{
+	margin-top: 8vh;
+	margin-bottom: 12vh;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	text-transform: capitalize;
+	font-weight: bold;
+	font-size: 3.5vw;
+}

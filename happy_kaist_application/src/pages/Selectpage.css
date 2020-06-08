@@ -1,6 +1,12 @@
-.App {
+.selectPage {
   text-align: center;
   justify-content: "center";
+  background-color: #eeeeee;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 h1 {
@@ -8,7 +14,9 @@ h1 {
 	text-align: center;
 }
 
-.title{
+.select_title{
 	margin-top: 5vh;
-	margin-bottom: 5vh;
+  margin-bottom: 5vh;
+  font-weight: bold;
+  font-size: 3.5vw;
 }

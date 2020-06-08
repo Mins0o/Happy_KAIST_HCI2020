@@ -7,7 +7,7 @@ var utensil_info = [
     },
     {
         "number": 2,
-        "name": "MicroWave",
+        "name": "Microwave",
         "checked": false
     },
     {
@@ -74,7 +74,7 @@ export function utImg(num){
     var img_src
     for(var i = 0; i < utensil_info.length; i++){
         if(num == i){
-            img_src = '/images/ut' + (i + 1) + '.png';
+            img_src = '/images/utensils/ut' + (i + 1) + '.png';
         }
     }
     return img_src;

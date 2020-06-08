@@ -1,43 +1,52 @@
-body {
-    background-color: white;
+.Login {
+	background-color: #eeeeee;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 h1 {
-	
 	font-weight : bold;
 	text-align: center;
 }
 
-.title {
+.login_title {
+	margin-top: 8vh;
+	margin-bottom: 12vh;
 	color: rgb(0, 0, 0);
-	margin: 50px auto;
 	text-align: center;
 	text-transform: capitalize;
+	font-weight: bold;
+	font-size: 3.5vw;
 }
    
 .form {
-	width: 26vw;
-	height: 35vh;
+	width: 30%;
+	height: 40vh;
 	border-radius: 25px;
 	background: #D8CFBE;
-	margin: 0 auto;
+	margin: auto;
 	padding: 10px;
 }
    
 .form2 {
-	margin-top: 2.8vh;
+	display: flex;
+	flex-direction: column;
+	margin-top: 2vh;
 }
    
 .form3 {
-    margin-left: 20px;
-    display: inline-block;
-	font-size: 18px;
+	margin: auto;
+	font-size: 1.4vw;
 	font-weight: bold;
 }
 
 .form4 {
     display:flex;
-    align-items: center;
+	align-items: center;
+	margin-top: 2.5vh;
 }
    
 #wrap {
@@ -46,30 +55,36 @@ h1 {
 
 input[type = button]{
     width: 10vw;
-    height: 4vh;
+    height: 6vh;
     margin: auto;
 	border:none;
 	border-radius: 15px;
 	background: #47372F;
-	font-size:1em;
+	font-size:1.2vw;
 	color: white;
 	outline:none;
 	position: relative;
+	font-weight: bold;
 }
 
   
 input[type = button]:hover{
-	background-color: lightgray;
+	background-color: rgb(133, 120, 112);
 }
 
 
 .inputbox{
-	margin-bottom: 2.2vh;
+	margin-bottom: 2vh;
 	float: left;
-	font-size:1em;
-	width: 22.2vw;
+	font-size:1.2vw;
+	width: 24vw;
 	height: 6vh;
 	border:none;
 	border-radius: 15px;
-	padding-left: 2vh;
+	padding-left: 1vW;
+	font-weight: bold;
+}
+
+.sign_button{
+	margin: auto;
 }
