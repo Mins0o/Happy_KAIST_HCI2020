@@ -14,7 +14,9 @@ h1 {
 	text-align: center;
 }
 
-.title{
+.select_title{
 	margin-top: 5vh;
-	margin-bottom: 5vh;
+  margin-bottom: 5vh;
+  font-weight: bold;
+  font-size: 3.5vw;
 }

@@ -8,10 +8,11 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Image from "react-bootstrap/Image";
 import { Link } from 'react-router-dom';
 import './HeaderBar.css';
+import * as ui from '../login/accountbox/userinfo.js';
 
 class HeaderBar extends React.Component {
 	render() {
-		let username="Micky";
+		var username= ui.getUserName();
 		return (
 			<Navbar fixed="top" className = "navbar_bg" expand="lg" style={{height:"78px"}}>
 				<Navbar.Brand>							
