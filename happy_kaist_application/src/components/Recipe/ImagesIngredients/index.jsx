@@ -46,7 +46,7 @@ class ImagesIngredients extends React.Component{
                     <Col md="1" lg="3"><BuyButton name = {"bacon"}/></Col>
                 </Row>
                 
-                <Row>
+                {/* <Row>
                     <Col md="1" lg="3"><p style={{fontWeight:'bold'}} >Bacon 200gr</p></Col>
                 </Row>
                 <Row>
@@ -54,7 +54,7 @@ class ImagesIngredients extends React.Component{
                 </Row>
                 <Row float='center'>
                     <Col md="1" lg="3"><BuyButton inCount={ inCount }/></Col>
-                </Row>
+                </Row> */}
 
             </Container>
             <br></br>
