@@ -84,6 +84,7 @@ input[type = button]:hover{
 	border-radius: 15px;
 	padding-left: 1vW;
 	font-weight: bold;
+	outline:none;
 }
 
 .sign_button{
