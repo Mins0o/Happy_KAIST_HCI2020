@@ -25,7 +25,7 @@ class Recipe extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      ingredients:['anjeng', 'anjeng', 'anjeng'],
+      ingredients:['anjeng', 'anjeng', 'anjeng', 'anjeng'],
       utensils: ['pan', 'pan', 'pan', 'pan'],
       inCount: 0,
       //recipe: 'this is the recipe'
