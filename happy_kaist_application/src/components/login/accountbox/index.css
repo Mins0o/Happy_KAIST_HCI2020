@@ -9,16 +9,19 @@
     background: #D8CFBE;
     height: 45vh;
     border-radius: 2vw;
+    outline:none;
 }
 
 .account_inputboxForm{
     margin: auto;
 	font-size: 1.3vw;
-	font-weight: bold;
+    font-weight: bold;
+    outline:none;
 }
 
 .account_buttonForm{
     margin-top: 2vh;
     display: flex;
     justify-content: flex-end;
+    outline:none;
 }
