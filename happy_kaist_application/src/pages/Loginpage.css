@@ -24,7 +24,7 @@ h1 {
    
 .form {
 	width: 30%;
-	height: 40vh;
+	height: 45vh;
 	border-radius: 25px;
 	background: #D8CFBE;
 	margin: auto;
@@ -44,7 +44,8 @@ h1 {
 }
 
 .form4 {
-    display:flex;
+	display:flex;
+	flex-direction: column;
 	align-items: center;
 	margin-top: 2.5vh;
 }
@@ -87,4 +88,8 @@ input[type = button]:hover{
 
 .sign_button{
 	margin: auto;
+}
+
+#register{
+	margin-top:2vh;
 }
