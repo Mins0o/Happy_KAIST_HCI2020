@@ -4,7 +4,6 @@ class Tablebar extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            num: null,
             name: null,
             type: null,
             count: null,
@@ -13,7 +12,6 @@ class Tablebar extends React.Component{
     }
 
     render(){
-        const{tnum} = this.props;
         const{tname} = this.props;
         const{ttype} = this.props;
         const{tcount} = this.props;
@@ -21,7 +19,6 @@ class Tablebar extends React.Component{
 
         return(
             <tr>
-            <td>{tnum}</td>
             <td>{tname}</td>
             <td>{ttype}</td>
             <td>{tcount}</td>

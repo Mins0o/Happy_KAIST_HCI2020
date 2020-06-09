@@ -40,7 +40,7 @@ class HeaderBar extends React.Component {
 					<Nav className="mr-auto">
 						<Nav.Link>
 							<Link to="/mainpage" style={{color: "#000000"}}>
-								Home
+							<img style={{height:"25px"}} src={require("../../images/"+"setHome.png")}/>
 							</Link>
 						</Nav.Link>
 					</Nav>
