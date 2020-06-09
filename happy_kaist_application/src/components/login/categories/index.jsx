@@ -20,6 +20,9 @@ class Category extends React.Component{
     }
     
     render(){
+		function temporary(){
+			alert("You'll have to Sign In to use the full feature!");
+		}
         return(
             <div className = "categoryForm">
                 <Buttonbar oncategorySubmit = {this.oncategorySubmit}/>
@@ -31,7 +34,7 @@ class Category extends React.Component{
                         <button className = "login_buttonStyle">Previous</button>   
                     </Link>
                     <Link to = "/mainpage" className ="category_button">
-                        <button className = "login_buttonStyle">Submit</button>
+                        <button className = "login_buttonStyle" onClick={temporary}>Submit</button>
                     </Link>
                 </div>
             </div>
