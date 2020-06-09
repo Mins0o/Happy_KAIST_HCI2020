@@ -6,6 +6,7 @@ import Tablebar from '../components/checkout/tablebar';
 import Button from 'react-bootstrap/Button';
 import Popup from '../components/checkout/checkoutbox';
 import * as ch from '../components/checkout/checkoutbox/check.js';
+import { Link } from 'react-router-dom';
 
 
 class Checkout extends React.Component {
@@ -60,6 +61,9 @@ class Checkout extends React.Component {
                     </tbody>
                 </Table>
                 <div className = "paymentButton">
+				  <Link to="/recipe" >
+					<Button style={{marginRight:"1em"}}variant="secondary">Back</Button>
+				  </Link>
                   <Button onClick = {this.togglePopup.bind(this)}>Proceed to Payment</Button>
                 </div>
             </div>      
