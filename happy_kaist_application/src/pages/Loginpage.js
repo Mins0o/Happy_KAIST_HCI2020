@@ -1,6 +1,7 @@
 import React from 'react';
 import './Loginpage.css';
 import { Link } from 'react-router-dom';
+import * as s from "../components/minsoo/Signed.js";
 
 class Loginpage extends React.Component{
   constructor(props){
@@ -8,6 +9,14 @@ class Loginpage extends React.Component{
   }
 
   render(){
+	 function signing(){
+		 if(s.uget()=="/login"){
+			 alert("Check your email address and password!");
+		 }else{
+		 s.set(1);
+		 }
+	 }
+	
     return (
       <div className = "Login">
         <h1 className = "login_title">Happy Apron</h1>
@@ -20,15 +29,18 @@ class Loginpage extends React.Component{
               <input type = "password" className="inputbox"/>
             </div>
             <div className = "form4">
-                <Link to="/mainpage" className = "sign_button">
-                  <input type = "button" value = "Sign in"/>
+                <Link to={s.uget()} className = "sign_button">
+                  <input type = "button" onClick={signing} value = "Sign in"/>
                 </Link>
                 <Link to="/create_account" className = "sign_button">
                   <input type = "button" value = "Sign up"/>                
                 </Link>
             </div>
           </div>
-        </div>
+        </div><br/>
+        <Link to="/mainpage" className="text-center">
+          <p>See what's on the menu</p>
+        </Link>
       </div>
     );
   }

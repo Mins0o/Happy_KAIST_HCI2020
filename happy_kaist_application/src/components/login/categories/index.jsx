@@ -3,6 +3,7 @@ import Utensil from '../utensils';
 import Buttonbar from '../buttonbar';
 import { Link } from 'react-router-dom';
 import './index.css';
+import * as s from "../../minsoo/Signed.js";
 
 class Category extends React.Component{
     constructor(props){
@@ -20,6 +21,10 @@ class Category extends React.Component{
     }
     
     render(){
+		function temporary(){
+			//alert("You'll have to Sign In to use the full feature!");
+			s.uset("/mainpage");
+		}
         return(
             <div className = "categoryForm">
                 <Buttonbar oncategorySubmit = {this.oncategorySubmit}/>
@@ -30,8 +35,8 @@ class Category extends React.Component{
                     <Link to = "/create_account" className ="category_button">
                         <button className = "login_buttonStyle">Previous</button>   
                     </Link>
-                    <Link to = "/mainpage" className ="category_button">
-                        <button className = "login_buttonStyle">Submit</button>
+                    <Link to = "/login" className ="category_button">
+                        <button className = "login_buttonStyle" onClick={temporary}>Submit</button>
                     </Link>
                 </div>
             </div>
