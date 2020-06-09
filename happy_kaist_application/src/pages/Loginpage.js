@@ -6,12 +6,16 @@ import * as s from "../components/minsoo/Signed.js";
 class Loginpage extends React.Component{
   constructor(props){
     super(props);
-	this.state={
-		Signed:0
-	}
   }
 
   render(){
+	 function signing(){
+		 if(s.uget()=="/login"){
+			 alert("Check your email address and password!");
+		 }else{
+		 s.set(1);
+		 }
+	 }
 	
     return (
       <div className = "Login">
@@ -25,8 +29,8 @@ class Loginpage extends React.Component{
               <input type = "password" className="inputbox"/>
             </div>
             <div className = "form4">
-                <Link to="/mainpage" className = "sign_button">
-                  <input type = "button" onClick={function(){s.set(1)}} value = "Sign in"/>
+                <Link to={s.uget()} className = "sign_button">
+                  <input type = "button" onClick={signing} value = "Sign in"/>
                 </Link>
                 <Link to="/create_account" className = "sign_button">
                   <input type = "button" value = "Sign up"/>                
