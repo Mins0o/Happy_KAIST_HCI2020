@@ -50,15 +50,15 @@ class ImagesIngredients extends React.Component{
                     })
                     }
                 </Row>
-                <br></br>
+                
                 <Row>
-                    <Col md="2" lg="4"><p style={{fontWeight:'bold'}} >Bacon 200gr</p></Col>
+                    <Col md="1" lg="3"><p style={{fontWeight:'bold'}} >Bacon 200gr</p></Col>
                 </Row>
                 <Row>
-                    <Col md="2" lg="4"><img src={bacon} style={{width:'150px', height:'150px' }}></img> </Col>
+                    <Col md="1" lg="3"><img src={bacon} style={{width:'150px', height:'150px' }}></img> </Col>
                 </Row>
                 <Row float='center'>
-                    <BuyButton inCount={ inCount }/>
+                    <Col md="1" lg="3"><BuyButton inCount={ inCount }/></Col>
                 </Row>
 
             </Container>

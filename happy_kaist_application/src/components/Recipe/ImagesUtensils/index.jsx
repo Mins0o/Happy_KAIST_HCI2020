@@ -7,6 +7,13 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import RentButton from '../RentButton';
 
+import knive from './knive.png';
+import pan from './pan.png';
+import stove from './stove.png';
+import spatula from './spatula.jpg';
+import tick from './tick.jpg';
+
+
 class ImagesUtensils extends React.Component{
     constructor(props){
         super(props);
@@ -20,28 +27,16 @@ class ImagesUtensils extends React.Component{
             <br></br>
             <Container>
                 <Row>
-                {
-                    utensils.map((val,idx) => {
-                        return(
-                        <Col md="2" lg="3">
-                            
-                        </Col>
-                        )
-                    })
-
-                }
+                    <Col md="1" lg="3"><img src={knive} style={{width:'150px', height:'150px' }}></img> </Col>
+                    <Col md="1" lg="3"><img src={pan} style={{width:'150px', height:'150px' }}></img> </Col>
+                    <Col md="1" lg="3"><img src={spatula} style={{width:'150px', height:'150px' }}></img> </Col>
+                    <Col md="1" lg="3"><img src={stove} style={{width:'150px', height:'150px' }}></img> </Col>
                 </Row>
-                <br></br>
-                <Row float='center'>
-                    {
-                    utensils.map((val,idx) => {
-                        return(
-                        <Col md='2' lg="3" >
-                            <RentButton/>
-                        </Col>
-                        )
-                    })
-                    }
+                <Row>
+                    <Col md="1" lg="3"><img src={tick} style={{width:'50px', height:'50px'}}></img> </Col>
+                    <Col md="1" lg="3"><img src={tick} style={{width:'50px', height:'50px'}}></img> </Col>
+                    <Col md="1" lg="3"> <RentButton/> </Col>
+                    <Col md="1" lg="3"><img src={tick} style={{width:'50px', height:'50px'}}></img> </Col>
                 </Row>
 
             </Container>
