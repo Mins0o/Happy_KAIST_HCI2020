@@ -5,6 +5,7 @@ import MenuInfo from './MenuInfo';
 import DescriptionInfo from './DescriptionInfo';
 import { Link } from 'react-router-dom';
 import foodData from '../../data/food_data.json'
+import * as s from "../minsoo/Signed.js";
 
 export class InfoModal extends Component{
     constructor(props){
@@ -12,6 +13,18 @@ export class InfoModal extends Component{
     }
 
     render(){
+		var linkToThePast;
+		if (s.get()==0){
+			linkToThePast="/login";
+		}else{
+			linkToThePast="/recipe";
+		}
+		function al(){
+			var v =s.get();
+			if(!v){
+				alert("Sign In first");
+			}
+		}
         return(
         <Modal
             {...this.props}
@@ -29,7 +42,7 @@ export class InfoModal extends Component{
                 <MenuInfo id={this.props.displayId} foodname={foodData[this.props.displayId].name} difficulty ={foodData[this.props.displayId].difficulty}></MenuInfo>
                 <DescriptionInfo></DescriptionInfo> 
                 </div>
-                <Link to = "/recipe">
+                <Link to = {linkToThePast} onClick={al}>
                     <div className="proceed-button" onClick={this.props.onHide}>
                                 Press to Proceed
                     </div>
