@@ -40,15 +40,10 @@ class ImagesIngredients extends React.Component{
                 </Row>
                 
                 <Row float='center'>
-                    {
-                    ingredients.map((val,idx) => {
-                        return(
-                        <Col md="1" lg="3" >
-                            <BuyButton inCount={ inCount }/>
-                        </Col>
-                        )
-                    })
-                    }
+                    <Col md="1" lg="3"><BuyButton name = {"bun"}/></Col>
+                    <Col md="1" lg="3"><BuyButton name = {"ham"}/></Col>
+                    <Col md="1" lg="3"><BuyButton name = {"lettuce"}/></Col>
+                    <Col md="1" lg="3"><BuyButton name = {"bacon"}/></Col>
                 </Row>
                 
                 <Row>

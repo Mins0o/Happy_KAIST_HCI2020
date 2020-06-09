@@ -5,6 +5,8 @@ import Table from 'react-bootstrap/Table';
 import Tablebar from '../components/checkout/tablebar';
 import Button from 'react-bootstrap/Button';
 import Popup from '../components/checkout/checkoutbox';
+import * as ch from '../components/checkout/checkoutbox/check.js';
+
 
 class Checkout extends React.Component {
   constructor() {
@@ -28,7 +30,7 @@ class Checkout extends React.Component {
                 <Table striped bordered hover>
                     <thead>
                         <tr>
-                        <th>#</th>
+                        <th></th>
                         <th>Name</th>
                         <th>Type</th>
                         <th>Count</th>
@@ -36,12 +38,18 @@ class Checkout extends React.Component {
                         </tr>
                     </thead>
                     <tbody>
-                      <Tablebar tnum = {1} tname = {"tomato"} ttype = {"Buy"} tcount = {1} tprice = {1.3}/>
-                      <Tablebar tnum = {1} tname = {"tomato"} ttype = {"Buy"} tcount = {1} tprice = {1.3}/>
-                      <Tablebar tnum = {1} tname = {"tomato"} ttype = {"Buy"} tcount = {1} tprice = {1.3}/>
+                      {ch.getIngredientCount("bun") > 0 ? 
+                      <Tablebar tnum = {''} tname = {"bun"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bun")} tprice = {"$" + ch.getIngredientPrice("bun")}/> : null}
+                      {ch.getIngredientCount("ham") > 0 ? 
+                      <Tablebar tnum = {''} tname = {"ham"} ttype = {"Buy"} tcount = {ch.getIngredientCount("ham")} tprice = {"$" + ch.getIngredientPrice("ham")}/> : null}
+                      {ch.getIngredientCount("lettuce") > 0 ? 
+                      <Tablebar tnum = {''} tname = {"lettuce"} ttype = {"Buy"} tcount = {ch.getIngredientCount("lettuce")} tprice = {"$" + ch.getIngredientPrice("lettuce")}/> : null}
+                      {ch.getIngredientCount("bacon") > 0 ? 
+                      <Tablebar tnum = {''} tname = {"bacon"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bacon")} tprice = {"$" + ch.getIngredientPrice("bacon")}/> : null}
+                      <Tablebar tnum = {''} tname = {"spatula"} ttype = {"Rent"} tcount = {1} tprice = {"$2"}/>
                       <tr>
                       <td colSpan="4">total</td>
-                      <td>4.22</td>
+                      <td>${ch.sum()}</td>
                       </tr>
                     </tbody>
                 </Table>
