@@ -23,9 +23,9 @@
 	{
 		"id": 4,
 		"name": "Avocado Salad",
-		"difficulty":"l",
+		"difficulty":"m",
 		"time" : "15",
-		"owned" : "3/3"
+		"owned" : "2/3"
 	},
 	{
 		"id": 5,
@@ -38,9 +38,9 @@
 	{
 		"id": 6,
 		"name": "Veggie Meal",
-		"difficulty":"l",
+		"difficulty":"m",
 		"time" : "20",
-		"owned" : "3/3"
+		"owned" : "2/3"
 	},
 	{
 		"id": 7,
