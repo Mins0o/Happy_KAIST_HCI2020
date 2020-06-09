@@ -19,6 +19,7 @@ import Button from 'react-bootstrap/Button';
 
 import ImagesIngredients from '../components/Recipe/ImagesIngredients';
 import ImagesUtensils from '../components/Recipe/ImagesUtensils';
+import RecipeText from '../components/Recipe/RecipeText';
 
 
 class Recipe extends React.Component {
@@ -43,7 +44,7 @@ class Recipe extends React.Component {
           <Row><Col></Col></Row>
           <Row>
             <Col>
-            <img src={burger} alt="Burger" border-radius='40px' style={{width:'300px', height:'300px' }}/>
+            <img src={burger} alt="Burger" style={{width:'300px', height:'300px', borderRadius:'40px' }}/>
             </Col>
             <Col><div id="title">Burger</div><br></br>
               <Link to="/checkout">
@@ -69,7 +70,7 @@ class Recipe extends React.Component {
               </div>
             </Tab>
             <Tab eventKey="contact" title="Recipe">
-              recipe
+              <RecipeText></RecipeText>
             </Tab>
           </Tabs>
         </div>

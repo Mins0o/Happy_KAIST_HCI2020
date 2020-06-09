@@ -50,7 +50,9 @@ class ImagesIngredients extends React.Component{
                     })
                     }
                 </Row>
-                
+                </Container>
+
+                <Container>
                 <Row>
                     <Col md="1" lg="3"><p style={{fontWeight:'bold'}} >Bacon 200gr</p></Col>
                 </Row>
@@ -60,8 +62,7 @@ class ImagesIngredients extends React.Component{
                 <Row float='center'>
                     <Col md="1" lg="3"><BuyButton inCount={ inCount }/></Col>
                 </Row>
-
-            </Container>
+                </Container>
             <br></br>
             </div>
         )
