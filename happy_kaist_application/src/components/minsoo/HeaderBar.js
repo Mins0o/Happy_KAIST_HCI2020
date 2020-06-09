@@ -24,12 +24,18 @@ class HeaderBar extends React.Component {
 				utArray.push(i);
 			}
 		}
-
+		function logout(){
+			s.set(0);
+			s.uset("login");
+		}
 		return (
 			<Navbar fixed="top" className = "navbar_bg" expand="lg" style={{height:"78px"}}>
-				<Navbar.Brand>							
-					Happy Kaist
-				</Navbar.Brand>
+			
+				<Link to="/mainpage" style={{color: "#000000"}}>
+					<Navbar.Brand>							
+						Happy Kaist
+					</Navbar.Brand>
+				</Link>
 				<Navbar.Toggle aria-controls="basic-navbar-nav"/>
 				<Navbar.Collapse id="nav-bar">
 					<Nav className="mr-auto">
@@ -48,11 +54,21 @@ class HeaderBar extends React.Component {
 							Sign In
 						</Link>
 					</Nav.Link>
+					<Nav.Link style={{display:choose1}}>
+						<Link to="/create_account" style={{color: "#000000"}}>
+							Sign Up
+						</Link>
+					</Nav.Link>
 					<span style={{display:choose2}}>
 						<Form inline style={{marginBottom:"0px",padding:"0px",maxHeight:"3vw"}}>
 							<Image src={require("../../images/userprofile.png")} style={{maxHeight:"2.1vw",margin:"0px"}} roundedCircle />
 							<NavDropdown alignRight={1} style={{marginBottom:"0px",paddingBottom:"0px"}} title={"Hi "+username}>
 								<NavDropdown.Item disabled={1} style={{width:"22vw"}}>
+									<div style={{display:"block",margin:"auto",alignItems:"right"}} className="text-right">
+										<Link to="/login" style={{color: "#000000",fontSize:"1vw"}} onClick={logout}>
+											Log Out
+										</Link>
+									</div>
 									<div>
 										<span>
 											<Image src={require("../../images/userprofile.png")} style={{maxHeight:"3vw",margin:"0px"}} roundedCircle />
