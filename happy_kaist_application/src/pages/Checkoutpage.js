@@ -6,6 +6,7 @@ import Tablebar from '../components/checkout/tablebar';
 import Button from 'react-bootstrap/Button';
 import Popup from '../components/checkout/checkoutbox';
 import * as ch from '../components/checkout/checkoutbox/check.js';
+import { Link } from 'react-router-dom';
 
 
 class Checkout extends React.Component {
@@ -46,13 +47,13 @@ class Checkout extends React.Component {
                       {ch.getIngredientCount("bacon") > 0 ? 
                       <Tablebar tname = {"bacon"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bacon")} tprice = {"$" + ch.getIngredientPrice("bacon")}/> : null}
                       {ch.getIngredientCount("knive") > 0 ? 
-                      <Tablebar tname = {"knive"} ttype = {"Buy"} tcount = {ch.getIngredientCount("knive")} tprice = {"$" + ch.getIngredientPrice("knive")}/> : null}
+                      <Tablebar tname = {"knive"} ttype = {"Rent"} tcount = {ch.getIngredientCount("knive")} tprice = {"$" + ch.getIngredientPrice("knive")}/> : null}
                       {ch.getIngredientCount("frying pan") > 0 ? 
-                      <Tablebar tname = {"frying pan"} ttype = {"Buy"} tcount = {ch.getIngredientCount("frying pan")} tprice = {"$" + ch.getIngredientPrice("frying pan")}/> : null}
+                      <Tablebar tname = {"frying pan"} ttype = {"Rent"} tcount = {ch.getIngredientCount("frying pan")} tprice = {"$" + ch.getIngredientPrice("frying pan")}/> : null}
                       {ch.getIngredientCount("spatula") > 0 ? 
-                      <Tablebar tname = {"spatula"} ttype = {"Buy"} tcount = {ch.getIngredientCount("spatula")} tprice = {"$" + ch.getIngredientPrice("spatula")}/> : null}
+                      <Tablebar tname = {"spatula"} ttype = {"Rent"} tcount = {ch.getIngredientCount("spatula")} tprice = {"$" + ch.getIngredientPrice("spatula")}/> : null}
                       {ch.getIngredientCount("stove") > 0 ? 
-                      <Tablebar tname = {"stove"} ttype = {"Buy"} tcount = {ch.getIngredientCount("stove")} tprice = {"$" + ch.getIngredientPrice("stove")}/> : null}
+                      <Tablebar tname = {"stove"} ttype = {"Rent"} tcount = {ch.getIngredientCount("stove")} tprice = {"$" + ch.getIngredientPrice("stove")}/> : null}
                       <tr>
                       <td colSpan="3">Total</td>
                       <td>${ch.sum()}</td>
@@ -60,6 +61,9 @@ class Checkout extends React.Component {
                     </tbody>
                 </Table>
                 <div className = "paymentButton">
+				  <Link to="/recipe" >
+					<Button style={{marginRight:"1em"}}variant="secondary">Back</Button>
+				  </Link>
                   <Button onClick = {this.togglePopup.bind(this)}>Proceed to Payment</Button>
                 </div>
             </div>      

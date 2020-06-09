@@ -32,7 +32,7 @@ class HeaderBar extends React.Component {
 			
 				<Link to="/mainpage" style={{color: "#000000"}}>
 					<Navbar.Brand>							
-						Happy Kaist
+						Happy Apron
 					</Navbar.Brand>
 				</Link>
 				<Navbar.Toggle aria-controls="basic-navbar-nav"/>
