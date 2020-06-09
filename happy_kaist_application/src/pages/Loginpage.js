@@ -24,17 +24,19 @@ class Loginpage extends React.Component{
           <div className = "form2">
             <div className = "form3">
               <div>Email Address</div>
-              <input type = "text" className = "inputbox"/>
+              <input type = "text" placeholder="youremail@domain.com" className = "inputbox"/>
               <div>Password</div>
-              <input type = "password" className="inputbox"/>
+              <input type = "password" placeholder="password" className="inputbox"/>
             </div>
             <div className = "form4">
                 <Link to={s.uget()} className = "sign_button">
                   <input type = "button" onClick={signing} value = "Sign in"/>
                 </Link>
-                <Link to="/create_account" className = "sign_button">
-                  <input type = "button" value = "Sign up"/>                
-                </Link>
+                <div id="register">Not registered? click <Link to="/create_account" className = "sign_button">
+                  {/* <input type = "button" value = "Sign up"/> */}
+                  here
+                </Link> to sign up</div>
+                
             </div>
           </div>
         </div><br/>
