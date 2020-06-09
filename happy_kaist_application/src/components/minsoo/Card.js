@@ -51,11 +51,10 @@ class CardItem extends React.Component {
 					<div class ="inv-color" style={{float:"right",fontSize:"12pt"}}><img style={{height:"35px"}} src={require("../../images/"+"time.png")}/> ~ {food_data[i].time.toString()} mins</div>
 				</div>
 				{/* </Card.Header> */}
-				<Card.Img variant="top" style={{maxHeight:"26vw"}}src={require("../../images/"+food_data[i].id.toString()+".png")} />'
+				<Card.Img variant="top" style={{maxHeight:"26vw"}}src={require("../../images/"+food_data[i].id.toString()+".png")} />
 				<Card.Footer style={{bgColor : "red", paddingLeft:"0px", paddingRight:"0px", fontSize:"17pt", padding:"auto", maxHeight:"4vw", position:"relative"}} className="text-center">
 				<span >{food_data[i].name}</span>
 				<span style={{fontSize:"0.5rem",position:"absolute",bottom:"0px",right:"0px"}}>{diffText}</span>
-'
 				</Card.Footer>
 			</Card>
 		);
