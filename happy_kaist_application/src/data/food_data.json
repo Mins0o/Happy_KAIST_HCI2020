@@ -1,52 +1,73 @@
 [
 	{
 		"id": 1,
-		"name": "비빔밥",
-		"difficulty":"l"
+		"name": "Bibimbap",
+		"difficulty":"h",
+		"time" : "50",
+		"owned" : "2/4"
 	},
 	{
 		"id": 2,
-		"name": "찌개",
-		"difficulty":"h"
+		"name": "Kimchi Jjigae",
+		"difficulty":"h",
+		"time" : "60+",
+		"owned" : "4/7"
 	},
 	{
 		"id": 3,
-		"name": "짜장면",
-		"difficulty":"l"
+		"name": "Jjajangmyeon",
+		"difficulty":"m",
+		"time" : "30",
+		"owned" : "4/6"
 	},
 	{
 		"id": 4,
 		"name": "Avocado Salad",
-		"difficulty":"l"
+		"difficulty":"l",
+		"time" : "15",
+		"owned" : "3/3"
 	},
 	{
 		"id": 5,
 		"name": "Mie goreng",
-		"difficulty":"m"
+		"difficulty":"m",
+		"time" : "30",
+		"owned" : "3/4"
+		
 	},
 	{
 		"id": 6,
-		"name": "Seasoned rice with egg",
-		"difficulty":"l"
+		"name": "Veggie Meal",
+		"difficulty":"l",
+		"time" : "20",
+		"owned" : "3/3"
 	},
 	{
 		"id": 7,
-		"name": "Delicious dish",
-		"difficulty":"h"
+		"name": "Fancy Potato",
+		"difficulty":"h",
+		"time" : "50",
+		"owned" : "3/6"
 	},
 	{
 		"id": 8,
-		"name": "Burger petty with naan",
-		"difficulty":"h"
+		"name": "Mushroom Naan",
+		"difficulty":"h",
+		"time" : "50",
+		"owned" : "3/5"
 	},
 	{
 		"id": 9,
-		"name": "Delicious Breakfast",
-		"difficulty":"m"
+		"name": "Waffle with Eggs",
+		"difficulty":"m",
+		"time" : "30",
+		"owned" : "3/4"
 	},
 	{
 		"id": 10,
-		"name": "World's Most Expensive Burger",
-		"difficulty":"h"
+		"name": "Beef Burger",
+		"difficulty":"l",
+		"time" : "30",
+		"owned" : "2/3"
 	}
 ]

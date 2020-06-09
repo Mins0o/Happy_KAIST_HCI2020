@@ -2,7 +2,7 @@
     display:flex;
     width:100%;
     height:50px;
-    background-color: gray;
+    background-color: rgb(18, 107, 223);
     color: white;
     text-align: center;
     justify-content: center;
@@ -15,12 +15,12 @@
     display: flex	;
     position:relative;
     flex-flow: column wrap;
-    border: 3px solid black;
+    /* border: 3px solid black; */
     height: 500px;
 }
 
 .menu-info-container{
-    border:5px solid orange;
+    /* border:5px solid black; */
     height:100%;
     width:35%;
     float:left;
@@ -29,8 +29,16 @@
     justify-content: center;
     align-items: center;
 }
+
+#border-left{
+    border-right: 1px solid rgba(128, 128, 128, 0.205);
+    position: absolute;
+    top: 8.2%;
+    bottom: 3%;
+}
+
 .description-container{
-    border:5px solid blue;
+    /* border:5px solid black; */
     height:100%;
     width:65%;
     float:left;  
@@ -73,7 +81,7 @@
     display:flex;
     width:50%;
     height:100%;
-    background-color:orange;
+    background-color:rgba(40, 40, 53, 0.774);
     color:whitesmoke;
     font-size:0.9vw;
     font-weight: 700;
@@ -114,7 +122,7 @@
     margin:0 auto;
     margin-top: 25px;
     margin-bottom:25px;
-    background-color: grey;
+    border: 1px solid rgba(128, 128, 128, 0.288);
 }
 
 .background-red{
@@ -125,4 +133,22 @@
 }
 .background-green{
     background-color: #27a243;
+}
+
+#information{
+    display:flex;
+    flex-direction: column;
+    justify-content: ;
+    align-items: center;
+    height: 50%;
+    position: relative;
+    overflow: hidden;
+    text-align:center;
+    padding:25px;
+}
+
+#extra-utensils{
+    font-size: x-large;
+    font-weight: 600;
+    padding-top: 25px;
 }
