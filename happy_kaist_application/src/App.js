@@ -15,7 +15,7 @@ class App extends Component {
                     <Route path = "/mainpage" component = {Mainpage}/>
                     <Route path = "/recipe" component = {Recipe}/>
                     <Route path = "/checkout" component = {Checkoutpage}/>
-                    <Redirect exact from = "/" to = "login"/>
+                    <Redirect exact from = "/" to = "mainpage"/>
                 </div>                
             </Router>
         );

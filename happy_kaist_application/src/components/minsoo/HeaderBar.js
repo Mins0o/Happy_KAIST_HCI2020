@@ -43,7 +43,7 @@ class HeaderBar extends React.Component {
 											<Image src={require("../../images/userprofile.png")} style={{maxHeight:"3vw",margin:"0px"}} roundedCircle />
 										</span>
 										<span style={{float:"right"}}>
-											<div>{"Hi "+username}</div>
+											<div>{"Hi "+username}[LEVEL 1]</div>
 											<Image src={require("../../images/expmeter.png")} style={{width:"14vw",maxHeight:"0.5vw"}}  rounded/>
 										</span>
 									</div>

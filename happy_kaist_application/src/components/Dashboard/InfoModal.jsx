@@ -27,7 +27,9 @@ export class InfoModal extends Component{
             <div className="modal-page">
                 <div className="body-container">
                 <MenuInfo id={this.props.displayId} foodname={foodData[this.props.displayId].name} difficulty ={foodData[this.props.displayId].difficulty}></MenuInfo>
-                <DescriptionInfo></DescriptionInfo> 
+                
+                <DescriptionInfo></DescriptionInfo>
+                <div id="border-right"></div> 
                 </div>
                 <Link to = "/recipe">
                     <div className="proceed-button" onClick={this.props.onHide}>
