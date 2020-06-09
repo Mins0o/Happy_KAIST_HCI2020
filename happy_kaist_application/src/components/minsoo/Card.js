@@ -45,8 +45,9 @@ class CardItem extends React.Component {
 				}}
 			>
 				<Card.Img variant="top" style={{maxHeight:"26vw"}}src={require("../../images/"+food_data[i].id.toString()+".png")} />
-				<Card.Footer style={{bgColor : "red", paddingLeft:"0px", paddingRight:"0px", fontSize:"17pt", padding:"auto", maxHeight:"4vw"}} className="text-center">
-				{food_data[i].name}
+				<Card.Footer style={{bgColor : "red", paddingLeft:"0px", paddingRight:"0px", fontSize:"17pt", padding:"auto", maxHeight:"4vw", position:"relative"}} className="text-center">
+				<span >{food_data[i].name}</span>
+				<span style={{fontSize:"0.5rem",position:"absolute",bottom:"0px",right:"0px"}}>{diffText}</span>
 				</Card.Footer>
 			</Card>
 		);
