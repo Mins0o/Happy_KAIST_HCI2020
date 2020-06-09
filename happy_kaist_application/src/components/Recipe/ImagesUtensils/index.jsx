@@ -7,6 +7,13 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import RentButton from '../RentButton';
 
+import knive from './knive.png';
+import pan from './pan.png';
+import stove from './stove.png';
+import spatula from './spatula.jpg';
+import tick from './tick.jpg';
+import * as ut from '../../login/utensils/ut.js';
+
 class ImagesUtensils extends React.Component{
     constructor(props){
         super(props);
@@ -20,28 +27,20 @@ class ImagesUtensils extends React.Component{
             <br></br>
             <Container>
                 <Row>
-                {
-                    utensils.map((val,idx) => {
-                        return(
-                        <Col md="2" lg="3">
-                            <Image/>
-                        </Col>
-                        )
-                    })
-
-                }
+                    <Col md="1" lg="3"><img src={knive} style={{width:'150px', height:'150px' }}></img> </Col>
+                    <Col md="1" lg="3"><img src={pan} style={{width:'150px', height:'150px' }}></img> </Col>
+                    <Col md="1" lg="3"><img src={spatula} style={{width:'150px', height:'150px' }}></img> </Col>
+                    <Col md="1" lg="3"><img src={stove} style={{width:'150px', height:'150px' }}></img> </Col>
                 </Row>
-                <br></br>
-                <Row float='center'>
-                    {
-                    utensils.map((val,idx) => {
-                        return(
-                        <Col md='2' lg="3" >
-                            <RentButton/>
-                        </Col>
-                        )
-                    })
-                    }
+                <Row>
+                    {ut.utGetCheck(4) ? 
+                    <Col md="1" lg="3"><img src={tick} style={{width:'50px', height:'50px'}}></img> </Col> : <Col md="1" lg="3"> <RentButton name = {"knive"}/> </Col>}
+                    {ut.utGetCheck(10) ?
+                    <Col md="1" lg="3"><img src={tick} style={{width:'50px', height:'50px'}}></img> </Col> : <Col md="1" lg="3"> <RentButton name = {"frying pan"}/> </Col>}
+                    {false ?
+                    <Col md="1" lg="3"><img src={tick} style={{width:'50px', height:'50px'}}></img> </Col> : <Col md="1" lg="3"> <RentButton name = {"spatula"}/> </Col>}
+                    {ut.utGetCheck(3) ?
+                    <Col md="1" lg="3"><img src={tick} style={{width:'50px', height:'50px'}}></img> </Col> : <Col md="1" lg="3"> <RentButton name = {"stove"}/> </Col>}
                 </Row>
 
             </Container>

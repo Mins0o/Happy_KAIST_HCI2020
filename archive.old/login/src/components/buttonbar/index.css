@@ -1,0 +1,26 @@
+.buttonStyle{
+	background: #A39D90;
+	border:none;
+	outline:none;
+	font-size:1.2rem;
+    color: white;
+    width: 33.33%;
+    height: 10vh;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+.buttonStyle:hover{
+    background-color: #D0C0B0;
+    font-size:1.2rem;
+    color: white;
+}
+
+.buttonStyle:disabled{
+    background-color: #D8CFBE;
+    font-size:1.2rem;
+	color: #47372F;
+}
+
+.buttonForm{
+}

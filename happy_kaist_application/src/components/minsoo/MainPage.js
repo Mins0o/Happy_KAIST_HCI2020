@@ -9,7 +9,7 @@ import {InfoModal} from '../Dashboard/InfoModal'
 
 class MainPage extends React.Component {
 	constructor(props){
-	super(props);
+		super(props);
 		this.state={
 
 			menulist:[

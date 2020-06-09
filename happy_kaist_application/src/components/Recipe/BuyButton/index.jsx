@@ -1,19 +1,22 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
+import * as ch from '../../checkout/checkoutbox/check.js';
 
 class BuyButton extends React.Component{
     constructor(props){
         super(props);
         this.state = {count:0}
+        this.name = this.props.name;
         this.clickUp = this.clickUp.bind(this);
         this.clickDown = this.clickDown.bind(this);
     }
 
     clickUp(){
         this.setState(prevState=>({
-            count: prevState.count + 1
+            count: prevState.count + 1,
         }));
+        ch.setIngredientCount(this.name, this.state.count + 1);
     }
 
     clickDown(){
@@ -21,6 +24,7 @@ class BuyButton extends React.Component{
             this.setState(prevState=>({
                 count: prevState.count - 1
             }));
+            ch.setIngredientCount(this.name, this.state.count - 1);
         }
     }
 

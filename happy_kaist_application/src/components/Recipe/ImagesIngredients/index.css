@@ -1,3 +1,12 @@
 #buybutton{
     text-align: center;
 }
+
+.edit{
+    height:150px;
+    width:150px;
+}
+
+.image-text{
+    font-weight: bold;
+}

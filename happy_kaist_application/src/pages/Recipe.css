@@ -40,7 +40,6 @@
 
 #tabs-container{
   margin: 10px auto;
-  height: 300px;
   overflow: hidden;
   
 }
@@ -49,4 +48,8 @@
   text-align: left;
   font-weight: bold; 
   font-size: 40px;
+}
+
+.proceed{
+  float:left;
 }

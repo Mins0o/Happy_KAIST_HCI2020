@@ -1,0 +1,10 @@
+.inv-color{
+    filter: brightness(0) invert(1);
+    height: 100%;
+}
+
+#header-card{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}

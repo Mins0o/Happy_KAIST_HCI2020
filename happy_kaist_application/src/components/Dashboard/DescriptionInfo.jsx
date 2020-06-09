@@ -20,6 +20,7 @@ class DescriptionInfo extends Component{
     render(){
         return(
         <div className ="description-container">
+            <div id="border-left"/>
             <Tabs
             fill
             id="controlled-tab-example"
@@ -27,14 +28,17 @@ class DescriptionInfo extends Component{
             onSelect={(k) => this.setKey(k)}
             >
                 <Tab eventKey="home" title="Information">
-                    <div id="information"></div>
+                    <div id="information">
+                        <div id="core-info"> <img style={{maxWidth:"70%"}} src={require("../../images/"+"info-png.png")}/> </div>
+                        <div id="extra-utensils">Extra Tools Required</div>
+                    </div>
                 </Tab>
                 <Tab eventKey="profile" title="Review">
                     <div id="reviews">
-                        <ReviewPost/>
-                        <ReviewPost/>
-                        <ReviewPost/>
-                        <ReviewPost/>
+                        <ReviewPost id={1}/>
+                        <ReviewPost id={2}/>
+                        <ReviewPost id={3}/>
+                        <ReviewPost id={4}/>
                     </div>
                 </Tab>
                 </Tabs>

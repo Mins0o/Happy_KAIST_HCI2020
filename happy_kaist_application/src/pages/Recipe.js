@@ -5,6 +5,7 @@ import HeaderBar from '../components/minsoo/HeaderBar.js';
 import './Recipe.css';
 //import './styles.css';
 import { render } from '@testing-library/react';
+import { Link } from 'react-router-dom';
 
 
 import Tabs from 'react-bootstrap/Tabs';
@@ -18,13 +19,14 @@ import Button from 'react-bootstrap/Button';
 
 import ImagesIngredients from '../components/Recipe/ImagesIngredients';
 import ImagesUtensils from '../components/Recipe/ImagesUtensils';
+import RecipeText from '../components/Recipe/RecipeText';
 
 
 class Recipe extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      ingredients:['anjeng', 'anjeng', 'anjeng'],
+      ingredients:['anjeng', 'anjeng', 'anjeng', 'anjeng'],
       utensils: ['pan', 'pan', 'pan', 'pan'],
       inCount: 0,
       //recipe: 'this is the recipe'
@@ -42,10 +44,12 @@ class Recipe extends React.Component {
           <Row><Col></Col></Row>
           <Row>
             <Col>
-            <img src={burger} alt="Burger" border-radius='40px' style={{width:'300px', height:'300px' }}/>
+            <img src={burger} alt="Burger" style={{width:'300px', height:'300px', borderRadius:'40px' }}/>
             </Col>
             <Col><div id="title">Burger</div><br></br>
-            <Button variant="primary" float="left">Proceed to Checkout</Button>{' '}</Col>
+              <Link to="/checkout">
+                <Button variant="primary" className='proceed'>Proceed to Checkout</Button>
+              </Link>{' '}</Col>
             <Col>
             
             </Col>
@@ -66,7 +70,7 @@ class Recipe extends React.Component {
               </div>
             </Tab>
             <Tab eventKey="contact" title="Recipe">
-              recipe
+              <RecipeText></RecipeText>
             </Tab>
           </Tabs>
         </div>

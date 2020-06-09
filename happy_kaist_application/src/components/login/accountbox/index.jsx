@@ -15,11 +15,11 @@ class Accountbox extends React.Component{
                 <div className = "account_boxForm">
                     <div className = "account_inputboxForm">
                         <div>Name</div>
-                        <input type = "text" className = "inputbox" id = "UserName"/>
+                        <input type = "text" placeholder="name" className = "inputbox" id = "UserName"/>
                         <div>Email Address</div>
-                        <input type = "text" className="inputbox" id = "UserEmail"/>
+                        <input type = "text" placeholder="youremail@domain.com" className="inputbox" id = "UserEmail"/>
                         <div>Password</div>
-                        <input type = "password" className="inputbox" id = "UserPassword"/>
+                        <input type = "password" placeholder="password" className="inputbox" id = "UserPassword"/>
                     </div>
                 </div>
                 <div className = "account_buttonForm">
