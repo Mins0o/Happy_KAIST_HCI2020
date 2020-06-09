@@ -46,7 +46,8 @@ class Checkout extends React.Component {
                       <Tablebar tnum = {''} tname = {"lettuce"} ttype = {"Buy"} tcount = {ch.getIngredientCount("lettuce")} tprice = {"$" + ch.getIngredientPrice("lettuce")}/> : null}
                       {ch.getIngredientCount("bacon") > 0 ? 
                       <Tablebar tnum = {''} tname = {"bacon"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bacon")} tprice = {"$" + ch.getIngredientPrice("bacon")}/> : null}
-                      <Tablebar tnum = {''} tname = {"spatula"} ttype = {"Rent"} tcount = {1} tprice = {"$2"}/>
+                      {ch.getIngredientCount("spatula") > 0 ? 
+                      <Tablebar tnum = {''} tname = {"spatula"} ttype = {"Buy"} tcount = {ch.getIngredientCount("spatula")} tprice = {"$" + ch.getIngredientPrice("spatula")}/> : null}
                       <tr>
                       <td colSpan="4">total</td>
                       <td>${ch.sum()}</td>
