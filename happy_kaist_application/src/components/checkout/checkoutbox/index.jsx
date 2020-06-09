@@ -12,7 +12,7 @@ class Popup extends React.Component {
             <h1 className = "payment_title">The payment has been completed!</h1>
             <div className = "gobackButton">
               <Link to = "/mainpage">
-                  <Button>Go to Main Page</Button>
+                  <Button>Go back to Main Page</Button>
               </Link>              
             </div>
           </div>
