@@ -52,4 +52,16 @@
 
 .proceed{
   float:left;
+  border:none;
+	border-radius: 10px;
+	background: #47372F;
+	font-size:1.2vw;
+	color: white;
+	outline:none;
+  position: relative;
+  font-weight: bold;
+}
+
+.proceed:hover{
+  background: #D0C0B0;
 }

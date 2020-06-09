@@ -2,6 +2,8 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import * as ch from '../../checkout/checkoutbox/check.js';
+import './index.css';
+
 
 class BuyButton extends React.Component{
     constructor(props){
@@ -32,9 +34,9 @@ class BuyButton extends React.Component{
         const { count } = this.state;
         return(
             <ButtonGroup aria-label="Basic example">
-                <Button variant="secondary" onClick={this.clickDown}>-</Button>
-                <Button variant="primary">in cart: {count} </Button>
-                <Button variant="secondary" onClick={this.clickUp}>+</Button>
+                <Button className = "buybutton_style" variant="secondary" onClick={this.clickDown}>-</Button>
+                <Button className = "buybuttonMiddle_style" variant="primary">in cart: {count} </Button>
+                <Button className = "buybutton_style" variant="secondary" onClick={this.clickUp}>+</Button>
             </ButtonGroup>
         )
             

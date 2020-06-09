@@ -10,9 +10,9 @@ class Popup extends React.Component {
         <div className='popup'>
           <div className='popup_inner'>
             <h1 className = "payment_title">The payment has been completed!</h1>
-            <div className = "gobackButton">
+            <div className = "gobackButtonForm">
               <Link to = "/mainpage">
-                  <Button>Go back to Main Page</Button>
+                  <Button className = "gobackButton">Go back to Main Page</Button>
               </Link>              
             </div>
           </div>

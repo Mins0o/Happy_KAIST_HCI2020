@@ -10,25 +10,36 @@
     background-color: rgba(0,0,0, 0.5);
   }
 
-  .popup_inner {
-    position: absolute;
-    left: 25%;
-    right: 25%;
-    top: 25%;
-    bottom: 25%;
-    margin: auto;
-    background: white;
-    border-radius: 30px;
-  }
+.popup_inner {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+  margin: auto;
+  background: white;
+  border-radius: 30px;
+}
 
-  .gobackButton{
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 10vh;
-    margin-right: 4vw;
-  }
+.gobackButtonForm{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10vh;
+  margin-right: 4vw;
+}
 
-  .payment_title{
-    margin-top: 20%;
-    font-size: 2vw;
-  }
+.gobackButton{
+  background: #47372F;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+}
+
+.gobackButton:hover{
+  background: #D0C0B0;    
+}
+
+.payment_title{
+  margin-top: 20%;
+  font-size: 2vw;
+}

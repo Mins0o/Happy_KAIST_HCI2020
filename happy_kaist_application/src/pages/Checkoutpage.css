@@ -4,7 +4,18 @@
     margin-top: 35vh;
 }
 
-.paymentButton{
+.paymentButtonForm{
     display: flex;
     justify-content: flex-end;
+}
+
+.paymentButton{
+    background: #47372F;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+
+.paymentButton:hover{
+    background: #D0C0B0;    
 }

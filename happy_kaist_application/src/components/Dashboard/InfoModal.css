@@ -2,13 +2,14 @@
     display:flex;
     width:100%;
     height:50px;
-    background-color: rgb(18, 107, 223);
+    background: #47372F;
     color: white;
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-weight: 500;
+    font-weight: bold;
     font-size: large;
+    border-radius: 15px;
 }
 
 .body-container{
