@@ -10,6 +10,7 @@ import Button from 'react-bootstrap/Button';
 import bun from './bun.jpg';
 import ham from './ham.png';
 import lettuce from './lettuce.jpg';
+import bacon from './bacon.png'
 
 class ImagesIngredients extends React.Component{
     constructor(props){
@@ -25,27 +26,39 @@ class ImagesIngredients extends React.Component{
             <br></br>
             <Container>
                 <Row>
-                    <Col xs="12" sm="4"><p style={{fontWeight:'bold'}} >Bun 2pcs</p></Col>
-                    <Col xs="12" sm="4"><p style={{fontWeight:'bold'}} >Ham 200gr</p></Col>
-                    <Col xs="12" sm="4"><p style={{fontWeight:'bold'}} >Lettuce</p></Col>
+                    <Col md="1" lg="3"><p style={{fontWeight:'bold'}} >Bun 2pcs</p></Col>
+                    <Col md="1" lg="3"><p style={{fontWeight:'bold'}} >Ham 200gr</p></Col>
+                    <Col md="1" lg="3"><p style={{fontWeight:'bold'}} >Lettuce</p></Col>
+                    <Col md="1" lg="3"><p style={{fontWeight:'bold'}} >Bacon 200gr</p></Col>
                 </Row>
 
                 <Row>
-                    <Col xs="12" sm="4"><img src={bun} style={{width:'150px', height:'150px' }}></img> </Col>
-                    <Col xs="12" sm="4"><img src={ham} style={{width:'150px', height:'150px' }}></img> </Col>
-                    <Col xs="12" sm="4"><img src={lettuce} style={{width:'150px', height:'150px' }}></img> </Col>
+                    <Col md="1" lg="3"><img src={bun} style={{width:'150px', height:'150px' }}></img> </Col>
+                    <Col md="1" lg="3"><img src={ham} style={{width:'150px', height:'150px' }}></img> </Col>
+                    <Col md="1" lg="3"><img src={lettuce} style={{width:'150px', height:'150px' }}></img> </Col>
+                    <Col md="1" lg="3"><img src={bacon} style={{width:'150px', height:'150px' }}></img> </Col>
                 </Row>
                 
                 <Row float='center'>
                     {
                     ingredients.map((val,idx) => {
                         return(
-                        <Col xs="12" sm="4" >
+                        <Col md="1" lg="3" >
                             <BuyButton inCount={ inCount }/>
                         </Col>
                         )
                     })
                     }
+                </Row>
+                <br></br>
+                <Row>
+                    <Col md="2" lg="4"><p style={{fontWeight:'bold'}} >Bacon 200gr</p></Col>
+                </Row>
+                <Row>
+                    <Col md="2" lg="4"><img src={bacon} style={{width:'150px', height:'150px' }}></img> </Col>
+                </Row>
+                <Row float='center'>
+                    <BuyButton inCount={ inCount }/>
                 </Row>
 
             </Container>
