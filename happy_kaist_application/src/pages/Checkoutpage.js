@@ -60,12 +60,12 @@ class Checkout extends React.Component {
                     </tbody>
                 </Table>
                 <div className = "paymentButton">
-                  <Button onClick = {this.togglePopup.bind(this)}>pay a charge</Button>
+                  <Button onClick = {this.togglePopup.bind(this)}>Proceed to Payment</Button>
                 </div>
             </div>      
         {this.state.showPopup ? 
           <Popup
-            text='Close Me'
+            text='...'
             closePopup={this.togglePopup.bind(this)}
           />
           : null
