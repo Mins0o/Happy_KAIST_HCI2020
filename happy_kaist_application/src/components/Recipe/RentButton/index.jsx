@@ -2,6 +2,7 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import * as ch from '../../checkout/checkoutbox/check.js';
+import './index.css';
 
 class RentButton extends React.Component{
     constructor(props){
@@ -31,7 +32,7 @@ class RentButton extends React.Component{
         if (rent == false){
             return(
                 <ButtonGroup aria-label="Basic example">
-                    <Button variant="primary" onClick={this.clickRent}>  Rent   </Button>
+                    <Button className = "rentButton" onClick={this.clickRent}>  Rent   </Button>
                     <Button variant="secondary" disabled>x</Button>
                 </ButtonGroup>     
             )
@@ -39,8 +40,8 @@ class RentButton extends React.Component{
         else{
             return(
                 <ButtonGroup aria-label="Basic example">
-                    <Button variant="success" disabled> in cart </Button>
-                    <Button variant="danger" onClick={this.clickCancel}>x</Button>
+                    <Button className = "clickedRentButton" disabled> in cart </Button>
+                    <Button variant="secondary" onClick={this.clickCancel}>x</Button>
                 </ButtonGroup>     
             )   
         }

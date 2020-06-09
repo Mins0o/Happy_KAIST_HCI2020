@@ -60,11 +60,11 @@ class Checkout extends React.Component {
                       </tr>
                     </tbody>
                 </Table>
-                <div className = "paymentButton">
+                <div className = "paymentButtonForm">
 				  <Link to="/recipe" >
-					<Button style={{marginRight:"1em"}}variant="secondary">Back</Button>
+					<Button className = "paymentButton" style={{marginRight:"1em"}}variant="secondary">Back</Button>
 				  </Link>
-                  <Button onClick = {this.togglePopup.bind(this)}>Proceed to Payment</Button>
+                  <Button  className = "paymentButton" onClick = {this.togglePopup.bind(this)}>Proceed to Payment</Button>
                 </div>
             </div>      
         {this.state.showPopup ? 

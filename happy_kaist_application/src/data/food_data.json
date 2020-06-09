@@ -65,9 +65,9 @@
 	},
 	{
 		"id": 10,
-		"name": "Beef Burger",
+		"name": "Burger",
 		"difficulty":"l",
 		"time" : "30",
-		"owned" : "2/3"
+		"owned" : "3/4"
 	}
 ]

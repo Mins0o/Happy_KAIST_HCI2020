@@ -65,3 +65,7 @@
 .proceed:hover{
   background: #D0C0B0;
 }
+
+.recipe_tabbutton{
+  font-weight: bold;
+}

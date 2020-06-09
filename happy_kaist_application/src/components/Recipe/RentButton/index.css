@@ -1,8 +1,14 @@
-.rentbutton{
+.rentButton{
     background: #47372F;
     font-weight: bold;
+    border: none;
 }
 
-.clickedRentbutton{
+.rentButton:hover{
+    background: #A39D90;
+}
+
+
+.clickedRentButton{
     font-weight: bold;    
 }
