@@ -18,6 +18,11 @@ var ingredient = [
         name: "bacon",
         num: 0,
         price: 1.83
+    },
+    {
+        name: "spatula",
+        num: 0,
+        price: 2
     }
 ]
 
@@ -46,7 +51,7 @@ export function setIngredientCount(name, count){
 }
 
 export function sum(){
-    var sum = 2;
+    var sum = 0;
     for(var i = 0; i < ingredient.length; i++){
         sum += ingredient[i].num  * ingredient[i].price;
     }

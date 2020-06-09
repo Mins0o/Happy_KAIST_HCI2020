@@ -35,7 +35,7 @@ class ImagesUtensils extends React.Component{
                 <Row>
                     <Col md="1" lg="3"><img src={tick} style={{width:'50px', height:'50px'}}></img> </Col>
                     <Col md="1" lg="3"><img src={tick} style={{width:'50px', height:'50px'}}></img> </Col>
-                    <Col md="1" lg="3"> <RentButton/> </Col>
+                    <Col md="1" lg="3"> <RentButton name = {"spatula"}/> </Col>
                     <Col md="1" lg="3"><img src={tick} style={{width:'50px', height:'50px'}}></img> </Col>
                 </Row>
 
