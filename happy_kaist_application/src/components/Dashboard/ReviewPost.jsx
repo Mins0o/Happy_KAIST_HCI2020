@@ -9,7 +9,7 @@ class ReviewPost extends Component{
     render(){
         return(
         <div className ="review-post">
-            lala
+            This is review # {this.props.id}
         </div>  
         )
     }

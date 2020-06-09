@@ -20,9 +20,6 @@ class Loginpage extends React.Component{
     return (
       <div className = "Login">
         <h1 className = "login_title">Happy Apron</h1>
-			<Link to="/mainpage" className="text-center">
-				<p>See what's on the menu</p>
-			</Link>
         <div className = "form">
           <div className = "form2">
             <div className = "form3">
@@ -40,7 +37,10 @@ class Loginpage extends React.Component{
                 </Link>
             </div>
           </div>
-        </div>
+        </div><br/>
+        <Link to="/mainpage" className="text-center">
+          <p>See what's on the menu</p>
+        </Link>
       </div>
     );
   }
