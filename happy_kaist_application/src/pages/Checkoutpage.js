@@ -30,7 +30,6 @@ class Checkout extends React.Component {
                 <Table striped bordered hover>
                     <thead>
                         <tr>
-                        <th></th>
                         <th>Name</th>
                         <th>Type</th>
                         <th>Count</th>
@@ -39,17 +38,23 @@ class Checkout extends React.Component {
                     </thead>
                     <tbody>
                       {ch.getIngredientCount("bun") > 0 ? 
-                      <Tablebar tnum = {''} tname = {"bun"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bun")} tprice = {"$" + ch.getIngredientPrice("bun")}/> : null}
+                      <Tablebar tname = {"bun"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bun")} tprice = {"$" + ch.getIngredientPrice("bun")}/> : null}
                       {ch.getIngredientCount("ham") > 0 ? 
-                      <Tablebar tnum = {''} tname = {"ham"} ttype = {"Buy"} tcount = {ch.getIngredientCount("ham")} tprice = {"$" + ch.getIngredientPrice("ham")}/> : null}
+                      <Tablebar tname = {"ham"} ttype = {"Buy"} tcount = {ch.getIngredientCount("ham")} tprice = {"$" + ch.getIngredientPrice("ham")}/> : null}
                       {ch.getIngredientCount("lettuce") > 0 ? 
-                      <Tablebar tnum = {''} tname = {"lettuce"} ttype = {"Buy"} tcount = {ch.getIngredientCount("lettuce")} tprice = {"$" + ch.getIngredientPrice("lettuce")}/> : null}
+                      <Tablebar tname = {"lettuce"} ttype = {"Buy"} tcount = {ch.getIngredientCount("lettuce")} tprice = {"$" + ch.getIngredientPrice("lettuce")}/> : null}
                       {ch.getIngredientCount("bacon") > 0 ? 
-                      <Tablebar tnum = {''} tname = {"bacon"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bacon")} tprice = {"$" + ch.getIngredientPrice("bacon")}/> : null}
+                      <Tablebar tname = {"bacon"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bacon")} tprice = {"$" + ch.getIngredientPrice("bacon")}/> : null}
+                      {ch.getIngredientCount("knive") > 0 ? 
+                      <Tablebar tname = {"knive"} ttype = {"Buy"} tcount = {ch.getIngredientCount("knive")} tprice = {"$" + ch.getIngredientPrice("knive")}/> : null}
+                      {ch.getIngredientCount("frying pan") > 0 ? 
+                      <Tablebar tname = {"frying pan"} ttype = {"Buy"} tcount = {ch.getIngredientCount("frying pan")} tprice = {"$" + ch.getIngredientPrice("frying pan")}/> : null}
                       {ch.getIngredientCount("spatula") > 0 ? 
-                      <Tablebar tnum = {''} tname = {"spatula"} ttype = {"Buy"} tcount = {ch.getIngredientCount("spatula")} tprice = {"$" + ch.getIngredientPrice("spatula")}/> : null}
+                      <Tablebar tname = {"spatula"} ttype = {"Buy"} tcount = {ch.getIngredientCount("spatula")} tprice = {"$" + ch.getIngredientPrice("spatula")}/> : null}
+                      {ch.getIngredientCount("stove") > 0 ? 
+                      <Tablebar tname = {"stove"} ttype = {"Buy"} tcount = {ch.getIngredientCount("stove")} tprice = {"$" + ch.getIngredientPrice("stove")}/> : null}
                       <tr>
-                      <td colSpan="4">total</td>
+                      <td colSpan="3">Total</td>
                       <td>${ch.sum()}</td>
                       </tr>
                     </tbody>

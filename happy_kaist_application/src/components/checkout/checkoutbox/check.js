@@ -20,9 +20,24 @@ var ingredient = [
         price: 1.83
     },
     {
+        name: "knive",
+        num: 0,
+        price: 5
+    },
+    {
+        name: "frying pan",
+        num: 0,
+        price: 5
+    },
+    {
         name: "spatula",
         num: 0,
         price: 2
+    },
+    {
+        name: "stove",
+        num: 0,
+        price: 6
     }
 ]
 
