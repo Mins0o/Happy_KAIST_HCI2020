@@ -2,7 +2,7 @@
 This app is focusing on making preparation for cooking easier for people who live alone and are not confident with their cooking skill. 
 
 ## Code
-The main 
+The main file app.js includes react router links that binds each of the pages. Pages folder contains each of the main 'page'.js files where all the components of the page is put together. The components folder consists of all the components used in the pages.
 
 ## URL of prototype
 https://happykaist-c6af9.web.app/login
