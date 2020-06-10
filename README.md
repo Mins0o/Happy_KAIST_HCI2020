@@ -1,6 +1,9 @@
 # Happy_KAIST_HCI2020
 This app is focusing on making preparation for cooking easier for people who live alone and are not confident with their cooking skill. 
 
+## Code
+The main 
+
 ## URL of prototype
 https://happykaist-c6af9.web.app/login
 
