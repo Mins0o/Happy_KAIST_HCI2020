@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Tab,Tabs} from 'react-bootstrap';
+import {Tab,Tabs,Image} from 'react-bootstrap';
 import './InfoModal.css';
 import ReviewPost from './ReviewPost';
 
@@ -30,7 +30,7 @@ class DescriptionInfo extends Component{
                 <Tab eventKey="home" title="Information">
                     <div id="information">
                         <div id="core-info"> <img style={{maxWidth:"70%"}} src={require("../../images/"+"info-png.png")}/> </div>
-                        <div id="extra-utensils">Extra Tools Required</div>
+                        <div id="extra-utensils">Extra Tools Required<br/><img src={require("./spatula.jpg")} style={{width:'150px', height:'150px' }}/></div>
                     </div>
                 </Tab>
                 <Tab eventKey="profile" title="Review">
