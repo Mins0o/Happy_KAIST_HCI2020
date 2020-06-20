@@ -24,6 +24,7 @@ class Category extends React.Component{
 		function temporary(){
 			//alert("You'll have to Sign In to use the full feature!");
 			s.uset("/mainpage");
+			s.set(1);
 		}
         return(
             <div className = "categoryForm">
