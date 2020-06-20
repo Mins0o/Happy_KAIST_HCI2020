@@ -78,6 +78,21 @@ class Checkout extends React.Component {
 						{ch.getIngredientCount("shrimp") > 0 ?  <Tablebar tname = {"shrimp"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bun")} tprice = {"$" + ch.getIngredientPrice("shrimp")}/>:null}
 						{ch.getIngredientCount("cabbage") > 0 ?  <Tablebar tname = {"cabbage"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bun")} tprice = {"$" + ch.getIngredientPrice("cabbage")}/>:null}
 						{ch.getIngredientCount("chilli") > 0 ?  <Tablebar tname = {"chilli"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bun")} tprice = {"$" + ch.getIngredientPrice("chilli")}/>:null}
+						{ch.getIngredientCount("yeast") > 0 ?  <Tablebar tname = {"yeast"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bun")} tprice = {"$" + ch.getIngredientPrice("yeast")}/>:null}
+						{ch.getIngredientCount("milk") > 0 ?  <Tablebar tname = {"milk"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bun")} tprice = {"$" + ch.getIngredientPrice("milk")}/>:null}
+						{ch.getIngredientCount("plain flour") > 0 ?  <Tablebar tname = {"plain flour"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bun")} tprice = {"$" + ch.getIngredientPrice("plain flour")}/>:null}
+						{ch.getIngredientCount("baking powder") > 0 ?  <Tablebar tname = {"baking powder"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bun")} tprice = {"$" + ch.getIngredientPrice("baking powder")}/>:null}
+						{ch.getIngredientCount("yogurt") > 0 ?  <Tablebar tname = {"yogurt"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bun")} tprice = {"$" + ch.getIngredientPrice("yogurt")}/>:null}
+						{ch.getIngredientCount("black bean paste") > 0 ?  <Tablebar tname = {"black bean paste"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bun")} tprice = {"$" + ch.getIngredientPrice("black bean paste")}/>:null}
+						{ch.getIngredientCount("button mushroom") > 0 ?  <Tablebar tname = {"button mushroom"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bun")} tprice = {"$" + ch.getIngredientPrice("button mushroom")}/>:null}
+						{ch.getIngredientCount("diced pork") > 0 ?  <Tablebar tname = {"diced pork"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bun")} tprice = {"$" + ch.getIngredientPrice("diced pork")}/>:null}
+						{ch.getIngredientCount("quinoa") > 0 ?  <Tablebar tname = {"quinoa"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bun")} tprice = {"$" + ch.getIngredientPrice("quinoa")}/>:null}
+						{ch.getIngredientCount("broccoli") > 0 ?  <Tablebar tname = {"broccoli"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bun")} tprice = {"$" + ch.getIngredientPrice("broccoli")}/>:null}
+						{ch.getIngredientCount("all purpose flour") > 0 ?  <Tablebar tname = {"all purpose flour"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bun")} tprice = {"$" + ch.getIngredientPrice("all purpose flour")}/>:null}
+						{ch.getIngredientCount("vegetable oil") > 0 ?  <Tablebar tname = {"vegetable oil"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bun")} tprice = {"$" + ch.getIngredientPrice("vegetable oil")}/>:null}
+						{ch.getIngredientCount("vanilla extract") > 0 ?  <Tablebar tname = {"vanilla extract"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bun")} tprice = {"$" + ch.getIngredientPrice("vanilla extract")}/>:null}
+						{ch.getIngredientCount("maple syrup") > 0 ?  <Tablebar tname = {"maple syrup"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bun")} tprice = {"$" + ch.getIngredientPrice("maple syrup")}/>:null}
+						{ch.getIngredientCount("chese") > 0 ?  <Tablebar tname = {"chese"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bun")} tprice = {"$" + ch.getIngredientPrice("chese")}/>:null}
 						{ch.getIngredientCount("ham") > 0 ?  <Tablebar tname = {"ham"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bun")} tprice = {"$" + ch.getIngredientPrice("ham")}/>:null}
 						{ch.getIngredientCount("lettuce") > 0 ?  <Tablebar tname = {"lettuce"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bun")} tprice = {"$" + ch.getIngredientPrice("lettuce")}/>:null}
 						{ch.getIngredientCount("bacon") > 0 ?  <Tablebar tname = {"bacon"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bun")} tprice = {"$" + ch.getIngredientPrice("bacon")}/>:null}

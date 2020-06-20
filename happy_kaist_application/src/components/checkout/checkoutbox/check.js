@@ -200,6 +200,81 @@ var ingredient = [
         price: 0.53
     },
     {
+        name: "yeast",
+        num: 0,
+        price: 0.15
+    },
+    {
+        name: "milk",
+        num: 0,
+        price: 0.50
+    },
+    {
+        name: "plain flour",
+        num: 0,
+        price: 0.45
+    },
+    {
+        name: "baking powder",
+        num: 0,
+        price: 0.02
+    },
+    {
+        name: "yogurt",
+        num: 0,
+        price: 0.50
+    },
+    {
+        name: "black bean paste",
+        num: 0,
+        price: 1.19
+    },
+    {
+        name: "button mushroom",
+        num: 0,
+        price: 1.35
+    },
+    {
+        name: "diced pork",
+        num: 0,
+        price: 8.33
+    },
+    {
+        name: "quinoa",
+        num: 0,
+        price: 0.78
+    },
+    {
+        name: "broccoli",
+        num: 0,
+        price: 0.75
+    },
+    {
+        name: "all purpose flour",
+        num: 0,
+        price: 0.60
+    },
+    {
+        name: "vegetable oil",
+        num: 0,
+        price: 0.03
+    },
+    {
+        name: "vanilla extract",
+        num: 0,
+        price: 0.01
+    },
+    {
+        name: "maple syrup",
+        num: 0,
+        price: 0.03
+    },
+    {
+        name: "chese",
+        num: 0,
+        price: 0.25
+    },
+    {
         name: "ham",
         num: 0,
         price: 2.25
