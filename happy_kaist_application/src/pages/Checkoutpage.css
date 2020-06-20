@@ -13,7 +13,7 @@
     background: #47372F;
     font-weight: bold;
     border: none;
-    border-radius: 10px;
+    border-radius: 0.8vw;
 }
 
 .paymentButton:hover{

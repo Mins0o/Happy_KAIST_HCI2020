@@ -168,32 +168,23 @@
 	},
 	{
 		"id": 8,
-		"name": "Mushroom Naan",
+		"name": "Beef Burger",
 		"imgIngredients": [
 			[
-				{"ing": "yeast", "qty": "13gr"}, 
-				{"ing": "milk", "qty": "95ml"}, 
-				{"ing": "plain flour", "qty": "280g"},
-				{"ing": "baking powder", "qty": "1/2tsp"}
+				{"ing": "bun", "qty": "2pcs"}, 
+				{"ing": "groundbeef", "qty": "200gr"}, 
+				{"ing": "lettuce", "qty": " "},
+				{"ing": "cheese", "qty": "2slices"}
 			], 
 			
 			[
-				{"ing": "canola oil", "qty": "20ml"},
-				{"ing": "yoghurt", "qty": "95gr"},
-				{"ing": "egg", "qty": "1medium"},
-				{"ing": "soy sauce", "qty": "1tbsp"}
-				
-			],
-
-			[
-				{"ing": "shiitake mushroom", "qty": "500gr"},
-				{"ing": "parsley", "qty": "30gr"},
-				{"ing": "sea salt", "qty": "1tsp"},
-				{"ing": "lettuce", "qty": "1leaf"}
-				
+				{"ing": "bacon", "qty": "100gr"},
+				{"ing": "tomato", "qty": "1pcs"},
+				{"ing": "salt pepper", "qty": ""}
 			]
-
 		]
+
+		
 		
 	},
 	{
@@ -225,23 +216,32 @@
 	},
 	{
 		"id": 10,
-		"name": "Beef Burger",
+		"name": "Mushroom Naan",
 		"imgIngredients": [
 			[
-				{"ing": "bun", "qty": "2pcs"}, 
-				{"ing": "groundbeef", "qty": "200gr"}, 
-				{"ing": "lettuce", "qty": " "},
-				{"ing": "cheese", "qty": "2slices"}
+				{"ing": "yeast", "qty": "13gr"}, 
+				{"ing": "milk", "qty": "95ml"}, 
+				{"ing": "plain flour", "qty": "280g"},
+				{"ing": "baking powder", "qty": "1/2tsp"}
 			], 
 			
 			[
-				{"ing": "bacon", "qty": "100gr"},
-				{"ing": "tomato", "qty": "1pcs"},
-				{"ing": "salt pepper", "qty": ""}
-			]
-		]
+				{"ing": "canola oil", "qty": "20ml"},
+				{"ing": "yoghurt", "qty": "95gr"},
+				{"ing": "egg", "qty": "1medium"},
+				{"ing": "soy sauce", "qty": "1tbsp"}
+				
+			],
 
-		
+			[
+				{"ing": "shiitake mushroom", "qty": "500gr"},
+				{"ing": "parsley", "qty": "30gr"},
+				{"ing": "sea salt", "qty": "1tsp"},
+				{"ing": "lettuce", "qty": "1leaf"}
+				
+			]
+
+		]
 		
 	}
 	

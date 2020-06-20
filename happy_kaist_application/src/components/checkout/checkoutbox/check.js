@@ -142,7 +142,7 @@ var ingredient = [
     {
         name: "kimchi",
         num: 0,
-        price: 399.99
+        price: 399.00
     },
     {
         name: "pork belly",
@@ -175,9 +175,104 @@ var ingredient = [
         price: 0.89
     },
     {
-        name: "bun",
+        name: "noodle",
         num: 0,
-        price: 0.33
+        price: 2.50
+    },
+    {
+        name: "shallots",
+        num: 0,
+        price: 0.70
+    },
+    {
+        name: "shrimp",
+        num: 0,
+        price: 0.60
+    },
+    {
+        name: "cabbage",
+        num: 0,
+        price: 1.75
+    },
+    {
+        name: "chilli",
+        num: 0,
+        price: 0.53
+    },
+    {
+        name: "yeast",
+        num: 0,
+        price: 0.15
+    },
+    {
+        name: "milk",
+        num: 0,
+        price: 0.50
+    },
+    {
+        name: "plain flour",
+        num: 0,
+        price: 0.45
+    },
+    {
+        name: "baking powder",
+        num: 0,
+        price: 0.02
+    },
+    {
+        name: "yogurt",
+        num: 0,
+        price: 0.50
+    },
+    {
+        name: "black bean paste",
+        num: 0,
+        price: 1.19
+    },
+    {
+        name: "button mushroom",
+        num: 0,
+        price: 1.35
+    },
+    {
+        name: "diced pork",
+        num: 0,
+        price: 8.33
+    },
+    {
+        name: "quinoa",
+        num: 0,
+        price: 0.78
+    },
+    {
+        name: "broccoli",
+        num: 0,
+        price: 0.75
+    },
+    {
+        name: "all purpose flour",
+        num: 0,
+        price: 0.60
+    },
+    {
+        name: "vegetable oil",
+        num: 0,
+        price: 0.03
+    },
+    {
+        name: "vanilla extract",
+        num: 0,
+        price: 0.01
+    },
+    {
+        name: "maple syrup",
+        num: 0,
+        price: 0.03
+    },
+    {
+        name: "chese",
+        num: 0,
+        price: 0.25
     },
     {
         name: "ham",
@@ -227,7 +322,7 @@ export function getIngredientCount(name){
 export function getIngredientPrice(name){
     for(var i = 0; i < ingredient.length; i++){
         if(ingredient[i].name == name){
-            return ingredient[i].price.toFixed(2)+"\t \tx"+ingredient[i].num+"\t \t \t(total:\t$"+(ingredient[i].num  * ingredient[i].price).toFixed(2)+")";
+            return (ingredient[i].num  * ingredient[i].price).toFixed(2)+"\t \t ($"+ingredient[i].price.toFixed(2)+"\t \tx"+ingredient[i].num+")";
         }
     }
 }
