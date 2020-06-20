@@ -140,6 +140,46 @@ var ingredient = [
         price: 0.15
     },
     {
+        name: "kimchi",
+        num: 0,
+        price: 399.99
+    },
+    {
+        name: "pork belly",
+        num: 0,
+        price: 1.99
+    },
+    {
+        name: "tofu",
+        num: 0,
+        price: 1.03
+    },
+    {
+        name: "dried anchovies",
+        num: 0,
+        price: 2.25
+    },
+    {
+        name: "onion",
+        num: 0,
+        price: 0.60
+    },
+    {
+        name: "spring onion",
+        num: 0,
+        price: 0.45
+    },
+    {
+        name: "dried kelp",
+        num: 0,
+        price: 0.89
+    },
+    {
+        name: "bun",
+        num: 0,
+        price: 0.33
+    },
+    {
         name: "ham",
         num: 0,
         price: 2.25
