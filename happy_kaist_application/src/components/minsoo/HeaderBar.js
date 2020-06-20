@@ -80,23 +80,28 @@ class HeaderBar extends React.Component {
 									<div style={{display:"block",margin:"auto"}} disabled={1}>
 										<br/><br/>
 										<div style={{display:"block",margin:"auto"}}>
+											<Link to="/select">
+												<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {require("../../images/addUtensil.png")} roundedCircle />
+											</Link>
 											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(utArray[0])} roundedCircle />
 											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(utArray[1])} roundedCircle />
-											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(utArray[2])} roundedCircle />
 										</div>
 										<div style={{display:"block",margin:"auto"}}>
+											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(utArray[2])} roundedCircle />
 											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(utArray[3])} roundedCircle />
 											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(utArray[4])} roundedCircle />
-											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(utArray[5])} roundedCircle />
 										</div>
 										<div style={{display:"block",margin:"auto"}}>
+											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(utArray[5])} roundedCircle />
 											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(utArray[6])} roundedCircle />
 											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(utArray[7])} roundedCircle />
-											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(utArray[8])} roundedCircle />
 										</div>
 										<div style={{display:"block",margin:"auto"}}>
+											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(utArray[8])} roundedCircle />
 											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(utArray[9])} roundedCircle />
 											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(utArray[10])} roundedCircle />
+										</div>
+										<div style={{display:"block",margin:"auto"}}>
 											<Image style={{maxWidth:"5.5vw", margin:"0.5vw"}} src = {ut.utImg(utArray[11])} roundedCircle />
 										</div>
 									</div>
