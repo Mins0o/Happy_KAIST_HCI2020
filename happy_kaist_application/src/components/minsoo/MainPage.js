@@ -4,6 +4,7 @@ import CardList from "./CardList.js";
 import CardColumns from "react-bootstrap/CardColumns";
 import {Button, ButtonToolbar} from 'react-bootstrap';
 import {InfoModal} from '../Dashboard/InfoModal'
+import * as di from '../Recipe/DisplayID.js';
 
 
 
@@ -34,6 +35,7 @@ class MainPage extends React.Component {
 	cardClick(id){
 		this.setState({displayId:id})
 		this.setState({modalShow:true})
+		di.setDisplayID(id);
 	}
 	render() {
 	  let modalClose = () => this.setState({modalShow:false})

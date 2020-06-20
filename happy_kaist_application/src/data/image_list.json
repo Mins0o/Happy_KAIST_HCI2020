@@ -1,0 +1,87 @@
+[
+	{
+		"id": 1,
+		"name": "Bibimbap",
+		"imgIngredients": [
+			[
+				{"ing": "groundbeef", "qty": "200gr"}, 
+				{"ing": "sauce", "qty": "200ml"}, 
+				{"ing": "carrot", "qty": "20gr"},
+				{"ing": "beansprout", "qty": "20gr"}
+			], 
+			
+			[
+				{"ing": "spinach", "qty": "20gr"}
+			]
+		]
+	},
+	{
+		"id": 2,
+		"name": "Kimchi Jjigae",
+        "imgIngredients": [["bun", "bun", "bun", "bun"], ["bun"]]
+        		
+	},
+	{
+		"id": 3,
+		"name": "Jjajangmyeon",
+		"imgIngredients": [["bun", "bun", "bun", "bun"], ["bun"]]
+		
+	},
+	{
+		"id": 4,
+		"name": "Avocado Salad",
+		"imgIngredients": [["bun", "bun", "bun", "bun"], ["bun"]]
+		
+	},
+	{
+		"id": 5,
+		"name": "Mie goreng",
+		"imgIngredients": [["bun", "bun", "bun", "bun"], ["bun"]]
+		
+		
+	},
+	{
+		"id": 6,
+		"name": "Veggie Meal",
+		"imgIngredients": [["bun", "bun", "bun", "bun"], ["bun"]]
+		
+	},
+	{
+		"id": 7,
+		"name": "Fancy Potato",
+		"imgIngredients": [["bun", "bun", "bun", "bun"], ["bun"]]
+		
+	},
+	{
+		"id": 8,
+		"name": "Mushroom Naan",
+		"imgIngredients": [["bun", "bun", "bun", "bun"], ["bun"]]
+		
+	},
+	{
+		"id": 9,
+		"name": "Waffle with Eggs",
+		"imgIngredients": [["bun", "bun", "bun", "bun"], ["bun"]]
+		
+	},
+	{
+		"id": 10,
+		"name": "Beef Burger",
+		"imgIngredients": [
+			[
+				{"ing": "bun", "qty": "2pcs"}, 
+				{"ing": "groundbeef", "qty": "200gr"}, 
+				{"ing": "lettuce", "qty": " "},
+				{"ing": "cheese", "qty": "2slices"}
+			], 
+			
+			[
+				{"ing": "bacon", "qty": "100gr"}
+			]
+		]
+
+		
+		
+	}
+	
+]

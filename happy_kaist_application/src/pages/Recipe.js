@@ -6,6 +6,8 @@ import './Recipe.css';
 //import './styles.css';
 import { render } from '@testing-library/react';
 import { Link } from 'react-router-dom';
+import imgList from '../data/image_list.json'
+import * as di from '../components/Recipe/DisplayID.js';
 
 
 import Tabs from 'react-bootstrap/Tabs';
@@ -26,14 +28,18 @@ class Recipe extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      ingredients:['anjeng', 'anjeng', 'anjeng', 'anjeng'],
+      //imgIngredients:[['bun', 'bun', 'bun', 'bun'],['bun','bun', 'bun']],
+      displayID: di.getDisplayID(),
       utensils: ['pan', 'pan', 'pan', 'pan'],
       inCount: 0,
       //recipe: 'this is the recipe'
     }
   }
   render(){
-    const { ingredients } = this.state;
+    var  displayID   = di.getDisplayID();
+    console.log(displayID);
+    //const displayIDstr = displayID.toString();
+    //const  img  = img_list.imgIngredients.toString().imgIngredients;
     const { utensils } = this.state;
     const { inCount } = this.state;
     return (
@@ -58,11 +64,13 @@ class Recipe extends React.Component {
         </Container>
         <br></br>
         <div id="tabs-container">
-          <Tabs fill defaultActiveKey="home" transition={false} id="noanim-tab-example">
-            <Tab eventKey="home"  title="Ingredients">
+          <Tabs fill defaultActiveKey="home" transition={false}>
+            <Tab eventKey="home" title="Ingredients">
+              
               <div id='img-container'>
-              <ImagesIngredients style = {{width:'100px', height:'100px'}} ingredients = {ingredients}/>
+              <ImagesIngredients style = {{width:'100px', height:'100px'}} imgIngredients = {imgList[displayID].imgIngredients} qty = {imgList[displayID].qty}/>
               </div>
+             
             </Tab>
             <Tab eventKey="profile" title="Utensils">
               <div id='img-container2'>

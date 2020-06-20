@@ -1,5 +1,5 @@
 import React from 'react';
-//import Image from '../Image';
+import Image from '../Image';
 import BuyButton from '../BuyButton';
 
 import Container from 'react-bootstrap/Container';
@@ -7,23 +7,42 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
-import bun from './bun.jpg';
-import ham from './ham.png';
-import lettuce from './lettuce.jpg';
-import bacon from './bacon.png'
 
 class ImagesIngredients extends React.Component{
     constructor(props){
         super(props);
+        
     }
 
     render(){
-        const { ingredients } = this.props;
-        const { inCount } = this.props;
+        //const { ingredients } = this.props;
+        //const { inCount } = this.props;
        
         return(
             <div>
             <br></br>
+            <Container>
+                <p style={{textAlign: 'left', color: 'blue', fontWeight:'bold'}}>*each quantity accounts for one portion</p>
+                {this.props.imgIngredients.map(group=>{
+                    return(
+                    <div>
+                    <Row>
+                        {group.map(value=>{
+                            console.log(value);
+                            return <Col md="1" lg="3"><Image ing = {value.ing} qty = {value.qty}/></Col>;
+                            })
+                        }
+                    </Row>
+                    <br></br>
+                    </div>
+                    )
+            })}
+                
+            </Container>
+            
+            {/*
+            <Image imgIngredients = {this.props.imgIngredients}></Image>
+            
             <Container>
                 <Row>
                     <Col md="1" lg="3"><p style={{fontWeight:'bold'}} >Bun 2pcs</p></Col>
@@ -46,7 +65,7 @@ class ImagesIngredients extends React.Component{
                     <Col md="1" lg="3"><BuyButton name = {"bacon"}/></Col>
                 </Row>
                 
-                {/* <Row>
+                <Row>
                     <Col md="1" lg="3"><p style={{fontWeight:'bold'}} >Bacon 200gr</p></Col>
                 </Row>
                 <Row>
@@ -54,9 +73,10 @@ class ImagesIngredients extends React.Component{
                 </Row>
                 <Row float='center'>
                     <Col md="1" lg="3"><BuyButton inCount={ inCount }/></Col>
-                </Row> */}
+                </Row> 
 
             </Container>
+            */}
             <br></br>
             </div>
         )
