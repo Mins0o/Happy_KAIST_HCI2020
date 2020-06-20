@@ -53,9 +53,7 @@ class Recipe extends React.Component {
             <img src={require("../images/"+(displayID+1).toString()+".png")} alt={imgList[displayID].name} style={{width:'300px', height:'300px', borderRadius:'40px' }}/>
             </Col>
             <Col><div id="title">{imgList[displayID].name}</div><br></br>
-              <Link to="/checkout">
-                <Button variant="primary" className='proceed'>Proceed to Checkout</Button>
-              </Link>{' '}</Col>
+              {' '}</Col>
             <Col>
             
             </Col>
@@ -82,6 +80,14 @@ class Recipe extends React.Component {
             </Tab>
           </Tabs>
         </div>
+        <br></br>
+        <Link to="/checkout">
+          <div className="proceed">
+                                Proceed to Payment
+          </div>       
+        </Link>
+        <br></br>
+        <br></br>
       </div>
     )
   }

@@ -50,17 +50,7 @@
   font-size: 40px;
 }
 
-.proceed{
-  float:left;
-  border:none;
-	border-radius: 10px;
-	background: #47372F;
-	font-size:1.2vw;
-	color: white;
-	outline:none;
-  position: relative;
-  font-weight: bold;
-}
+
 
 .proceed:hover{
   background: #D0C0B0;
@@ -68,4 +58,19 @@
 
 .recipe_tabbutton{
   font-weight: bold;
+}
+
+.proceed{
+    margin:0 auto;
+    display:flex;
+    width:75%;
+    height:50px;
+    background: #47372F;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 15px;
 }
