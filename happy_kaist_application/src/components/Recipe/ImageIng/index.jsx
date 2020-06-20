@@ -27,7 +27,7 @@ class ImageIng extends React.Component{
         console.log(this.ing);
         //const qty = this.state;
         //const style = this.props.activeImg ? {border: '3px solid green', height: '150px', width: '150px'}: {height: '150px', width: '150px'};
-        const style = {height: '150px', width: '150px'};
+        const style = {height: '9.2vw', width: '9.2vw'};
         return (
             <div>
                 
