@@ -32,7 +32,7 @@ class Checkout extends React.Component {
                     <thead>
                         <tr>
                         <th>Name</th>
-                        <th>Type</th>
+                        <th>Buy/Rent</th>
                         <th>Count</th>
                         <th>Price</th>
                         </tr>

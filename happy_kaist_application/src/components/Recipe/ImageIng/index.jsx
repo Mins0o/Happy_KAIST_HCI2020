@@ -38,7 +38,7 @@ class ImageIng extends React.Component{
                     //onClick={this.clickImage}
                 />
                 <br></br>
-                <BuyButton name = {"bun"}/>
+                <BuyButton name = {this.ing}/>
                 
             </div>
         )

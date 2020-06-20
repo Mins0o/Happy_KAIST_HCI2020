@@ -5,6 +5,11 @@ var ingredient = [
         price: 0.33
     },
     {
+        name: "groundbeef",
+        num: 0,
+        price: 1.33
+    },
+    {
         name: "ham",
         num: 0,
         price: 2.25
@@ -52,7 +57,7 @@ export function getIngredientCount(name){
 export function getIngredientPrice(name){
     for(var i = 0; i < ingredient.length; i++){
         if(ingredient[i].name == name){
-            return (ingredient[i].num  * ingredient[i].price).toPrecision(3);
+            return ingredient[i].price.toFixed(2)+"\t \tx"+ingredient[i].num+"\t \t \t(total:\t$"+(ingredient[i].num  * ingredient[i].price).toFixed(2)+")";
         }
     }
 }
