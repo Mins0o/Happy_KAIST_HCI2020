@@ -5,7 +5,7 @@
 		"imgIngredients": [
 			[
 				{"ing": "groundbeef", "qty": "200gr"}, 
-				{"ing": "sauce", "qty": "200ml"}, 
+				{"ing": "gochujang", "qty": "200ml"}, 
 				{"ing": "carrot", "qty": "20gr"},
 				{"ing": "beansprout", "qty": "20gr"}
 			], 
@@ -18,50 +18,191 @@
 	{
 		"id": 2,
 		"name": "Kimchi Jjigae",
-        "imgIngredients": [["bun", "bun", "bun", "bun"], ["bun"]]
+        "imgIngredients": [
+			[
+				{"ing": "kimchi", "qty": "450gr"}, 
+				{"ing": "pork belly", "qty": "200gr"}, 
+				{"ing": "tofu", "qty": "200gr"},
+				{"ing": "dried anchovies", "qty": "7pcs"}
+			], 
+			
+			[
+				{"ing": "onion", "qty": "2pcs"},
+				{"ing": "spring onion", "qty": "2pcs"},
+				{"ing": "dried kelp", "qty": "4pcs"}
+				
+			]
+		]
         		
 	},
 	{
 		"id": 3,
 		"name": "Jjajangmyeon",
-		"imgIngredients": [["bun", "bun", "bun", "bun"], ["bun"]]
+		"imgIngredients": [
+			[
+				{"ing": "noodle", "qty": "450gr"}, 
+				{"ing": "onion", "qty": "150gr"}, 
+				{"ing": "black bean paste", "qty": "6tbsp"},
+				{"ing": "cabbage", "qty": "2pcs"}
+			], 
+			
+			[
+				{"ing": "potato", "qty": "2pcs"},
+				{"ing": "button mushroom", "qty": "150gr"},
+				{"ing": "diced pork", "qty": "600gr"}
+				
+			]
+		]
 		
 	},
 	{
 		"id": 4,
 		"name": "Avocado Salad",
-		"imgIngredients": [["bun", "bun", "bun", "bun"], ["bun"]]
+		"imgIngredients": [
+			[
+				{"ing": "avocado", "qty": "2pcs"}, 
+				{"ing": "tomato", "qty": "1pcs"}, 
+				{"ing": "bell peppers", "qty": "1pcs"},
+				{"ing": "lime", "qty": "1/2pcs"}
+			], 
+			
+			[
+				{"ing": "coriander", "qty": "1/4cup"},
+				{"ing": "salt pepper", "qty": ""},
+				{"ing": "chia seeds", "qty": "20gr"},
+				{"ing": "lettuce", "qty": "200gr"}
+				
+			],
+
+			[
+				{"ing": "parsley", "qty": "30gr"}
+			]
+		]
 		
 	},
 	{
 		"id": 5,
 		"name": "Mie goreng",
-		"imgIngredients": [["bun", "bun", "bun", "bun"], ["bun"]]
+		"imgIngredients": [
+			[
+				{"ing": "noodle", "qty": "450gr"}, 
+				{"ing": "egg", "qty": "2pcs"}, 
+				{"ing": "garlic", "qty": "5cloves"},
+				{"ing": "shallots", "qty": "1head"}
+			], 
+			
+			[
+				{"ing": "sweet soy sauce", "qty": "20ml"},
+				{"ing": "shrimp", "qty": "150gr"},
+				{"ing": "spring onion", "qty": "50gr"},
+				{"ing": "cabbage", "qty": "150gr"}
+				
+			],
+
+			[
+				{"ing": "chilli", "qty": "4pcs"},
+				{"ing": "carrot", "qty": "150gr"}
+				
+			]
+
+		]
 		
 		
 	},
 	{
 		"id": 6,
 		"name": "Veggie Meal",
-		"imgIngredients": [["bun", "bun", "bun", "bun"], ["bun"]]
+		"imgIngredients": [
+			[
+				{"ing": "avocado", "qty": "1pcs"}, 
+				{"ing": "egg", "qty": "1pcs"}, 
+				{"ing": "spinach", "qty": "200gr"},
+				{"ing": "lime", "qty": "1/2pcs"}
+			], 
+			
+			[
+				{"ing": "tofu", "qty": "200gr"},
+				{"ing": "salt pepper", "qty": ""},
+				{"ing": "quinoa", "qty": "50gr"}
+				
+			]
+		]
 		
 	},
 	{
 		"id": 7,
 		"name": "Fancy Potato",
-		"imgIngredients": [["bun", "bun", "bun", "bun"], ["bun"]]
+		"imgIngredients": [
+			[
+				{"ing": "potato", "qty": "3pcs"}, 
+				{"ing": "butter", "qty": "100gr"}, 
+				{"ing": "sour cream", "qty": "50gr"},
+				{"ing": "green pea", "qty": "100gr"}
+			], 
+			
+			[
+				{"ing": "canola oil", "qty": "20ml"},
+				{"ing": "bacon", "qty": "200gr"},
+				{"ing": "salt pepper", "qty": ""}
+				
+			]
+		]
 		
 	},
 	{
 		"id": 8,
 		"name": "Mushroom Naan",
-		"imgIngredients": [["bun", "bun", "bun", "bun"], ["bun"]]
+		"imgIngredients": [
+			[
+				{"ing": "yeast", "qty": "13gr"}, 
+				{"ing": "milk", "qty": "95ml"}, 
+				{"ing": "plain flour", "qty": "280g"},
+				{"ing": "baking powder", "qty": "1/2tsp"}
+			], 
+			
+			[
+				{"ing": "canola oil", "qty": "20ml"},
+				{"ing": "yoghurt", "qty": "95gr"},
+				{"ing": "egg", "qty": "1medium"},
+				{"ing": "soy sauce", "qty": "1tbsp"}
+				
+			],
+
+			[
+				{"ing": "shiitake mushroom", "qty": "500gr"},
+				{"ing": "parsley", "qty": "30gr"},
+				{"ing": "sea salt", "qty": "1tsp"}
+				
+			]
+
+		]
 		
 	},
 	{
 		"id": 9,
 		"name": "Waffle with Eggs",
-		"imgIngredients": [["bun", "bun", "bun", "bun"], ["bun"]]
+		"imgIngredients": [
+			[
+				{"ing": "egg", "qty": "2pcs"}, 
+				{"ing": "all purpose flour", "qty": "200gr"}, 
+				{"ing": "milk", "qty": "90ml"},
+				{"ing": "vegetable oil", "qty": "30ml"}
+			], 
+			
+			[
+				{"ing": "sugar", "qty": "1tbsp"},
+				{"ing": "baking powder", "qty": "4tsp"},
+				{"ing": "sea salt", "qty": "1/4tsp"},
+				{"ing": "vanilla extract", "qty": "1/2tsp"}
+				
+			],
+
+			[
+				{"ing": "maple syrup", "qty": "20ml"},
+				{"ing": "butter", "qty": "200gr"}
+				
+			]
+		]
 		
 	},
 	{
@@ -76,7 +217,9 @@
 			], 
 			
 			[
-				{"ing": "bacon", "qty": "100gr"}
+				{"ing": "bacon", "qty": "100gr"},
+				{"ing": "tomato", "qty": "1pcs"},
+				{"ing": "salt pepper", "qty": ""}
 			]
 		]
 

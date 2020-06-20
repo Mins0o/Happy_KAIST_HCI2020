@@ -50,9 +50,9 @@ class Recipe extends React.Component {
           <Row><Col></Col></Row>
           <Row>
             <Col>
-            <img src={burger} alt="Burger" style={{width:'300px', height:'300px', borderRadius:'40px' }}/>
+            <img src={require("../images/"+(displayID+1).toString()+".png")} alt={imgList[displayID].name} style={{width:'300px', height:'300px', borderRadius:'40px' }}/>
             </Col>
-            <Col><div id="title">Burger</div><br></br>
+            <Col><div id="title">{imgList[displayID].name}</div><br></br>
               <Link to="/checkout">
                 <Button variant="primary" className='proceed'>Proceed to Checkout</Button>
               </Link>{' '}</Col>
