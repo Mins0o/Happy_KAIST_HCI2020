@@ -35,7 +35,7 @@ class Category extends React.Component{
                     <Link to = "/create_account" className ="category_button">
                         <button className = "login_buttonStyle">Previous</button>   
                     </Link>
-                    <Link to = "/login" className ="category_button">
+                    <Link to = "/mainpage" className ="category_button">
                         <button className = "login_buttonStyle" onClick={temporary}>Submit</button>
                     </Link>
                 </div>
