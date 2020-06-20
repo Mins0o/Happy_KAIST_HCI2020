@@ -60,6 +60,61 @@ var ingredient = [
         price: 0.70
     },
     {
+        name: "sesame oil",
+        num: 0,
+        price: 0.05
+    },
+    {
+        name: "seaweed",
+        num: 0,
+        price: 0.49
+    },
+    {
+        name: "roasted sesame seed",
+        num: 0,
+        price: 0.79
+    },
+    {
+        name: "avocado",
+        num: 0,
+        price: 1.20
+    },
+    {
+        name: "tomato",
+        num: 0,
+        price: 0.60
+    },
+    {
+        name: "bell peppers",
+        num: 0,
+        price: 0.70
+    },
+    {
+        name: "lime",
+        num: 0,
+        price: 0.59
+    },
+    {
+        name: "coriander",
+        num: 0,
+        price: 0.30
+    },
+    {
+        name: "salt pepper",
+        num: 0,
+        price: 0.03
+    },
+    {
+        name: "chia seeds",
+        num: 0,
+        price: 0.33
+    },
+    {
+        name: "parsley",
+        num: 0,
+        price: 0.33
+    },
+    {
         name: "ham",
         num: 0,
         price: 2.25
