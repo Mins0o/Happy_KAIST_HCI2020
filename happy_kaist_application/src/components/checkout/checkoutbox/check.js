@@ -322,7 +322,7 @@ export function getIngredientCount(name){
 export function getIngredientPrice(name){
     for(var i = 0; i < ingredient.length; i++){
         if(ingredient[i].name == name){
-            return ingredient[i].price.toFixed(2)+"\t \tx"+ingredient[i].num+"\t \t \t(total:\t$"+(ingredient[i].num  * ingredient[i].price).toFixed(2)+")";
+            return (ingredient[i].num  * ingredient[i].price).toFixed(2)+"\t \t ($"+ingredient[i].price.toFixed(2)+"\t \tx"+ingredient[i].num+")";
         }
     }
 }
