@@ -115,6 +115,31 @@ var ingredient = [
         price: 0.33
     },
     {
+        name: "potato",
+        num: 0,
+        price: 399.99
+    },
+    {
+        name: "butter",
+        num: 0,
+        price: 1.5
+    },
+    {
+        name: "sour cream",
+        num: 0,
+        price: 0.42
+    },
+    {
+        name: "green pea",
+        num: 0,
+        price: 0.40
+    },
+    {
+        name: "canola oil",
+        num: 0,
+        price: 0.15
+    },
+    {
         name: "ham",
         num: 0,
         price: 2.25
