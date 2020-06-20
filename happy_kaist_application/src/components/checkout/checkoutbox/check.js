@@ -25,7 +25,7 @@ var ingredient = [
         price: 0.60
     },
     {
-        name: "spinich",
+        name: "spinach",
         num: 0,
         price: 0.50
     },
@@ -247,3 +247,5 @@ export function sum(){
     }
     return sum.toPrecision(3);
 }
+
+

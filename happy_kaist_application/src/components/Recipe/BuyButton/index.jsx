@@ -8,7 +8,7 @@ import './index.css';
 class BuyButton extends React.Component{
     constructor(props){
         super(props);
-        this.state = {count:0}
+        this.state = {count:ch.getIngredientCount(this.props.name)}
         this.name = this.props.name;
         this.clickUp = this.clickUp.bind(this);
         this.clickDown = this.clickDown.bind(this);
@@ -31,6 +31,8 @@ class BuyButton extends React.Component{
     }
 
     render(){
+        //console.log('buybutton');
+        console.log(this.name);
         const { count } = this.state;
         return(
             <ButtonGroup aria-label="Basic example">

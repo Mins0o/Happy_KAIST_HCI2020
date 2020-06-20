@@ -7,14 +7,18 @@ import Button from 'react-bootstrap/Button';
 import Popup from '../components/checkout/checkoutbox';
 import * as ch from '../components/checkout/checkoutbox/check.js';
 import { Link } from 'react-router-dom';
+import * as di from '../components/Recipe/DisplayID.js';
+import imgList from '../data/image_list.json';
 
 
 class Checkout extends React.Component {
   constructor() {
     super();
     this.state = {
-      showPopup: false
+      showPopup: false,
+      displayID: di.getDisplayID()
     };
+    
   }
 
   togglePopup() {
@@ -22,8 +26,11 @@ class Checkout extends React.Component {
       showPopup: !this.state.showPopup
     });
   }
+
 	
 	render() {
+    var  displayID   = di.getDisplayID();
+    var imgIngredients = imgList[displayID].imgIngredients;
 	  return (
 		<div className = "checkout">
             <HeaderBar/>
@@ -38,6 +45,37 @@ class Checkout extends React.Component {
                         </tr>
                     </thead>
                     <tbody>
+                    {imgIngredients.map(group=>{return(
+                      group.map(value=>{
+                        var tableData = null;
+                        if (ch.getIngredientCount(value.ing) > 0) {
+                          tableData= 
+                            <tr>
+                            <td>{value.ing}</td>
+                            <td>Buy</td>
+                            <td>{ch.getIngredientCount(value.ing)}</td>
+                            <td>{"$" + ch.getIngredientPrice(value.ing)}</td>
+                            </tr> 
+                        }
+                        return tableData 
+                      })
+                      
+                    )
+                    })}
+                    {ch.getIngredientCount("knive") > 0 ? 
+                      <Tablebar tname = {"knive"} ttype = {"Rent"} tcount = {ch.getIngredientCount("knive")} tprice = {"$" + ch.getIngredientPrice("knive")}/> : null}
+                      {ch.getIngredientCount("frying pan") > 0 ? 
+                      <Tablebar tname = {"frying pan"} ttype = {"Rent"} tcount = {ch.getIngredientCount("frying pan")} tprice = {"$" + ch.getIngredientPrice("frying pan")}/> : null}
+                      {ch.getIngredientCount("spatula") > 0 ? 
+                      <Tablebar tname = {"spatula"} ttype = {"Rent"} tcount = {ch.getIngredientCount("spatula")} tprice = {"$" + ch.getIngredientPrice("spatula")}/> : null}
+                      {ch.getIngredientCount("stove") > 0 ? 
+                      <Tablebar tname = {"stove"} ttype = {"Rent"} tcount = {ch.getIngredientCount("stove")} tprice = {"$" + ch.getIngredientPrice("stove")}/> : null}
+                      <tr>
+                      <td colSpan="3">Total</td>
+                      <td>${ch.sum()}</td>
+                      </tr>
+
+                      {/*
                       {ch.getIngredientCount("bun") > 0 ? 
                       <Tablebar tname = {"bun"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bun")} tprice = {"$" + ch.getIngredientPrice("bun")}/> : null}
                       {ch.getIngredientCount("ham") > 0 ? 
@@ -58,6 +96,7 @@ class Checkout extends React.Component {
                       <td colSpan="3">Total</td>
                       <td>${ch.sum()}</td>
                       </tr>
+                      */}
                     </tbody>
                 </Table>
                 <div className = "paymentButtonForm">
