@@ -10,6 +10,56 @@ var ingredient = [
         price: 1.33
     },
     {
+        name: "gochujang",
+        num: 0,
+        price: 3.00
+    },
+    {
+        name: "carrot",
+        num: 0,
+        price: 0.40
+    },
+    {
+        name: "beansprout",
+        num: 0,
+        price: 0.60
+    },
+    {
+        name: "spinich",
+        num: 0,
+        price: 0.50
+    },
+    {
+        name: "shiitake mushroom",
+        num: 0,
+        price: 0.70
+    },
+    {
+        name: "sea salt",
+        num: 0,
+        price: 0.05
+    },
+    {
+        name: "egg",
+        num: 0,
+        price: 0.20
+    },
+    {
+        name: "sugar",
+        num: 0,
+        price: 0.01
+    },
+    {
+        name: "soy sauce",
+        num: 0,
+        price: 0.00
+    },
+    {
+        name: "garlic",
+        num: 0,
+        price: 0.70
+    },
+    {
         name: "ham",
         num: 0,
         price: 2.25
