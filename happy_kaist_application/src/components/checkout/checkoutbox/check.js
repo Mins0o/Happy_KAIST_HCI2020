@@ -142,7 +142,7 @@ var ingredient = [
     {
         name: "kimchi",
         num: 0,
-        price: 399.99
+        price: 399.00
     },
     {
         name: "pork belly",
@@ -175,9 +175,29 @@ var ingredient = [
         price: 0.89
     },
     {
-        name: "bun",
+        name: "noodle",
         num: 0,
-        price: 0.33
+        price: 2.50
+    },
+    {
+        name: "shallots",
+        num: 0,
+        price: 0.70
+    },
+    {
+        name: "shrimp",
+        num: 0,
+        price: 0.60
+    },
+    {
+        name: "cabbage",
+        num: 0,
+        price: 1.75
+    },
+    {
+        name: "chilli",
+        num: 0,
+        price: 0.53
     },
     {
         name: "ham",
