@@ -51,10 +51,10 @@
 	},
 	{
 		"id": 8,
-		"name": "Mushroom Naan",
-		"difficulty":"h",
-		"time" : "50",
-		"owned" : "3/5"
+		"name": "Burger",
+		"difficulty":"l",
+		"time" : "30",
+		"owned" : "3/4"
 	},
 	{
 		"id": 9,
@@ -65,9 +65,9 @@
 	},
 	{
 		"id": 10,
-		"name": "Burger",
-		"difficulty":"l",
-		"time" : "30",
-		"owned" : "3/4"
+		"name": "Mushroom Naan",
+		"difficulty":"h",
+		"time" : "50",
+		"owned" : "3/5"
 	}
 ]
