@@ -11,7 +11,23 @@
 			], 
 			
 			[
-				{"ing": "spinach", "qty": "20gr"}
+				{"ing": "spinach", "qty": "20gr"},
+				{"ing": "shiitake mushroom", "qty": "100gr"},
+				{"ing": "sea salt", "qty": "1/2tsp"},
+				{"ing": "egg", "qty": "1pcs"}
+			],
+
+			[
+				{"ing": "sugar", "qty": "1tbsp"},
+				{"ing": "soy sauce", "qty": "1tbsp"},
+				{"ing": "garlic", "qty": "2cloves"},
+				{"ing": "sesame oil", "qty": "2tbsp"}
+			],
+
+			[
+				{"ing": "seaweed", "qty": "50gr"},
+				{"ing": "roasted sesame seed", "qty": "20gr"}
+				
 			]
 		]
 	},
@@ -123,7 +139,8 @@
 			[
 				{"ing": "tofu", "qty": "200gr"},
 				{"ing": "salt pepper", "qty": ""},
-				{"ing": "quinoa", "qty": "50gr"}
+				{"ing": "quinoa", "qty": "300gr"},
+				{"ing": "broccoli", "qty": "50gr"}
 				
 			]
 		]
@@ -171,7 +188,8 @@
 			[
 				{"ing": "shiitake mushroom", "qty": "500gr"},
 				{"ing": "parsley", "qty": "30gr"},
-				{"ing": "sea salt", "qty": "1tsp"}
+				{"ing": "sea salt", "qty": "1tsp"},
+				{"ing": "lettuce", "qty": "1leaf"}
 				
 			]
 
