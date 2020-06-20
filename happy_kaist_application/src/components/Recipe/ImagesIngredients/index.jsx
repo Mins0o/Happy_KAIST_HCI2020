@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from '../Image';
+import ImageIng from '../ImageIng';
 import BuyButton from '../BuyButton';
 
 import Container from 'react-bootstrap/Container';
@@ -29,7 +29,7 @@ class ImagesIngredients extends React.Component{
                     <Row>
                         {group.map(value=>{
                             console.log(value);
-                            return <Col md="1" lg="3"><Image ing = {value.ing} qty = {value.qty}/></Col>;
+                            return <Col md="1" lg="3"><ImageIng ing = {value.ing} qty = {value.qty}/></Col>;
                             })
                         }
                     </Row>

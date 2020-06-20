@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from '../Image';
+//import Image from '../Image';
 import BuyButton from '../BuyButton';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';

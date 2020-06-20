@@ -4,7 +4,7 @@ import * as di from '../DisplayID.js';
 import imgList from '../../../data/image_list.json'
 //import './index.css';
 
-class Image extends React.Component{
+class ImageIng extends React.Component{
     constructor(props){
         super(props);
         this.ing = this.props.ing;
@@ -45,4 +45,4 @@ class Image extends React.Component{
     }
 }
 
-export default Image;
+export default ImageIng;
