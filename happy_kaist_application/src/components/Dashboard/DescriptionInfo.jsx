@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Tab,Tabs,Image} from 'react-bootstrap';
 import './InfoModal.css';
 import ReviewPost from './ReviewPost';
+import RecipeText from '../Recipe/RecipeText/index'
 
 class DescriptionInfo extends Component{
     constructor(props){
@@ -31,6 +32,13 @@ class DescriptionInfo extends Component{
                     <div id="information">
                         <div id="core-info"> <img style={{maxWidth:"70%"}} src={require("../../images/"+"info-png.png")}/> </div>
                         <div id="extra-utensils">Extra Tools Required<br/><img src={require("./spatula.jpg")} style={{width:'150px', height:'150px' }}/></div>
+                    </div>
+                </Tab>
+                <Tab eventKey="yes" title="Recipe">
+                    <div id="recipes">
+                    <RecipeText></RecipeText>
+                        {/* <div id="core-info"> <img style={{maxWidth:"70%"}} src={require("../../images/"+"info-png.png")}/> </div> */}
+                        {/* <div id="extra-utensils">Extra Tools Required<br/><img src={require("./spatula.jpg")} style={{width:'150px', height:'150px' }}/></div> */}
                     </div>
                 </Tab>
                 <Tab eventKey="profile" title="Review">

@@ -141,9 +141,21 @@
     flex-direction: column;
     justify-content: ;
     align-items: center;
-    height: 50%;
+    height:50%;
     position: relative;
-    overflow: hidden;
+    overflow-y: hidden;
+    text-align:center;
+    padding:25px;
+}
+
+#recipes{
+    display:flex;
+    flex-direction: column;
+    justify-content: ;
+    align-items: center;
+    height:430px;
+    position: relative;
+    overflow-y: scroll;
     text-align:center;
     padding:25px;
 }
