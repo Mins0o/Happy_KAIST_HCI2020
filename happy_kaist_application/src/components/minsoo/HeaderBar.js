@@ -60,7 +60,7 @@ class HeaderBar extends React.Component {
 					</Nav.Link>
 					<span style={{display:choose2}}>
 						<Form inline style={{marginBottom:"0px",padding:"0px",maxHeight:"3vw"}}>
-							<Image src={require("../../images/userprofile.png")} style={{maxHeight:"2.1vw",margin:"0px"}} roundedCircle />
+							<Image src={require("../../images/userprofile-male-01.png")} style={{maxHeight:"2.1vw",margin:"0px"}} roundedCircle />
 							<NavDropdown alignRight={1} style={{marginBottom:"0px",paddingBottom:"0px"}} title={"Hi "+username}>
 								<NavDropdown.Item style={{width:"22vw"}}>
 									<div style={{display:"block",margin:"auto",alignItems:"right"}} className="text-right">
@@ -70,7 +70,7 @@ class HeaderBar extends React.Component {
 									</div>
 									<div disabled={1}>
 										<span>
-											<Image src={require("../../images/userprofile.png")} style={{maxHeight:"3vw",margin:"0px"}} roundedCircle />
+											<Image src={require("../../images/userprofile-male-01.png")} style={{maxHeight:"6vw",margin:"0px"}} roundedCircle />
 										</span>
 										<span style={{float:"right"}}>
 											<div>{"Hi "+username}<br/></div>
