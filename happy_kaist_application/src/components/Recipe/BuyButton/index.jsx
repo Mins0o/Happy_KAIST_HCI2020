@@ -37,7 +37,7 @@ class BuyButton extends React.Component{
         return(
             <ButtonGroup aria-label="Basic example">
                 <Button className = "buybutton_style" variant="secondary" onClick={this.clickDown}>-</Button>
-                <Button className = "buybuttonMiddle_style" disabled>in cart: {count} </Button>
+                <Button className = "buybuttonMiddle_style" disabled> {count} portion </Button>
                 <Button className = "buybutton_style" variant="secondary" onClick={this.clickUp}>+</Button>
             </ButtonGroup>
         )

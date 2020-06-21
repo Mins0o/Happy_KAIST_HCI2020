@@ -61,6 +61,7 @@ class Recipe extends React.Component {
         </Container>
         <br></br>
         <div id="tabs-container">
+            <br></br>
             <p class="title2">Ingredients</p>
             <div id='img-container'>
               <ImagesIngredients style = {{width:'100px', height:'100px'}} imgIngredients = {imgList[displayID].imgIngredients} qty = {imgList[displayID].qty}/>
