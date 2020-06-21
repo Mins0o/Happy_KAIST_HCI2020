@@ -270,7 +270,7 @@ var ingredient = [
         price: 0.03
     },
     {
-        name: "chese",
+        name: "cheese",
         num: 0,
         price: 0.25
     },
