@@ -40,7 +40,7 @@ class MainPage extends React.Component {
 	render() {
 	  let modalClose = () => this.setState({modalShow:false})
 	  return (
-		<div style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
+		<div style={{backgroundColor:"#2c3e50", display: "flex", alignItems: "center", justifyContent: "center"}}>
 			<InfoModal
                 show = {this.state.modalShow}
 				onHide ={modalClose}

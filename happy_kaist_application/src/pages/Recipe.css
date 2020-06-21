@@ -53,7 +53,7 @@
 
 
 .proceed:hover{
-  background: #D0C0B0;
+  background: rgba(44, 62, 80,0.8);
 }
 
 .recipe_tabbutton{
@@ -65,7 +65,7 @@
     display:flex;
     width:75%;
     height:50px;
-    background: #47372F;
+    background: rgb(44, 62, 80);
     color: white;
     text-align: center;
     justify-content: center;

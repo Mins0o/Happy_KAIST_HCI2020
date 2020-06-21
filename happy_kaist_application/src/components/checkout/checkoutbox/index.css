@@ -29,14 +29,14 @@
 }
 
 .gobackButton{
-  background: #47372F;
+  background: rgba(44, 62, 80,1);
   font-weight: bold;
   border: none;
   border-radius: 10px;
 }
 
 .gobackButton:hover{
-  background: #D0C0B0;    
+  background: rgba(44, 62, 80,0.8);   
 }
 
 .payment_title{

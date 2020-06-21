@@ -22,7 +22,7 @@ class ImagesIngredients extends React.Component{
             <div>
             <br></br>
             <Container>
-                <p style={{textAlign: 'left', color: 'blue', fontWeight:'bold'}}>*each quantity accounts for one portion</p>
+                <p style={{textAlign: 'left', color: "rgba(0,0,255,0.8)", fontWeight:'700'}}>*each quantity accounts for one portion</p>
                 {this.props.imgIngredients.map(group=>{
                     return(
                     <div>

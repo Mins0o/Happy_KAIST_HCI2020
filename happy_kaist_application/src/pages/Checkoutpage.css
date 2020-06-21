@@ -10,12 +10,12 @@
 }
 
 .paymentButton{
-    background: #47372F;
+    background: rgb(44, 62, 80);
     font-weight: bold;
     border: none;
     border-radius: 0.8vw;
 }
 
 .paymentButton:hover{
-    background: #D0C0B0;    
+    background: rgba(44, 62, 80,0.8);    
 }

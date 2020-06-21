@@ -32,7 +32,7 @@ class HeaderBar extends React.Component {
 			
 				<Link to="/mainpage" style={{color: "#000000"}}>
 					<Navbar.Brand>							
-						Happy Apron
+					<img style={{height:"25px"}} src={require("../../images/"+"apron-logo-01.png")}/>
 					</Navbar.Brand>
 				</Link>
 				<Navbar.Toggle aria-controls="basic-navbar-nav"/>
@@ -40,13 +40,13 @@ class HeaderBar extends React.Component {
 					<Nav className="mr-auto">
 						<Nav.Link>
 							<Link to="/mainpage" style={{color: "#000000"}}>
-							<img style={{height:"25px"}} src={require("../../images/"+"setHome.png")}/>
+							{/* <img style={{height:"25px"}} src={require("../../images/"+"setHome.png")}/> */}
 							</Link>
 						</Nav.Link>
 					</Nav>
 					<Form inline>
-						<FormControl type="text" placeholder="Search" className="mr-sm-2" />
-						<Button style={{marginRight:"1vw"}} variant="outline-success">Search</Button>
+						{/* <FormControl type="text" placeholder="Search" className="mr-sm-2" /> */}
+						{/* <Button style={{marginRight:"1vw"}} variant="outline-success">Search</Button> */}
 					</Form>
 					<Nav.Link style={{display:choose1}}>
 						<Link to="/login" style={{color: "#000000"}}>
@@ -73,8 +73,8 @@ class HeaderBar extends React.Component {
 											<Image src={require("../../images/userprofile.png")} style={{maxHeight:"3vw",margin:"0px"}} roundedCircle />
 										</span>
 										<span style={{float:"right"}}>
-											<div>{"Hi "+username}[LEVEL 1]</div>
-											<Image src={require("../../images/expmeter.png")} style={{width:"14vw",maxHeight:"0.5vw"}}  rounded/>
+											<div>{"Hi "+username}<br/></div>
+											<div>EXP:</div><Image src={require("../../images/expmeter.png")} style={{maxHeight:"0.5vw"}}  rounded/> <div style={{fontSize:"0.9vw"}}>[LEVEL 1] 0/100</div>
 										</span>
 									</div>
 									<div style={{display:"block",margin:"auto"}} disabled={1}>
@@ -104,7 +104,7 @@ class HeaderBar extends React.Component {
 							</NavDropdown>
 						</Form>
 						<Form inline style={{padding:"0px",margin:"0px",width:"100%"}}>
-							<Image src={require("../../images/expmeter.png")} style={{maxHeight:"0.5vw"}}  rounded/>
+							<div>EXP:</div><br/><Image src={require("../../images/expmeter.png")} style={{maxHeight:"0.5vw"}}  rounded/> <div style={{fontSize:"0.9vw"}}>0/100</div>
 						</Form>
 					</span>
 				</Navbar.Collapse>

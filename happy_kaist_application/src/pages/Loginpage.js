@@ -19,7 +19,7 @@ class Loginpage extends React.Component{
 	
     return (
       <div className = "Login">
-        <h1 className = "login_title">Happy Apron</h1>
+        <h1 className = "login_title"><img style={{height:"50px"}} src={require("../images/"+"apron-logo-01.png")}/></h1>
         <div className = "form">
           <div className = "form2">
             <div className = "form3">
@@ -41,7 +41,7 @@ class Loginpage extends React.Component{
           </div>
         </div><br/>
         <Link to="/mainpage" className="text-center">
-          <p>See what's on the menu</p>
+          <p id="see-menu" >See what's on the menu</p>
         </Link>
       </div>
     );
