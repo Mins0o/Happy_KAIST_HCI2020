@@ -47,10 +47,13 @@ class Recipe extends React.Component {
           <Row><Col></Col></Row>
           <Row>
             <Col>
+            
+            </Col>
+            <Col>
+            <div id="title">{imgList[displayID].name}</div>
+            
             <img src={require("../images/"+(displayID+1).toString()+".png")} alt={imgList[displayID].name} style={{width:'300px', height:'300px', borderRadius:'40px' }}/>
             </Col>
-            <Col><div id="title">{imgList[displayID].name}</div><br></br>
-              {' '}</Col>
             <Col>
             
             </Col>

@@ -5,6 +5,7 @@ import CardColumns from "react-bootstrap/CardColumns";
 import {Button, ButtonToolbar} from 'react-bootstrap';
 import {InfoModal} from '../Dashboard/InfoModal'
 import * as di from '../Recipe/DisplayID.js';
+import * as ch from '../checkout/checkoutbox/check.js';
 
 
 
@@ -38,6 +39,7 @@ class MainPage extends React.Component {
 		di.setDisplayID(id);
 	}
 	render() {
+	ch.reset()
 	  let modalClose = () => this.setState({modalShow:false})
 	  return (
 		<div style={{backgroundColor:"#2c3e50", display: "flex", alignItems: "center", justifyContent: "center"}}>

@@ -22,7 +22,7 @@ var utensil_info = [
     },
     {
         "number": 5,
-        "name": "knive",
+        "name": "Knife",
         "checked": false
     },
     {

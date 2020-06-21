@@ -34,11 +34,12 @@ class Checkout extends React.Component {
 	  return (
 		<div className = "checkout">
             <HeaderBar/>
+           
             <div className = "tableForm">
                 <Table striped bordered hover>
                     <thead>
                         <tr>
-                        <th>Name</th>
+                        <th>Item</th>
                         <th>Buy/Rent</th>
                         <th>Count</th>
                         <th>Price</th>
@@ -62,8 +63,8 @@ class Checkout extends React.Component {
                       
                     )
                     })}
-                    {ch.getIngredientCount("knive") > 0 ? 
-                      <Tablebar tname = {"knive"} ttype = {"Rent"} tcount = {ch.getIngredientCount("knive")} tprice = {"$" + ch.getIngredientPrice("knive")}/> : null}
+                    {ch.getIngredientCount("knife") > 0 ? 
+                      <Tablebar tname = {"knife"} ttype = {"Rent"} tcount = {ch.getIngredientCount("knife")} tprice = {"$" + ch.getIngredientPrice("knife")}/> : null}
                       {ch.getIngredientCount("frying pan") > 0 ? 
                       <Tablebar tname = {"frying pan"} ttype = {"Rent"} tcount = {ch.getIngredientCount("frying pan")} tprice = {"$" + ch.getIngredientPrice("frying pan")}/> : null}
                       {ch.getIngredientCount("spatula") > 0 ? 
@@ -74,29 +75,6 @@ class Checkout extends React.Component {
                       <td colSpan="3">Total</td>
                       <td>${ch.sum()}</td>
                       </tr>
-
-                      {/*
-                      {ch.getIngredientCount("bun") > 0 ? 
-                      <Tablebar tname = {"bun"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bun")} tprice = {"$" + ch.getIngredientPrice("bun")}/> : null}
-                      {ch.getIngredientCount("ham") > 0 ? 
-                      <Tablebar tname = {"ham"} ttype = {"Buy"} tcount = {ch.getIngredientCount("ham")} tprice = {"$" + ch.getIngredientPrice("ham")}/> : null}
-                      {ch.getIngredientCount("lettuce") > 0 ? 
-                      <Tablebar tname = {"lettuce"} ttype = {"Buy"} tcount = {ch.getIngredientCount("lettuce")} tprice = {"$" + ch.getIngredientPrice("lettuce")}/> : null}
-                      {ch.getIngredientCount("bacon") > 0 ? 
-                      <Tablebar tname = {"bacon"} ttype = {"Buy"} tcount = {ch.getIngredientCount("bacon")} tprice = {"$" + ch.getIngredientPrice("bacon")}/> : null}
-                      {ch.getIngredientCount("knive") > 0 ? 
-                      <Tablebar tname = {"knive"} ttype = {"Rent"} tcount = {ch.getIngredientCount("knive")} tprice = {"$" + ch.getIngredientPrice("knive")}/> : null}
-                      {ch.getIngredientCount("frying pan") > 0 ? 
-                      <Tablebar tname = {"frying pan"} ttype = {"Rent"} tcount = {ch.getIngredientCount("frying pan")} tprice = {"$" + ch.getIngredientPrice("frying pan")}/> : null}
-                      {ch.getIngredientCount("spatula") > 0 ? 
-                      <Tablebar tname = {"spatula"} ttype = {"Rent"} tcount = {ch.getIngredientCount("spatula")} tprice = {"$" + ch.getIngredientPrice("spatula")}/> : null}
-                      {ch.getIngredientCount("stove") > 0 ? 
-                      <Tablebar tname = {"stove"} ttype = {"Rent"} tcount = {ch.getIngredientCount("stove")} tprice = {"$" + ch.getIngredientPrice("stove")}/> : null}
-                      <tr>
-                      <td colSpan="3">Total</td>
-                      <td>${ch.sum()}</td>
-                      </tr>
-                      */}
                     </tbody>
                 </Table>
                 <div className = "paymentButtonForm">
@@ -105,6 +83,8 @@ class Checkout extends React.Component {
 				  </Link>
                   <Button  className = "paymentButton" onClick = {this.togglePopup.bind(this)}>Proceed to Payment</Button>
                 </div>
+                <br></br>
+                <br></br>
             </div>      
         {this.state.showPopup ? 
           <Popup
@@ -114,6 +94,7 @@ class Checkout extends React.Component {
           : null
         }      
 		</div>
+  
 	  );
 	}
 }

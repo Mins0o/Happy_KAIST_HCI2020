@@ -79,8 +79,11 @@ class ImagesIngredients extends React.Component{
                         label="Buy all ingredients"
                         onChange={this.handleCheck}
                     custom
-                    />      
+                    />   
                     </Col>
+                    
+                    
+                    
                     </Form.Row>
                 </Form>
                 </div></Col>
