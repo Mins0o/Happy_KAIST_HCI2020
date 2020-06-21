@@ -7,7 +7,7 @@ import './index.css';
 class RentButton extends React.Component{
     constructor(props){
         super(props);
-        this.state = {rent:false}
+        this.state = {rent:ch.getIngredientCount(this.props.name)}
         this.name = this.props.name;
         this.clickRent = this.clickRent.bind(this);
         this.clickCancel = this.clickCancel.bind(this);
@@ -15,21 +15,22 @@ class RentButton extends React.Component{
 
     clickRent(){
         this.setState(prevState=>({
-            rent: true 
+            rent: 1
         }));
         ch.setIngredientCount(this.name, 1);
     }
 
     clickCancel(){
         this.setState(prevState=>({
-            rent: false
+            rent: 0
         }));
         ch.setIngredientCount(this.name, 0);
     }
 
     render(){
-        const { rent } = this.state;
-        if (rent == false){
+        
+        var {rent} = this.state;
+        if (rent == 0){
             return(
                 <ButtonGroup aria-label="Basic example">
                     <Button className = "rentButton" onClick={this.clickRent}>  Rent   </Button>
