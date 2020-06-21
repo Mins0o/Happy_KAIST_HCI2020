@@ -38,8 +38,7 @@ class Recipe extends React.Component {
   render(){
     var  displayID   = di.getDisplayID();
     console.log(displayID);
-    //const displayIDstr = displayID.toString();
-    //const  img  = img_list.imgIngredients.toString().imgIngredients;
+
     const { utensils } = this.state;
     const { inCount } = this.state;
     return (
@@ -62,6 +61,16 @@ class Recipe extends React.Component {
         </Container>
         <br></br>
         <div id="tabs-container">
+            <p class="title2">Ingredients</p>
+            <div id='img-container'>
+              <ImagesIngredients style = {{width:'100px', height:'100px'}} imgIngredients = {imgList[displayID].imgIngredients} qty = {imgList[displayID].qty}/>
+            </div>
+            <br></br>
+            <p class="title2">Utensils</p>
+            <div id='img-container2'>
+              <ImagesUtensils style = {{width:'100px', height:'100px'}} utensils = {utensils}/>
+            </div>
+          {/*
           <Tabs fill defaultActiveKey="home" transition={false}>
             <Tab eventKey="home" title="Ingredients">
               
@@ -79,6 +88,7 @@ class Recipe extends React.Component {
               <RecipeText></RecipeText>
             </Tab>
           </Tabs>
+          */}
         </div>
         <br></br>
         <Link to="/checkout">
