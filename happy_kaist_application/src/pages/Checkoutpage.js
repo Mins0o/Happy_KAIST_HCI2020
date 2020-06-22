@@ -52,7 +52,7 @@ class Checkout extends React.Component {
                         if (ch.getIngredientCount(value.ing) > 0) {
                           tableData= 
                             <tr>
-                            <td>{value.ing}</td>
+                            <td>{value.ing[0].toUpperCase()+value.ing.substring(1)}</td>
                             <td>Buy</td>
                             <td>{ch.getIngredientCount(value.ing)}</td>
                             <td>{"$" + ch.getIngredientPrice(value.ing)}</td>
@@ -64,13 +64,13 @@ class Checkout extends React.Component {
                     )
                     })}
                     {ch.getIngredientCount("knife") > 0 ? 
-                      <Tablebar tname = {"knife"} ttype = {"Rent"} tcount = {ch.getIngredientCount("knife")} tprice = {"$" + ch.getIngredientPrice("knife")}/> : null}
+                      <Tablebar tname = {"Knife"} ttype = {"Rent"} tcount = {ch.getIngredientCount("knife")} tprice = {"$" + ch.getIngredientPrice("knife")}/> : null}
                       {ch.getIngredientCount("frying pan") > 0 ? 
-                      <Tablebar tname = {"frying pan"} ttype = {"Rent"} tcount = {ch.getIngredientCount("frying pan")} tprice = {"$" + ch.getIngredientPrice("frying pan")}/> : null}
+                      <Tablebar tname = {"Frying pan"} ttype = {"Rent"} tcount = {ch.getIngredientCount("frying pan")} tprice = {"$" + ch.getIngredientPrice("frying pan")}/> : null}
                       {ch.getIngredientCount("spatula") > 0 ? 
-                      <Tablebar tname = {"spatula"} ttype = {"Rent"} tcount = {ch.getIngredientCount("spatula")} tprice = {"$" + ch.getIngredientPrice("spatula")}/> : null}
+                      <Tablebar tname = {"Spatula"} ttype = {"Rent"} tcount = {ch.getIngredientCount("spatula")} tprice = {"$" + ch.getIngredientPrice("spatula")}/> : null}
                       {ch.getIngredientCount("stove") > 0 ? 
-                      <Tablebar tname = {"stove"} ttype = {"Rent"} tcount = {ch.getIngredientCount("stove")} tprice = {"$" + ch.getIngredientPrice("stove")}/> : null}
+                      <Tablebar tname = {"Stove"} ttype = {"Rent"} tcount = {ch.getIngredientCount("stove")} tprice = {"$" + ch.getIngredientPrice("stove")}/> : null}
                       <tr>
                       <td colSpan="3">Total</td>
                       <td>${ch.sum()}</td>

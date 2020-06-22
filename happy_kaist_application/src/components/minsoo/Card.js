@@ -43,7 +43,7 @@ class CardItem extends React.Component {
 					fontSize: "0.2vh",
 					border:"0.5vw solid "+borderColor,
 					color: "#FFFFFF",
-					marginBottom: "1.5vw",
+					marginBottom: "2vw",
 					backgroundColor: color
 				}}
 			>

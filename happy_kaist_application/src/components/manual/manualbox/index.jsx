@@ -26,7 +26,7 @@ export class Manual extends Component{
                 </Modal.Title>
             </Modal.Header> */}
             <Modal.Body className = "manual_body">
-                <Image src ={manualImage} style={{width: '831px', height: '467px'}}/>
+                <Image src ={manualImage} style={{width: '1068px', height: '600px'}}/>
             </Modal.Body>
             <Modal.Footer>
                 <div className="understand-button" onClick={this.props.onHide}>
