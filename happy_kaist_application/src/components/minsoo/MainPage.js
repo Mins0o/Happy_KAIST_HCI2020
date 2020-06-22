@@ -59,7 +59,7 @@ class MainPage extends React.Component {
 				displayId = {this.state.displayId}
                 />
 			<HeaderBar/>
-			<div style={{width: "63vw",  alignItems: "center", justifyContent: "center"}}>
+			<div style={{width: "61vw",  alignItems: "center", justifyContent: "center"}}>
 				<br/><br/><br/><br/>
 				<CardColumns style={{columnCount:"3"}}>
 					<CardList menus={this.state.menulist}

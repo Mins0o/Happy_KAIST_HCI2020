@@ -47,7 +47,7 @@ class ImagesIngredients extends React.Component{
             <Container>
                 <Row>
                 <Col>
-                <p style={{textAlign: 'left', color: "rgba(0,0,255,0.8)", fontWeight:'700'}}>*each ingredient's quantity accounts for one portion</p>
+                <p style={{textAlign: 'left', color: "rgba(0,0,255,0.8)", fontWeight:'700'}}>*Each ingredient's quantity accounts for one portion</p>
                 </Col>
                 <Col>
                 

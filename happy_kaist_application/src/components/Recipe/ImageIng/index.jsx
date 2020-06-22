@@ -18,7 +18,7 @@ class ImageIng extends React.Component{
         return (
             <div>
                 
-                <p style={{fontWeight:'bold'}} >{this.ing + " " + this.qty }</p>
+                <p style={{fontWeight:'bold'}} >{this.ing[0].toUpperCase()+this.ing.substring(1) + " " + this.qty }</p>
                 <img 
                     style = {style}
                     src = {require("./pictures/"+(this.ing).toString()+".jpg")}
