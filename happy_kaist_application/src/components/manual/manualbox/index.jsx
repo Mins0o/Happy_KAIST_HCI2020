@@ -14,7 +14,7 @@ export class Manual extends Component{
 
     render(){
         return(
-        <Modal className
+        <Modal className = "manualForm"
             {...this.props}
             size="xl"
             aria-labelledby="contained-modal-title-vcenter"
