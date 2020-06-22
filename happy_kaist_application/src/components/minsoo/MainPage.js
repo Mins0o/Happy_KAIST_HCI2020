@@ -43,7 +43,7 @@ class MainPage extends React.Component {
 	render() {
 	ch.reset()
 	  let modalClose = () => this.setState({modalShow:false})
-	  let manualClose = () => this.setState({manualSow:false})	
+	  let manualClose = () => this.setState({manualShow:false})	
 
 	  return (
 		<div style={{backgroundColor:"#2c3e50", display: "flex", alignItems: "center", justifyContent: "center"}}>
@@ -57,7 +57,7 @@ class MainPage extends React.Component {
 				displayId = {this.state.displayId}
                 />
 			<HeaderBar/>
-			<div style={{width: "61vw",  alignItems: "center", justifyContent: "center"}}>
+			<div style={{width: "63vw",  alignItems: "center", justifyContent: "center"}}>
 				<br/><br/><br/><br/>
 				<CardColumns style={{columnCount:"3"}}>
 					<CardList menus={this.state.menulist}

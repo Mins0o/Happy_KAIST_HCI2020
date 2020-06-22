@@ -19,14 +19,20 @@ export class Manual extends Component{
             size="xl"
             aria-labelledby="contained-modal-title-vcenter"
             centered
+            backdrop = "static"
             >
-            <Modal.Header closeButton>
+            {/* <Modal.Header closeButton>
                 <Modal.Title id="contained-modal-title-vcenter">
                 </Modal.Title>
-            </Modal.Header>
+            </Modal.Header> */}
             <Modal.Body className = "manual_body">
                 <Image src ={manualImage} style={{width: '831px', height: '467px'}}/>
             </Modal.Body>
+            <Modal.Footer>
+                <div className="understand-button" onClick={this.props.onHide}>
+                                I understand
+                    </div>
+            </Modal.Footer>
         </Modal>   
         )
     }
