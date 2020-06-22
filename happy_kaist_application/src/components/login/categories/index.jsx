@@ -26,7 +26,7 @@ class Category extends React.Component{
 			//alert("You'll have to Sign In to use the full feature!");
 			s.uset("/mainpage");
             s.set(1);
-            //mc.setChecked(1);
+            mc.setChecked(0);
             //console.log(mc.getChecked)
 		}
         return(
