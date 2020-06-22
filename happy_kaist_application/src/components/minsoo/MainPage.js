@@ -6,6 +6,7 @@ import {Button, ButtonToolbar} from 'react-bootstrap';
 import {InfoModal} from '../Dashboard/InfoModal'
 import {Manual} from '../manual/manualbox/index'
 import * as di from '../Recipe/DisplayID.js';
+import * as ch from '../checkout/checkoutbox/check.js';
 
 
 
@@ -40,6 +41,7 @@ class MainPage extends React.Component {
 		di.setDisplayID(id);
 	}
 	render() {
+	ch.reset()
 	  let modalClose = () => this.setState({modalShow:false})
 	  let manualClose = () => this.setState({manualSow:false})	
 

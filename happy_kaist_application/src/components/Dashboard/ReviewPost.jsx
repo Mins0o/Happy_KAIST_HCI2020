@@ -9,7 +9,7 @@ class ReviewPost extends Component{
     render(){
         return(
         <div className ="review-post">
-            This is review # {this.props.id}
+            <img style={{maxWidth:"100%"}} src={require("../../images/"+"review-" + this.props.id + ".png")}/>
         </div>  
         )
     }
