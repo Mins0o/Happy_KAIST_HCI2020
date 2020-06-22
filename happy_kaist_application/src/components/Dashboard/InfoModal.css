@@ -165,3 +165,8 @@
     font-weight: 600;
     padding-top: 25px;
 }
+
+#extra-utensils p {
+    font-size:smaller;
+    font-weight:500;
+}
