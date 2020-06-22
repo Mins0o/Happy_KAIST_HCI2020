@@ -43,7 +43,7 @@ class MainPage extends React.Component {
 	render() {
 	ch.reset()
 	  let modalClose = () => this.setState({modalShow:false})
-	  let manualClose = () => this.setState({manualSow:false})	
+	  let manualClose = () => this.setState({manualShow:false})	
 
 	  return (
 		<div style={{backgroundColor:"#2c3e50", display: "flex", alignItems: "center", justifyContent: "center"}}>
