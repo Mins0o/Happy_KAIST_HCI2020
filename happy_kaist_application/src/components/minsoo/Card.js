@@ -42,13 +42,14 @@ class CardItem extends React.Component {
 					fontWeight:"bold",
 					fontSize: "1.8vw",
 					border:"0.5vw solid "+borderColor,
-					color: "#FFFFFF"
+					color: "#FFFFFF",
+					marginBottom: "1.5vw"
 				}}
 			>
 				{/* <Card.Header style={{bgColor : "red", paddingLeft:"10px", paddingRight:"10px", fontSize:"17pt", paddingBottom:"10px", maxHeight:"0.1vw"}}> */}
 				<div id="header-card">
-					<div class ="inv-color" style={{float:"left",fontSize:"1vw"}}><img style={{height:"2.5vw"}} src={require("../../images/"+"cooking.png")}/> {food_data[i].owned.toString()}</div>
-					<div class ="inv-color" style={{float:"right",fontSize:"1vw"}}><img style={{height:"2vw"}} src={require("../../images/"+"time.png")}/> ~ {food_data[i].time.toString()} mins</div>
+					<div class ="inv-color" style={{float:"left",fontSize:"1vw"}}><img style={{height:"2.7vw"}} src={require("../../images/"+"cooking.png")}/> {food_data[i].owned.toString()}</div>
+					<div class ="inv-color" style={{float:"right",fontSize:"1vw"}}><img style={{height:"1.8vw"}} src={require("../../images/"+"time.png")}/> ~ {food_data[i].time.toString()} mins</div>
 				</div>
 				{/* </Card.Header> */}
 				<Card.Img variant="top" style={{maxHeight:"26vw"}}src={require("../../images/"+food_data[i].id.toString()+".png")} />
