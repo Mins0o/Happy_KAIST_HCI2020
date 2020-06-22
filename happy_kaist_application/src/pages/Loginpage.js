@@ -2,6 +2,7 @@ import React from 'react';
 import './Loginpage.css';
 import { Link } from 'react-router-dom';
 import * as s from "../components/minsoo/Signed.js";
+import * as mc from "../components/minsoo/ManualCheck.js";
 
 class Loginpage extends React.Component{
   constructor(props){
@@ -15,7 +16,11 @@ class Loginpage extends React.Component{
 		 }else{
 		 s.set(1);
 		 }
-	 }
+   }
+   
+   function seeMenu(){
+      mc.setChecked(0);
+   }
 	
     return (
       <div className = "Login">
@@ -40,7 +45,7 @@ class Loginpage extends React.Component{
             </div>
           </div>
         </div><br/>
-        <Link to="/mainpage" className="text-center">
+        <Link to="/mainpage" className="text-center" onClick={seeMenu}>
           <p id="see-menu" >See what's on the menu</p>
         </Link>
       </div>
