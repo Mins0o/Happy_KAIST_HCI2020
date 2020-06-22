@@ -28,18 +28,15 @@ class Recipe extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      //imgIngredients:[['bun', 'bun', 'bun', 'bun'],['bun','bun', 'bun']],
       displayID: di.getDisplayID(),
       utensils: ['pan', 'pan', 'pan', 'pan'],
       inCount: 0,
-      //recipe: 'this is the recipe'
     }
   }
   render(){
     var  displayID   = di.getDisplayID();
     console.log(displayID);
-    //const displayIDstr = displayID.toString();
-    //const  img  = img_list.imgIngredients.toString().imgIngredients;
+
     const { utensils } = this.state;
     const { inCount } = this.state;
     return (
@@ -50,10 +47,13 @@ class Recipe extends React.Component {
           <Row><Col></Col></Row>
           <Row>
             <Col>
+            
+            </Col>
+            <Col>
+            <div id="title">{imgList[displayID].name}</div>
+            
             <img src={require("../images/"+(displayID+1).toString()+".png")} alt={imgList[displayID].name} style={{width:'300px', height:'300px', borderRadius:'40px' }}/>
             </Col>
-            <Col><div id="title">{imgList[displayID].name}</div><br></br>
-              {' '}</Col>
             <Col>
             
             </Col>
@@ -62,23 +62,16 @@ class Recipe extends React.Component {
         </Container>
         <br></br>
         <div id="tabs-container">
-          <Tabs fill defaultActiveKey="home" transition={false}>
-            <Tab eventKey="home" title="Ingredients">
-              
-              <div id='img-container'>
+            <br></br>
+            <p class="title2">Ingredients</p>
+            <div id='img-container'>
               <ImagesIngredients style = {{width:'100px', height:'100px'}} imgIngredients = {imgList[displayID].imgIngredients} qty = {imgList[displayID].qty}/>
-              </div>
-             
-            </Tab>
-            <Tab eventKey="profile" title="Utensils">
-              <div id='img-container2'>
+            </div>
+            <br></br>
+            <p class="title2">Utensils</p>
+            <div id='img-container2'>
               <ImagesUtensils style = {{width:'100px', height:'100px'}} utensils = {utensils}/>
-              </div>
-            </Tab>
-            <Tab eventKey="contact" title="Recipe">
-              <RecipeText></RecipeText>
-            </Tab>
-          </Tabs>
+            </div>
         </div>
         <br></br>
         <Link to="/checkout">

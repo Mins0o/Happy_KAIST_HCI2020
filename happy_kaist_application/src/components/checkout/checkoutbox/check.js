@@ -270,7 +270,7 @@ var ingredient = [
         price: 0.03
     },
     {
-        name: "chese",
+        name: "cheese",
         num: 0,
         price: 0.25
     },
@@ -290,7 +290,7 @@ var ingredient = [
         price: 1.83
     },
     {
-        name: "knive",
+        name: "knife",
         num: 0,
         price: 5
     },
@@ -341,6 +341,12 @@ export function sum(){
         sum += ingredient[i].num  * ingredient[i].price;
     }
     return sum.toPrecision(3);
+}
+
+export function reset(){
+    for(var i = 0; i < ingredient.length; i++){
+            ingredient[i].num = 0;
+    }
 }
 
 

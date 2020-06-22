@@ -42,6 +42,7 @@ class MenuInfo extends Component{
             <div id="exp">{exp}</div>
         </div>
         </div>  
+        
         )
     }
 }

@@ -4,7 +4,9 @@ import CardList from "./CardList.js";
 import CardColumns from "react-bootstrap/CardColumns";
 import {Button, ButtonToolbar} from 'react-bootstrap';
 import {InfoModal} from '../Dashboard/InfoModal'
+import {Manual} from '../manual/manualbox/index'
 import * as di from '../Recipe/DisplayID.js';
+import * as ch from '../checkout/checkoutbox/check.js';
 
 
 
@@ -27,8 +29,9 @@ class MainPage extends React.Component {
 			],
 
 			modalShow:false,
+			manualShow:true,
 
-			displayId:1,
+			displayId:1
 		}
 	}
 
@@ -38,14 +41,21 @@ class MainPage extends React.Component {
 		di.setDisplayID(id);
 	}
 	render() {
+	ch.reset()
 	  let modalClose = () => this.setState({modalShow:false})
+	  let manualClose = () => this.setState({manualShow:false})	
+
 	  return (
-		<div style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
+		<div style={{backgroundColor:"#2c3e50", display: "flex", alignItems: "center", justifyContent: "center"}}>
+			<Manual
+				show = {this.state.manualShow}
+				onHide ={manualClose}
+				/>
 			<InfoModal
                 show = {this.state.modalShow}
 				onHide ={modalClose}
 				displayId = {this.state.displayId}
-                />  
+                />
 			<HeaderBar/>
 			<div style={{width: "63vw",  alignItems: "center", justifyContent: "center"}}>
 				<br/><br/><br/><br/>

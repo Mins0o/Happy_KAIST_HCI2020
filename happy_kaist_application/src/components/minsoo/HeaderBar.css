@@ -1,5 +1,9 @@
 .navbar_bg{
-    background-color: #D8CFBE;
+    background-color: #EEEEEE;
     box-shadow: 0px 10px 20px #646464;
     font-weight: bold;
+}
+
+#blankDiv{
+    color:#EEEEEE;
 }

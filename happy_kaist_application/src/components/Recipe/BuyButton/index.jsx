@@ -8,11 +8,16 @@ import './index.css';
 class BuyButton extends React.Component{
     constructor(props){
         super(props);
-        this.state = {count:ch.getIngredientCount(this.props.name)}
+        this.state = {
+            count:ch.getIngredientCount(this.props.name)
+            
+        }
         this.name = this.props.name;
         this.clickUp = this.clickUp.bind(this);
         this.clickDown = this.clickDown.bind(this);
+        
     }
+
 
     clickUp(){
         this.setState(prevState=>({
@@ -31,17 +36,15 @@ class BuyButton extends React.Component{
     }
 
     render(){
-        //console.log('buybutton');
-        console.log(this.name);
         const { count } = this.state;
+        const { ingState } = this.state;
         return(
-            <ButtonGroup aria-label="Basic example">
-                <Button className = "buybutton_style" variant="secondary" onClick={this.clickDown}>-</Button>
-                <Button className = "buybuttonMiddle_style" variant="primary" disabled>in cart: {count} </Button>
-                <Button className = "buybutton_style" variant="secondary" onClick={this.clickUp}>+</Button>
-            </ButtonGroup>
-        )
-            
+                <ButtonGroup aria-label="Basic example">
+                    <Button className = "buybutton_style" variant="secondary" onClick={this.clickDown}>-</Button>
+                    <Button className = "buybuttonMiddle_style" disabled> {count} portion </Button>
+                    <Button className = "buybutton_style" variant="secondary" onClick={this.clickUp}>+</Button>
+                </ButtonGroup>
+            )   
     }
 }
 

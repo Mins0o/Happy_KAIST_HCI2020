@@ -9,24 +9,11 @@ class ImageIng extends React.Component{
         super(props);
         this.ing = this.props.ing;
         this.qty = this.props.qty;
-        //this.clickImage = this.clickImage.bind(this);
+        this.ingState = this.props.ingState;
+        
     }
 
-    //clickImage(){
-        //this.setState(prevState=>({
-            //active: !(prevState.active)
-        //}));
-
-    //}
-
-
     render(){
-        
-        //let ing = this.props.ing;
-        //let qty = this.props.qty;
-        console.log(this.ing);
-        //const qty = this.state;
-        //const style = this.props.activeImg ? {border: '3px solid green', height: '150px', width: '150px'}: {height: '150px', width: '150px'};
         const style = {height: '9.2vw', width: '9.2vw'};
         return (
             <div>
@@ -35,10 +22,9 @@ class ImageIng extends React.Component{
                 <img 
                     style = {style}
                     src = {require("./pictures/"+(this.ing).toString()+".jpg")}
-                    //onClick={this.clickImage}
                 />
                 <br></br>
-                <BuyButton name = {(this.ing).toString()}/>
+                <BuyButton name = {(this.ing).toString()} ingState= {this.ingState}/>
                 
             </div>
         )

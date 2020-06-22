@@ -1,14 +1,22 @@
 .rentButton{
-    background: #47372F;
+    background: rgb(44, 62, 80);
     font-weight: bold;
     border: none;
 }
 
 .rentButton:hover{
-    background: #A39D90;
+    background: rgba(44, 62, 80,0.9);
+}
+
+.rentButton:focus{
+    background-color: rgba(44, 62, 80,0.9);
 }
 
 
 .clickedRentButton{
-    font-weight: bold;    
+    font-weight: bold;
+}
+
+.clickedRentButton:disabled{
+    background: rgba(44, 62, 80);
 }

@@ -1,12 +1,16 @@
 .buybutton_style{
-    background: #47372F;
+    background: rgb(44, 62, 80);
     font-weight: bold;
     border: none;
     border-radius: 10px;
 }
 
 .buybuttonMiddle_style{
-    background: #A39D90;
+    background: rgb(44, 62, 80);
     font-weight: bold;
     border: none;
+}
+
+.buybuttonMiddle_style:disabled{
+    background: rgb(44, 62, 80);
 }
