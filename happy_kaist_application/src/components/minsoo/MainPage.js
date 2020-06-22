@@ -7,6 +7,7 @@ import {InfoModal} from '../Dashboard/InfoModal'
 import {Manual} from '../manual/manualbox/index'
 import * as di from '../Recipe/DisplayID.js';
 import * as ch from '../checkout/checkoutbox/check.js';
+import * as mc from './ManualCheck.js';
 
 
 
@@ -29,7 +30,7 @@ class MainPage extends React.Component {
 			],
 
 			modalShow:false,
-			manualShow:true,
+			manualShow:mc.getChecked()==0?true:false,
 
 			displayId:1
 		}
@@ -41,6 +42,7 @@ class MainPage extends React.Component {
 		di.setDisplayID(id);
 	}
 	render() {
+		mc.setChecked(1)
 	ch.reset()
 	  let modalClose = () => this.setState({modalShow:false})
 	  let manualClose = () => this.setState({manualShow:false})	
