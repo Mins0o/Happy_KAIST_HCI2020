@@ -4,6 +4,7 @@ import Buttonbar from '../buttonbar';
 import { Link } from 'react-router-dom';
 import './index.css';
 import * as s from "../../minsoo/Signed.js";
+import * as mc from "../../minsoo/ManualCheck.js";
 
 class Category extends React.Component{
     constructor(props){
@@ -24,7 +25,9 @@ class Category extends React.Component{
 		function temporary(){
 			//alert("You'll have to Sign In to use the full feature!");
 			s.uset("/mainpage");
-			s.set(1);
+            s.set(1);
+            //mc.setChecked(1);
+            //console.log(mc.getChecked)
 		}
         return(
             <div className = "categoryForm">
