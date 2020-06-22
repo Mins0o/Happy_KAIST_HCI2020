@@ -109,7 +109,7 @@ class HeaderBar extends React.Component {
 							</NavDropdown>
 						</Form>
 						<Form inline style={{padding:"0px",margin:"0px",width:"100%"}}>
-							<div>EXP:</div><br/><Image src={require("../../images/expmeter.png")} style={{maxHeight:"0.5vw"}}  rounded/> <div style={{fontSize:"0.9vw"}}>0/100</div>
+							<div>EXP :</div><div id="blankDiv">la</div><Image src={require("../../images/expmeter.png")} style={{maxHeight:"0.5vw"}}  rounded/> <div id="blankDiv">a</div><div style={{fontSize:"0.9vw"}}>0/100</div>
 						</Form>
 					</span>
 				</Navbar.Collapse>
