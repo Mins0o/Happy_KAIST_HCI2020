@@ -23,15 +23,18 @@ Let's start cooking!
 
 
 Screen Captures:
-![SignIn](https://github.com/Mins0o/Happy_KAIST_HCI2020/raw/master/Images_For_Readme/01_SignIn.png)"SignIn"
-![SignUp](https://github.com/Mins0o/Happy_KAIST_HCI2020/raw/master/Images_For_Readme/02_SignUp.png)"SignUp"
-![Selection](https://github.com/Mins0o/Happy_KAIST_HCI2020/raw/master/Images_For_Readme/03_Selection.png)"Selection"
-![Tutorial](https://github.com/Mins0o/Happy_KAIST_HCI2020/raw/master/Images_For_Readme/04_Tutorial.png)"Tutorial"
-![Main_Menu](https://github.com/Mins0o/Happy_KAIST_HCI2020/raw/master/Images_For_Readme/05_Main_Menu.png)"Main_Menu"
-![Info](https://github.com/Mins0o/Happy_KAIST_HCI2020/raw/master/Images_For_Readme/06_Info.png)"Info"
-![Recipe_Shopping_1](https://github.com/Mins0o/Happy_KAIST_HCI2020/raw/master/Images_For_Readme/07_Recipe_Shopping_1.png)"Recipe_Shopping_1"
-![Recipe_Shopping_2](https://github.com/Mins0o/Happy_KAIST_HCI2020/raw/master/Images_For_Readme/08_Recipe_Shopping_2.png)"Recipe_Shopping_2"
-![Recipe_Shopping_3](https://github.com/Mins0o/Happy_KAIST_HCI2020/raw/master/Images_For_Readme/09_Recipe_Shopping_3.png)"Recipe_Shopping_3"
-![Checkout](https://github.com/Mins0o/Happy_KAIST_HCI2020/raw/master/Images_For_Readme/10_Checkout.png)"Checkout"
-![Profile_Dropdown](https://github.com/Mins0o/Happy_KAIST_HCI2020/raw/master/Images_For_Readme/11_Profile_Dropdown.png)"Profile_Dropdown"
+SignIn ![SignIn](https://github.com/ins0o/Happy_KAIST_HCI2020/raw/master/Images_For_Readme/01_SignIn.png "SignIn")
+SignUp ![SignUp](https://github.com/ins0o/Happy_KAIST_HCI2020/raw/master/Images_For_Readme/02_SignUp.png "SignUp")
+Selection ![Selection](https://github.com/ins0o/Happy_KAIST_HCI2020/raw/master/Images_For_Readme/03_Selection.png "Selection")
+Tutorial ![Tutorial](https://github.com/ins0o/Happy_KAIST_HCI2020/raw/master/Images_For_Readme/04_Tutorial.png "Tutorial")
+Main_Menu ![Main_Menu](https://github.com/ins0o/Happy_KAIST_HCI2020/raw/master/Images_For_Readme/05_Main_Menu.png "Main_Menu")
+Info ![Info](https://github.com/ins0o/Happy_KAIST_HCI2020/raw/master/Images_For_Readme/06_Info.png "Info")
+Recipe_Shopping_1 ![Recipe_Shopping_1](https://github.com/ins0o/Happy_KAIST_HCI2020/raw/master/Images_For_Readme/07_Recipe_Shopping_1.png "Recipe_Shopping_1")
+Recipe_Shopping_2 ![Recipe_Shopping_2](https://github.com/ins0o/Happy_KAIST_HCI2020/raw/master/Images_For_Readme/08_Recipe_Shopping_2.png "Recipe_Shopping_2")
+Recipe_Shopping_3 ![Recipe_Shopping_3](https://github.com/ins0o/Happy_KAIST_HCI2020/raw/master/Images_For_Readme/09_Recipe_Shopping_3.png "Recipe_Shopping_3")
+Checkout ![Checkout](https://github.com/ins0o/Happy_KAIST_HCI2020/raw/master/Images_For_Readme/10_Checkout.png "Checkout")
+Profile_Dropdown ![Profile_Dropdown](https://github.com/ins0o/Happy_KAIST_HCI2020/raw/master/Images_For_Readme/11_Profile_Dropdown.png "Profile_Dropdown")
+
+
+
 
